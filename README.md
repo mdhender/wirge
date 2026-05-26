@@ -47,22 +47,25 @@ documentation (the Diátaxis docs above) — never by changing the manual.
 
 ## Building the site
 
-The site is built with [Hugo](https://gohugo.io) using the
-[Hextra](https://imfing.github.io/hextra/) theme. We expect to adopt Hextra
-features such as shortcodes over time, as the need arises.
+The site is built with [Hugo](https://gohugo.io) (Extended) using the
+[Hextra](https://imfing.github.io/hextra/) theme, which is pulled in as a Hugo
+module (see `go.mod`). We expect to adopt Hextra features such as shortcodes
+over time, as the need arises.
 
-> **Note:** the Hugo scaffolding is not yet in place. Once it is:
->
-> ```sh
-> hugo server   # local preview at http://localhost:1313
-> hugo          # build the static site into public/
-> ```
+Requirements: Hugo Extended and Go (for the module-based theme).
 
-### Target layout
+```sh
+hugo server   # local preview at http://localhost:1313
+hugo          # build the static site into public/
+hugo mod get -u ./...   # update the Hextra theme module
+```
+
+### Layout
 
 ```text
 wirge/
 ├── hugo.toml          # Hugo + Hextra site configuration
+├── go.mod / go.sum    # Hugo module deps (pins the Hextra theme version)
 ├── content/           # published site content (Diátaxis)
 │   ├── _index.md
 │   ├── tutorial/
@@ -71,14 +74,16 @@ wirge/
 │   └── explanation/
 ├── user-manual/       # original manual — internal reference, NOT published
 ├── notes/             # working notes — NOT published
-├── README.md
+├── deploy/            # sample Nginx / Caddy configs (serve public/ under /docs)
+├── README.md          # this file
+├── CLAUDE.md          # guidance for working in this repo
 ├── LICENSE.md         # licensing overview
 └── LICENSE-docs.md    # CC BY-NC-SA 4.0 text for the project documentation
 ```
 
-The four Diátaxis directories currently live at the repository root; they will
-move under `content/` when the Hugo site is scaffolded. `user-manual/` and
-`notes/` stay outside `content/` so Hugo never publishes them.
+The four Diátaxis directories live under `content/`, so Hugo publishes them.
+`user-manual/` and `notes/` stay outside `content/` so Hugo never publishes
+them.
 
 ## License
 

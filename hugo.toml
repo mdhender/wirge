@@ -1,0 +1,33 @@
+# Epimethean Challenge documentation site
+# Built with Hugo + the Hextra theme (https://imfing.github.io/hextra/).
+
+baseURL = "https://epimethean.dev/docs"
+title = "Epimethean Challenge"
+
+# Hextra works best with these enabled.
+enableRobotsTXT = true
+enableGitInfo = true
+hasCJKLanguage = false
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true # allow raw HTML in Markdown (used by Hextra shortcodes)
+
+# Pull in the Hextra theme as a Hugo module.
+[module]
+  [[module.imports]]
+    path = "github.com/imfing/hextra"
+
+[params]
+  # Hextra theme parameters. Expand as we adopt more theme features.
+  [params.navbar]
+    displayTitle = true
+    displayLogo = false
+  [params.footer]
+    enable = true
+    displayCopyright = true
+    displayPoweredBy = true
+  [params.editURL]
+    enable = false

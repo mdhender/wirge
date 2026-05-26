@@ -48,21 +48,24 @@ reference only** and is **never published** to the site.
   into four modes: `tutorial/` (learning), `how-to/` (tasks), `reference/`
   (information), `explanation/` (understanding). Put new content in the mode that
   matches its purpose; don't mix modes in one page.
-- The site is built with [Hugo](https://gohugo.io) using the
-  [Hextra](https://imfing.github.io/hextra/) theme. Follow whatever Markdown
-  style and conventions Hugo/Hextra prefer, **including front matter**, as
-  documentation is created. We'll adopt Hextra features (e.g. shortcodes) as the
-  need arises.
-- The Hugo scaffolding is not yet in place. The four Diátaxis directories
-  currently live at the repository root and will move under `content/` when the
-  site is scaffolded. `user-manual/` and `notes/` stay outside `content/` so they
-  are never published.
+- The site is built with [Hugo](https://gohugo.io) (Extended) using the
+  [Hextra](https://imfing.github.io/hextra/) theme, pulled in as a Hugo module
+  (`go.mod`/`go.sum` pin the version). Follow whatever Markdown style and
+  conventions Hugo/Hextra prefer, **including front matter**, as documentation is
+  created. We'll adopt Hextra features (e.g. shortcodes) as the need arises.
+- Published content lives under `content/`, organized into the four Diátaxis
+  directories (each with an `_index.md`; `weight` in front matter sets sidebar
+  order). `user-manual/` and `notes/` stay **outside** `content/` so they are
+  never published.
+- Build/preview: `hugo server` (preview at http://localhost:1313), `hugo`
+  (build into `public/`, which is git-ignored). Update the theme with
+  `hugo mod get -u ./...`.
 
 ## What is published vs. internal
 
 | Path | Published? | Notes |
 | ---- | ---------- | ----- |
-| `tutorial/`, `how-to/`, `reference/`, `explanation/` | Yes | Our Diátaxis docs (CC BY-NC-SA 4.0) |
+| `content/` (`tutorial/`, `how-to/`, `reference/`, `explanation/`) | Yes | Our Diátaxis docs (CC BY-NC-SA 4.0) |
 | `user-manual/` | **No** | Sacred reference; all rights reserved (James Colombo) |
 | `notes/` | **No** | Working notes |
 
