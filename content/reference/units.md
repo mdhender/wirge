@@ -20,84 +20,84 @@ These are the units that make up ship/colonies.
 
 These are the citizens of the empire.
 
-| Full name            | Code | Notes                                                         |
-| -------------------- | ---- | ------------------------------------------------------------- |
-| Unemployables        | UEM  | Non-working population. All birth increases enter here.       |
-| Unskilled Workers    | USK  | Labor needing little training.                                |
-| Professionals        | PRO  | Skilled labor requiring long apprenticeships.                 |
-| Trainees             | TRNE | Unskilled workers being trained as professionals.             |
-| Soldiers             | SLD  | All military personnel.                                       |
-| Spies                | SPY  | Cadre of 1 PRO + 1 SLD.                                       |
-| Construction Workers | CNW  | Cadre of 1 PRO + 1 USK.                                       |
-| Rebels               | RBL  | A tally of population willing to rebel, not a separate class. |
+| Code | Full name            | Notes                                                         |
+| ---- | -------------------- | ------------------------------------------------------------- |
+| UEM  | Unemployables        | Non-working population. All birth increases enter here.       |
+| USK  | Unskilled Workers    | Labor needing little training.                                |
+| PRO  | Professionals        | Skilled labor requiring long apprenticeships.                 |
+| TRNE | Trainees             | Unskilled workers being trained as professionals.             |
+| SLD  | Soldiers             | All military personnel.                                       |
+| SPY  | Spies                | Cadre of 1 PRO + 1 SLD.                                       |
+| CNW  | Construction Workers | Cadre of 1 PRO + 1 USK.                                       |
+| RBL  | Rebels               | A tally of population willing to rebel, not a separate class. |
 
 ### Production
 
 These are produced by FACT and may be traded. All carry a technological level.
 
-| Full name | Code | Notes                            |
-| --------- | ---- | -------------------------------- |
-| Mines     | MINE | Extract resources from deposits. |
-| Factories | FACT | Manufacture units.               |
-| Farms     | FARM | Produce food.                    |
+| Code | Full name | Notes                            |
+| ---- | --------- | -------------------------------- |
+| MINE | Mines     | Extract resources from deposits. |
+| FACT | Factories | Manufacture units.               |
+| FARM | Farms     | Produce food.                    |
 
 ### Miscellaneous
 
 These are produced by FACT and may be traded. All carry a technological level.
 
-| Full name        | Code | Notes                                                  |
-| ---------------- | ---- | ------------------------------------------------------ |
-| Automation       | AUT  | Replace USK in FARM, MINE, and FACT.                   |
-| Life Support     | LSP  | Recycle air and water in ships and enclosed colonies.  |
-| Hyper Engines    | HPD  | Propel ships through hyper-space.                      |
-| Space Drives     | SPD  | Maintain orbit and maneuver in combat.                 |
-| Sensors          | SEN  | Report on systems, ships/colonies, and conduct probes. |
-| Transports       | TPT  | Move units between ships/colonies or assist in combat. |
-| Structural Units | STU  | Frame for ships and colonies.                          |
+| Code | Full name        | Notes                                                  |
+| ---- | ---------------- | ------------------------------------------------------ |
+| AUT  | Automation       | Replace USK in FARM, MINE, and FACT.                   |
+| LSP  | Life Support     | Recycle air and water in ships and enclosed colonies.  |
+| HPD  | Hyper Engines    | Propel ships through hyper-space.                      |
+| SPD  | Space Drives     | Maintain orbit and maneuver in combat.                 |
+| SEN  | Sensors          | Report on systems, ships/colonies, and conduct probes. |
+| TPT  | Transports       | Move units between ships/colonies or assist in combat. |
+| STU  | Structural Units | Frame for ships and colonies.                          |
 
 ### Weapons
 
 These are produced by FACT and may be traded or consumed. All carry a technological level.
 
-| Full name         | Code | Notes                                              |
-| ----------------- | ---- | -------------------------------------------------- |
-| Assault Weapons   | ASW  | Carried by SLD in surface combat.                  |
-| Assault Craft     | ASC  | Land/space vehicles used to invade ships/colonies. |
-| Military Robots   | MRBT | Replace SLD units in combat.                       |
-| Missiles          | MSS  | Indirect combat weapon.                            |
-| Missile Launchers | MSL  | Launch MSS and ANM.                                |
-| Anti-Missiles     | ANM  | Destroy incoming MSS.                              |
-| Energy Weapons    | EWP  | Line of sight combat weapon.                       |
-| Energy Shields    | ESH  | Absorb EWP damage.                                 |
-| Military Supplies | MTSP | SLD combat supplies.                               |
+| Code | Full name         | Notes                                              |
+| ---- | ----------------- | -------------------------------------------------- |
+| ASW  | Assault Weapons   | Carried by SLD in surface combat.                  |
+| ASC  | Assault Craft     | Land/space vehicles used to invade ships/colonies. |
+| MRBT | Military Robots   | Replace SLD units in combat.                       |
+| MSS  | Missiles          | Indirect combat weapon.                            |
+| MSL  | Missile Launchers | Launch MSS and ANM.                                |
+| ANM  | Anti-Missiles     | Destroy incoming MSS.                              |
+| EWP  | Energy Weapons    | Line of sight combat weapon.                       |
+| ESH  | Energy Shields    | Absorb EWP damage.                                 |
+| MTSP | Military Supplies | SLD combat supplies.                               |
 
 ### Prototypes
 
 These are produced by FACT and may be traded or consumed. All carry a technological level.
 
-| Full name       | Code | Notes                                      |
-| --------------- | ---- | ------------------------------------------ |
-| Research Points | RSCH | Used to pay for technological advancement. |
+| Code | Full name       | Notes                                      |
+| ---- | --------------- | ------------------------------------------ |
+| RSCH | Research Points | Used to pay for technological advancement. |
 
 ## Materials
 
 These are produced by FACT and may be traded or consumed. None carry a technological level.
 
-| Full name      | Code | Notes                       |
-| -------------- | ---- | --------------------------- |
-| Consumer Goods | CNGD | Used to pay the population. |
+| Code | Full name      | Notes                       |
+| ---- | -------------- | --------------------------- |
+| CNGD | Consumer Goods | Used to pay the population. |
 
 ## Resources
 
 These are farmed or mined, not produced by FACT. None carry a technological level.
 
-| Full name              | Code | Source | Notes                                                |
-| ---------------------- | ---- | ------ | ---------------------------------------------------- |
-| Food                   | FOOD | FARM   | Feeds the population.                                |
-| Metallic Resources     | METS | MINE   | Raw material consumed by factories to build units.   |
-| Non-Metallic Resources | NMTS | MINE   | Raw material consumed by factories to build units.   |
-| Fuel                   | FUEL | MINE   | Powers mines, farms, factories, engines, and combat. |
-| Gold                   | GOLD | MINE   | Currency used in the market and for wages.           |
+| Code | Full name              | Source | Notes                                                |
+| ---- | ---------------------- | ------ | ---------------------------------------------------- |
+| FOOD | Food                   | FARM   | Feeds the population.                                |
+| METS | Metallic Resources     | MINE   | Raw material consumed by factories to build units.   |
+| NMTS | Non-Metallic Resources | MINE   | Raw material consumed by factories to build units.   |
+| FUEL | Fuel                   | MINE   | Powers mines, farms, factories, engines, and combat. |
+| GOLD | Gold                   | MINE   | Currency used in the market and for wages.           |
 
 ## Differences from the rule book
 
