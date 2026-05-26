@@ -31,3 +31,12 @@ hasCJKLanguage = false
     displayPoweredBy = true
   [params.editURL]
     enable = false
+
+# Navbar menu entries. An entry with an `icon` param renders as an icon-only
+# link (Hextra convention) — used here for the GitHub repo link.
+[[menu.main]]
+  name = "GitHub"
+  weight = 10
+  url = "https://github.com/mdhender/wirge"
+  [menu.main.params]
+    icon = "github"
