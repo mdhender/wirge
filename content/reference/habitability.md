@@ -11,12 +11,12 @@ and the limits derived from it.
 ## Habitability number
 
 A planet's HN ranges from 0 to 25. The range depends on the
-[planet's type]({{< relref "game-setup.md#planets" >}}):
+[planet's type]({{< relref "planets.md#types" >}}):
 
 | Type            | HN range |
 | --------------- | -------- |
-| **Gas giant**   | 0 – 12   |
 | **Terrestrial** | 0 – 25   |
+| **Gas giant**   | 0 – 12   |
 | **Asteroid**    | 0        |
 
 ## Surface limits

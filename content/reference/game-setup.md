@@ -46,30 +46,9 @@ planets it contains, their type, and their orbit positions.
 
 ## Planets
 
-Each occupied orbit contains a planet. There are three types of planets. Every
-planet also has a [habitability number]({{< relref "habitability.md" >}}) and a
-set of [natural resources](#natural-resources).
-
-| Type  | Description |
-| ----- | ----------- |
-| **Gas giant**   | Natural resources and surface colonies are located only on its moons. |
-| **Terrestrial** | Too small to retain a gas giant's atmosphere, but large enough to be spherical. Not necessarily "earth-like." |
-| **Asteroid**    | Too small to be spherical, so it keeps an irregular shape. Refers to an entire asteroid belt. |
-
-{{< callout type="info" >}}
-An **Asteroid** and a **Gas giant**'s moons are both treated as a single planet.
-{{< /callout >}}
-
-### Natural resources
-
-Each planet holds a maximum of 40 natural resource deposits. Each deposit contains from 1,000,000 to 99,999,999 units of one resource:
-
-| Resource          | Use                                            |
-| ----------------- | ---------------------------------------------- |
-| **Gold**          | Economic exchange.                             |
-| **Fuel**          | All production and transportation.             |
-| **Metallics**     | All metallic substances other than gold.       |
-| **Non-metallics** | All non-metallic substances.                   |
+Each occupied orbit contains a planet, of one of three types, with a
+[habitability number]({{< relref "habitability.md" >}}) and a set of natural
+resources. See [Planets]({{< relref "planets.md" >}}) for the full description.
 
 ## Time scale
 
