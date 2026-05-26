@@ -46,7 +46,9 @@ planets it contains, their type, and their orbit positions.
 
 ## Planets
 
-Each occupied orbit contains a planet. There are three types of planets.
+Each occupied orbit contains a planet. There are three types of planets. Every
+planet also has a [habitability number]({{< relref "habitability.md" >}}) and a
+set of [natural resources](#natural-resources).
 
 | Type  | Description |
 | ----- | ----------- |
@@ -57,20 +59,6 @@ Each occupied orbit contains a planet. There are three types of planets.
 {{< callout type="info" >}}
 An **Asteroid** and a **Gas giant**'s moons are both treated as a single planet.
 {{< /callout >}}
-
-### Habitability
-
-Every planet has a habitability number (HN) from 0 to 25.
-
-| Type  | HN Range |
-| ----- | ----------- |
-| **Gas giant**   | 0 - 12 |
-| **Terrestrial** | 0 - 25 |
-| **Asteroid**    | 0  |
-
-- Open air colonies are forbidden on planets with an HN of 0.
-- The number of FARM-1 units that can be placed on the planet's surface is HN × 100,000.
-- The number of population units who can live on the planet's surface without increasing the chances of rebellion is HN × 10,000,000.
 
 ### Natural resources
 
