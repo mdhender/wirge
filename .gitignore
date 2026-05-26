@@ -1,0 +1,11 @@
+# Local / personal Claude Code settings
+.claude/settings.local.json
+
+# Hugo build artifacts
+/public/
+/resources/_gen/
+/.hugo_build.lock
+hugo_stats.json
+
+# OS cruft
+.DS_Store

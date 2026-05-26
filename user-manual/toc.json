@@ -1,0 +1,22 @@
+[
+      { title: 'Forward',                           href: 'forward.md'                           },
+      { title: 'Introduction!',                     href: 'introduction.md'                      },
+      { title: 'History of the Empyrean Cluster',   href: 'history-of-the-empyrean-cluster.md'   },
+      { title: 'Game Set Up',                       href: 'game-setup.md'                        },
+      { title: 'Basic Units',                       href: 'basic-units.md'                       },
+      { title: 'Colonies and Ships',                href: 'colonies-and-ships.md'                },
+      { title: 'Manufacturing',                     href: 'manufacturing.md'                     },
+      { title: 'Technological Advancement',         href: 'technological-advancement.md'         },
+      { title: 'Trade',                             href: 'trade.md'                             },
+      { title: 'Exploration',                       href: 'exploration.md'                       },
+      { title: 'Rebellion',                         href: 'rebellion.md'                         },
+      { title: 'Combat',                            href: 'combat.md'                            },
+      { title: 'Espionage',                         href: 'espionage.md'                         },
+      { title: 'Control of Planets',                href: 'control-of-planets.md'                },
+      { title: 'Communication',                     href: 'communication.md'                     },
+      { title: 'Victory Conditions',                href: 'victory-conditions.md'                },
+      { title: 'Sequence of Turn Execution',        href: 'sequence-of-turn-execution.md'        },
+      { title: 'Writing Orders',                    href: 'writing-orders.md'                    },
+      { title: 'Appendices',                        href: 'appendices.md'                        },
+      { title: 'Colophon',                          href: 'colophon.md'                          }
+]
