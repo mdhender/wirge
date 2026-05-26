@@ -1,7 +1,7 @@
 # wirge
 
 **wirge** is the documentation project for **Epimethean Challenge**, a
-play-by-mail strategy game. It produces a static documentation website and
+play-by-email strategy game. It produces a static documentation website and
 serves as the authoritative specification for the game.
 
 The game engine and web app are developed separately in

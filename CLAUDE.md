@@ -5,7 +5,7 @@ project overview.
 
 ## What this repo is
 
-`wirge` is the documentation project for **Epimethean Challenge**, a play-by-mail
+`wirge` is the documentation project for **Epimethean Challenge**, a play-by-email
 strategy game. It contains documentation and the Hugo site that publishes it —
 **no engine code**.
 

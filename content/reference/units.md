@@ -18,7 +18,7 @@ These are the units that make up ship/colonies.
 
 ### Population units
 
-These are the citizens of the empire.
+These are the citizens of the nation.
 
 | Code | Full name            | Notes                                                         |
 | ---- | -------------------- | ------------------------------------------------------------- |
