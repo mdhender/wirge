@@ -1,6 +1,6 @@
 ---
 title: Victory Conditions
-weight: 10
+weight: 160
 ---
 
 The current rules define a single victory condition: a **Nation Victory**. Later

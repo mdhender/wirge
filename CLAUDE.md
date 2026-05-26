@@ -57,6 +57,11 @@ reference only** and is **never published** to the site.
   directories (each with an `_index.md`; `weight` in front matter sets sidebar
   order). `user-manual/` and `notes/` stay **outside** `content/` so they are
   never published.
+- Within a section, set each page's `weight` from its position in
+  `user-manual/toc.json` (the manual's canonical order) **times 10** — e.g. "Game
+  Set Up" is 4th in the toc, so `content/reference/game-setup.md` is `weight: 40`.
+  This keeps pages in the manual's order and leaves gaps so new pages slot in
+  without renumbering.
 - Build/preview: `hugo server` (preview at http://localhost:1313), `hugo`
   (build into `public/`, which is git-ignored). Update the theme with
   `hugo mod get -u ./...`.

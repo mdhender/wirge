@@ -1,6 +1,6 @@
 ---
 title: Units
-weight: 10
+weight: 50
 ---
 
 Every unit that may be held by a ship or colony in Epimethean Challenge, with its
