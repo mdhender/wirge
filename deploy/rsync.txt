@@ -1,0 +1,15 @@
+
+Normally, deploy with the script (builds public/ then syncs):
+
+	deploy/deploy-docs.sh              # build and sync
+	deploy/deploy-docs.sh --dry-run    # build and preview the sync
+
+The raw rsync commands it runs, for reference:
+
+Dry run
+
+	rsync -avz --checksum --delete --dry-run public/ epimethean.dev:/var/www/epimethean/docs/
+
+Sync
+
+	rsync -avz --checksum --delete-after public/ epimethean.dev:/var/www/epimethean/docs/
