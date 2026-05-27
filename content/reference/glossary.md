@@ -45,6 +45,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 ## F
 
 - **Factory** (`FACT`) — A [production unit]({{< relref "units.md#production" >}}) that manufactures other units from materials.
+- **Factory group** — A set of `FACT` units that manufacture units together, tracked in four quarter buckets toward completion.
 - **Farm** (`FARM`) — A production unit that grows FOOD, delivering its harvest once a year. See [Farming]({{< relref "farming.md" >}}).
 - **Farm group** — A set of `FARM` units that grow FOOD together, tracked in four quarter buckets toward harvest.
 - **Food** (`FOOD`) — The resource that feeds the population, produced by farms. See [Food]({{< relref "food.md" >}}).
