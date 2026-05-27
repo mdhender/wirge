@@ -36,7 +36,7 @@ where:
 
 - `Ra` is the actual ration served that turn,
 - `Fa` is the FOOD available, and
-- `Ff` is the FOOD required to satisfy a full ration.
+- `Fr` is the FOOD required to satisfy a full ration.
 
 **Example.** A ship or colony has `Ra` set to 100% and requires 500 FOOD for a full ration, but
 only 200 FOOD is available:
