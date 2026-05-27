@@ -79,7 +79,7 @@ These are produced by FACT and may be traded or consumed. All carry a technologi
 | ---- | --------------- | ------------------------------------------ |
 | RSCH | Research Points | Used to pay for technological advancement. |
 
-## Materials
+### Materials
 
 These are produced by FACT and may be traded or consumed. None carry a technological level.
 
@@ -87,7 +87,7 @@ These are produced by FACT and may be traded or consumed. None carry a technolog
 | ---- | -------------- | --------------------------- |
 | CNGD | Consumer Goods | Used to pay the population. |
 
-## Resources
+### Resources
 
 These are farmed or mined, not produced by FACT. None carry a technological level.
 
@@ -98,6 +98,17 @@ These are farmed or mined, not produced by FACT. None carry a technological leve
 | NMTS | Non-Metallic Resources | MINE   | Raw material consumed by factories to build units.   |
 | FUEL | Fuel                   | MINE   | Powers mines, farms, factories, engines, and combat. |
 | GOLD | Gold                   | MINE   | Currency used in the market and for wages.           |
+
+## Entities
+
+Entities are ships or colonies and are frequently called "S/C" units in reports and documentation.
+
+| Code | Full Name       | LSP required? | FARM TL? | FACT allowed? | MINE allowed? | Notes                                       |
+| ---- | --------------- | ------------- | -------- | ------------- | ------------- | ------------------------------------------- |
+| SHIP | Ship            | yes           | TL 6-10  | no            | no            | Allowed to move between orbits and systems. |
+| COPN | Open Air Colony | no            | TL 1-10  | yes           | yes           | Surface colony.                             |
+| CENC | Enclosed Colony | yes           | TL 2-10  | yes           | yes           | Surface colony.                             |
+| CORB | Orbital Colony  | yes           | TL 2-10  | yes           | no            | Allowed to build STU-2 units.               |
 
 ## Differences from the rule book
 
