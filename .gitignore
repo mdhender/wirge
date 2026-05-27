@@ -9,3 +9,7 @@ hugo_stats.json
 
 # OS cruft
 .DS_Store
+
+# notes
+notes/cluster-generation.md
+notes/holford.*
