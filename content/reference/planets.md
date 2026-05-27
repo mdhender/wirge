@@ -57,7 +57,7 @@ giant would otherwise have none.
 ## Natural resources
 
 Each planet holds a maximum of 40 natural resource deposits. Each deposit
-contains from 1,000,000 to 99,999,999 units of a single resource:
+contains from 1,000,000 to 99,000,000 units of a single resource:
 
 | Resource | Use                                      |
 | -------- | ---------------------------------------- |
@@ -65,6 +65,11 @@ contains from 1,000,000 to 99,999,999 units of a single resource:
 | **FUEL** | All production and transportation.       |
 | **METS** | All metallic substances other than gold. |
 | **NMTS** | All non-metallic substances.             |
+
+Each deposit also has a **yield** — a percentage that sets how much of a mining
+group's extraction becomes usable product each turn. The yield is fixed when the
+planet is generated; see [Mining]({{< relref "mining.md#yield" >}}) for how it
+applies.
 
 ## Learning about a planet
 

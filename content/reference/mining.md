@@ -43,28 +43,47 @@ Each mine group has:
 **Group number** is never reused.
 {{< /callout >}}
 
-## Output
+## Extraction
 
-A MINE unit produces resources in proportion to its technological level. Annual
-output is **100 × TL** mass units; because mines produce every turn, the output
-per turn is one quarter of that, **25 × TL** mass units. The resource produced is
-whatever the assigned deposit holds.
+A MINE unit **extracts** ore in proportion to its technological level. Annual
+extraction is **100 × TL** mass units; because mines work every turn, the
+extraction per turn is one quarter of that, **25 × TL** mass units. The resource
+is whatever the assigned deposit holds.
 
-| Tech level | Annual output (MU) | Output per turn (MU) | Fuel per turn |
-| ---------- | ------------------ | -------------------- | ------------- |
-| MINE-1     | 100                | 25                   | 0.5           |
-| MINE-2     | 200                | 50                   | 1.0           |
-| MINE-3     | 300                | 75                   | 1.5           |
-| MINE-4     | 400                | 100                  | 2.0           |
-| MINE-5     | 500                | 125                  | 2.5           |
-| MINE-6     | 600                | 150                  | 3.0           |
-| MINE-7     | 700                | 175                  | 3.5           |
-| MINE-8     | 800                | 200                  | 4.0           |
-| MINE-9     | 900                | 225                  | 4.5           |
-| MINE-10    | 1,000              | 250                  | 5.0           |
+| Tech level | Annual extraction (MU) | Extraction per turn (MU) | Fuel per turn |
+| ---------- | ---------------------- | ------------------------ | ------------- |
+| MINE-1     | 100                    | 25                       | 0.5           |
+| MINE-2     | 200                    | 50                       | 1.0           |
+| MINE-3     | 300                    | 75                       | 1.5           |
+| MINE-4     | 400                    | 100                      | 2.0           |
+| MINE-5     | 500                    | 125                      | 2.5           |
+| MINE-6     | 600                    | 150                      | 3.0           |
+| MINE-7     | 700                    | 175                      | 3.5           |
+| MINE-8     | 800                    | 200                      | 4.0           |
+| MINE-9     | 900                    | 225                      | 4.5           |
+| MINE-10    | 1,000                  | 250                      | 5.0           |
+
+These figures are the **gross** amount a group pulls from the deposit. How much
+of it becomes usable product depends on the deposit's yield.
+
+## Yield
+
+Every deposit has a **yield** — a percentage fixed when the planet is generated
+(see [natural resources]({{< relref "planets.md#natural-resources" >}})). The
+amount a group **produces** in a turn, and delivers to cargo, is its extraction
+multiplied by the deposit's yield:
+
+> produced = extracted × yield
+
+The deposit's remaining quantity then drops by the amount **produced**, not the
+amount extracted. For example, a group that extracts 1,000 MU from a deposit with
+a 10% yield produces **100 MU**, and the deposit's quantity falls by 100. A
+low-yield deposit therefore both produces less each turn and lasts far longer
+before it is exhausted — which is why an asteroid (large quantity, low yield) is a
+slow but durable mine.
 
 A mine begins producing the turn after it is assembled into a group. It carries no
-multi-turn pipeline: each turn the engine delivers that turn's output straight to
+multi-turn pipeline: each turn the engine delivers that turn's product straight to
 cargo (see [Shortages]({{< relref "shortages.md#mines-the-quarterly-wink" >}})).
 
 ## Inputs
@@ -93,8 +112,8 @@ orbit — and mining is surface-only, so MINE units can never qualify.
 ## Shortages
 
 A shortage of fuel or labor reduces the number of mine units that run that turn,
-dropping the lowest-priority units first; output falls with the active count, but
-only for that turn. There is no reset penalty — a mine carries no work between turns,
+dropping the lowest-priority units first; extraction — and so product — falls with
+the active count, but only for that turn. There is no reset penalty — a mine carries no work between turns,
 so production returns to full rate as soon as its inputs are restored.
 
 This is gentler than the other production units: a short turn forfeits a FARM group's
