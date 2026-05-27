@@ -1,6 +1,6 @@
 ---
 title: Planets
-weight: 180
+weight: 43
 ---
 
 A **planet** occupies an orbit within a solar system and is the basic site for

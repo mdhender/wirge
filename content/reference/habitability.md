@@ -1,6 +1,6 @@
 ---
 title: Habitability
-weight: 190
+weight: 46
 ---
 
 Every planet has a **habitability number** (HN) that sets how much population and
