@@ -48,9 +48,9 @@ the section that matches what you need:
 - 4 - [BASIC UNITS]({{< relref "reference/units.md" >}})
 - 4.1 - [Description of basic units]({{< relref "reference/units.md#basic-units" >}})
 - 4.2 - [Population Units]({{< relref "reference/units.md#population-units" >}})
-- 4.2.1 - Orders applicable to population units
-- 4.2.2 - Population units on ships
-- 4.2.3 - Population Charts
+- 4.2.1 - [Orders applicable to population units]({{< relref "reference/population.md#orders" >}})
+- 4.2.2 - [Population units on ships]({{< relref "reference/population.md#ships" >}})
+- 4.2.3 - [Population Charts]({{< relref "reference/population.md#population-classes" >}})
 - 4.3 - [Weapons]({{< relref "reference/units.md#weapons" >}})
 - 4.4 - [Production Units]({{< relref "reference/units.md#production" >}})
 - 4.4.1 - [Production Chart]({{< relref "reference/units.md#production" >}})
