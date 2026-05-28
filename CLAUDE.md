@@ -66,6 +66,25 @@ reference only** and is **never published** to the site.
   (build into `public/`, which is git-ignored). Update the theme with
   `hugo mod get -u ./...`.
 
+## Deploying
+
+**Only deploy when the user explicitly asks.** Deploying publishes to the live
+site; never run a deploy on your own initiative, even after committing or
+pushing. Wait for an explicit instruction to deploy.
+
+The live site (<https://epimethean.dev/docs/>) is built **on the server** from a
+git checkout — the server publishes the commit it pulls, not your working tree.
+Everyday flow:
+
+1. Commit and **push to `main`** first. Unpushed work won't go live, and a deploy
+   without a preceding push just republishes stale content.
+2. Run `deploy/deploy-docs.sh` from your laptop. It SSHes to the server and runs
+   `/opt/wirge/deploy.sh`, which `git pull --ff-only`s and rebuilds `public/` with
+   `hugo --gc --minify`.
+3. Verify: `curl -sI https://epimethean.dev/docs/ | head -1` (expect `200`).
+
+See `deploy/README.md` for the full runbook and one-time server setup.
+
 ## What is published vs. internal
 
 | Path | Published? | Notes |
