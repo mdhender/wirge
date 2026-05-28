@@ -17,6 +17,11 @@
 #
 set -euo pipefail
 
+# deploy-docs.sh invokes this over SSH, and a non-interactive SSH shell has a
+# minimal PATH that omits /usr/local/bin, the Go toolchain, and /snap/bin. Add
+# the common locations so git/hugo/go resolve however they were installed.
+export PATH="/usr/local/bin:/usr/local/go/bin:/snap/bin:$PATH"
+
 # Where the wirge repo is checked out on this server. The web server's docs root
 # points at "$REPO_DIR/public".
 REPO_DIR="/opt/wirge/wirge"
