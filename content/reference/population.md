@@ -19,46 +19,50 @@ For FOOD consumption, rationing, morale, and starvation, see
 | `USK` | Unskilled workers | Workers who do not require long apprenticeships or extensive training. | 100 | 0.125 | 0.0625% |
 | `PRO` | Professionals | Workers who require long apprenticeships or extensive training. | 100 | 0.375 | 0.0625% |
 | `SLD` | Soldiers | All military personnel. | 100 | 0.250 | 0.0625% |
-| `UEM` | Unemployables | All other citizens not represented by the working or soldier classes. All birth increases enter this type. | 100 | 0.000 | 0.0625% |
+| `UEM` | Unemployables | All other citizens. | 100 | 0.000 | 0.0625% |
+
+{{< callout type="info" >}}
+`POP` is a catch-all code for any population class (`USK`, `PRO`, `SLD`, or `UEM`), used where a rule applies regardless of class.
+{{< /callout >}}
 
 ## Population Cadres
 
-| Code | Type | Allocation basis | People represented per unit |
+| Code | Type | Allocation basis | Population units per cadre |
 | ---- | ---- | ---------------- | --------------------------- |
-| `TRN` | Trainees | Allocated from `USK` while training to become `PRO`. | 100 USK |
-| `SPY` | Spies | Allocated from 1 `PRO` and 1 `SLD`; reports on other players and incites rebellion. | 100 PRO + 100 SLD |
-| `CNW` | Construction workers | Allocated from 1 `PRO` and 1 `USK`; executes assembly and dis-assembly orders. | 100 PRO + 100 USK |
-| `RBL` | Rebels | A tally of citizens in other population segments who are willing to rebel. | 100 |
+| `TRN` | Trainees | Allocated from `USK` while training to become `PRO`. | 1 USK |
+| `SPY` | Spies | Allocated from 1 `PRO` and 1 `SLD`. | 1 PRO + 1 SLD |
+| `CNW` | Construction workers | Allocated from 1 `PRO` and 1 `USK`. | 1 PRO + 1 USK |
+| `RBL` | Rebels | A tally of citizens who are willing to rebel. | 1 |
 
 {{< callout type="info" >}}
-The number of `PRO`, `SLD`, and `USK` units assigned to cadres can not exceed the total number of units in the ship/colony.
+The number of `PRO`, `SLD`, and `USK` units assigned to non-`RBL` cadres can not exceed the total number of units in the ship/colony.
 {{< /callout >}}
 
-Players cannot set pay rates for cadre because cadres are not an actual population
-class and are already included in other population segments.
+{{< callout type="info" >}}
+Rebel counts are never reported directly. The engine tracks `RBL`, but a player learns the number of rebels — and their population type — only by assigning a `SPY` to that ship or colony. See [Rebellion]({{< relref "rebellion.md" >}}).
+{{< /callout >}}
 
-Cadre allocation does not reduce the census count of the underlying population
-classes. For example, a population with 100 `PRO`, 200 `USK`, and 50 `SLD` may
-also report 50 `CNW` and 50 `SPY`; the census still shows 100 `PRO`, 200 `USK`,
-and 50 `SLD`, with the cadre counts showing where those citizens are allocated.
+Players cannot set pay rates for cadres.
+
+Cadre counts are reported separately from population-class census totals.
 
 ## Population Changes
 
 | Change | Rule |
 | ------ | ---- |
-| Birth increase | Colonies (never ships) experience population grown between 0.25% and 2.5% of the total population (rounded down) per turn. Birth increases are added as `UEM` units.  |
+| Birth increase | Colonies (never ships) experience population growth between 0.25% and 2.5% of the total population (rounded down) per turn. Birth increases are added as `UEM` units.  |
 | Birth increase factors | Birth increases are based on unpopulated habitable land and inversely on standard of living. |
 | Unemployable maturation | On any turn when `UEM` is greater than 30% of total population, 2% of `UEM` (rounded down) become `USK`. |
 | Professional training | Any number of `USK` may be trained as `TRN` on any turn. Each 100 `TRN` units require the services of 1 `PRO` unit. |
 | Trainee graduation | 5% of all `TRN` (rounded down) graduate into `PRO` each turn. |
 | Soldier retirement | 1.25% of all `SLD` (rounded up) retire as `PRO` each turn. |
-| Drafting | `SLD` may be drafted from `USK` on any turn, as long as the drafted number does not exceed the number of `SLD` at the time of the draft. |
+| Drafting | `SLD` units may be created from `USK` units. The drafted amount may not exceed the current `SLD` count. |
 | Disbanding | Any number of `SLD` may be disbanded on any turn. Disbanded soldiers become `USK`. |
-| Spy assembly | A `SPY` unit may be assembled or disassembled on any turn. |
-| Construction-worker assembly | A `CNW` unit may be assembled or disassembled on any turn. |
-| Rebel increase | `RBL` increases when the standard of living decreases, the general population is underpaid or underfed, and especially when starvation occurs. |
+| Spy assembly | `SPY` cadres may be assembled or disassembled on any turn. |
+| Construction-worker assembly | `CNW` cadres may be assembled or disassembled on any turn. |
+| Rebel increase | `RBL` increases when the standard of living decreases — e.g. when the population is underpaid, underfed, or starving. |
 
-Total population in census reports excludes cadres because cadres are already counted within other population segments.
+Total population in census reports excludes cadres because cadres are already counted within other population classes.
 
 ## Orders
 

@@ -91,9 +91,9 @@ the section that matches what you need:
 - 9.1.2 - Interstellar Movement
 - 9.2 - Probes
 - 9.3 - Surveys
-- 10 - REBELLION
-- 10.1 - Rebellion
-- 10.2 - Independent Colonies and Ships
+- 10 - [REBELLION](reference/rebellion/)
+- 10.1 - [Rebellion](reference/rebellion/#when-rebellion-occurs)
+- 10.2 - [Independent Colonies and Ships](reference/rebellion/#independent-ships-and-colonies)
 - 11 - COMBAT
 - 11.1 - Description
 - 11.2 - Military Supplies

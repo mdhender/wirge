@@ -19,11 +19,11 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 ## B
 
 - **Binary system** — A [solar system]({{< relref "game-setup.md#solar-systems" >}}) containing two stars that share one set of co-ordinates.
-- **Birth increase** — Quarterly population growth that enters the `UEM` population segment. See [Population]({{< relref "population.md#population-changes" >}}).
+- **Birth increase** — Population growth (colonies only) that enters the `UEM` class. See [Population]({{< relref "population.md#population-changes" >}}).
 
 ## C
 
-- **Cadre** — An allocation tracked separately from the main population classes, without reducing the census count of those classes. Cadres include trainees (`TRN`), spies (`SPY` — 1 professional + 1 soldier), construction workers (`CNW` — 1 professional + 1 unskilled worker), and rebels (`RBL` — a tally of would-be rebels counted within the other population segments).
+- **Cadre** — A population allocation tracked separately from census totals. Includes `TRN`, `SPY`, `CNW`, and `RBL`.
 - **Cluster** — The complete game map: 100 solar systems whose locations differ from one game to the next.
 - **Colony** — A permanent installation a player establishes at a planet, in one of three forms: open-air, enclosed, or orbiting.
 - **Combat round** (`CR`) — One increment of a combat exchange; some weapons' fuel use is measured per combat round.
