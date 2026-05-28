@@ -4,10 +4,11 @@
 # epimethean.dev (matching the Hugo `baseURL` of https://epimethean.dev/docs).
 # Caddy provisions and renews TLS for epimethean.dev automatically.
 #
-# Deploy: build with `hugo` and copy the CONTENTS of the generated `public/`
-# directory to /srv/epimethean/docs on the server. `handle_path /docs/*` strips
-# the /docs prefix, so /docs/tutorial/ is served from
-# /srv/epimethean/docs/tutorial/.
+# Deploy: the site is built on the server by /opt/wirge/deploy.sh (see
+# deploy/README.md). Point this docs root at the build output by symlinking
+# /srv/epimethean/docs -> /opt/wirge/wirge/public. `handle_path /docs/*` strips
+# the /docs prefix, so /docs/tutorial/ is served from /srv/epimethean/docs/
+# tutorial/ (i.e. /opt/wirge/wirge/public/tutorial/).
 #
 # This is a template — adjust the site address and root path for your
 # environment. Other routes (e.g. the pyre app) can live alongside the docs
