@@ -60,6 +60,14 @@ hugo          # build the static site into public/
 hugo mod get -u ./...   # update the Hextra theme module
 ```
 
+## Deploying
+
+The published site at <https://epimethean.dev/docs> is built **on the server**:
+push your changes to `main`, then run `deploy/deploy-docs.sh`, which SSHes in and
+rebuilds the live `public/` directory in place. See
+[`deploy/README.md`](deploy/README.md) for the full workflow and the one-time
+server setup.
+
 ### Layout
 
 ```text
@@ -74,7 +82,7 @@ wirge/
 │   └── explanation/
 ├── user-manual/       # original manual — internal reference, NOT published
 ├── notes/             # working notes — NOT published
-├── deploy/            # sample Nginx / Caddy configs (serve public/ under /docs)
+├── deploy/            # deploy scripts + Nginx/Caddy configs (see deploy/README.md)
 ├── README.md          # this file
 ├── CLAUDE.md          # guidance for working in this repo
 ├── LICENSE.md         # licensing overview
