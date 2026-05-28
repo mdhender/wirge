@@ -10,6 +10,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 ## A
 
 - **Anti-missile** (`ANM`) — A weapon launched by a missile launcher to destroy incoming missiles.
+- **Assembly** — An order family that forms or disassembles units, including `SPY` and `CNW` population-cadre allocations. See [Population]({{< relref "population.md#orders" >}}).
 - **Assault craft** (`ASC`) — A land/space vehicle used to invade a ship or colony.
 - **Assault weapon** (`ASW`) — A weapon carried by soldiers in surface combat.
 - **Asteroid** — A [planet]({{< relref "planets.md#types" >}}) type too small to be spherical; represents an entire asteroid belt and is treated as a single planet. Its habitability number is always 0.
@@ -18,14 +19,15 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 ## B
 
 - **Binary system** — A [solar system]({{< relref "game-setup.md#solar-systems" >}}) containing two stars that share one set of co-ordinates.
+- **Birth increase** — Quarterly population growth that enters the `UEM` population segment. See [Population]({{< relref "population.md#population-changes" >}}).
 
 ## C
 
-- **Cadre** — A population unit that is not a class of its own but is drawn from other [population units]({{< relref "units.md#population-units" >}}). The cadres are the spy (`SPY` — 1 professional + 1 soldier), the construction worker (`CNW` — 1 professional + 1 unskilled worker), and the rebel (`RBL` — a tally of would-be rebels counted within the other population segments).
+- **Cadre** — An allocation tracked separately from the main population classes, without reducing the census count of those classes. Cadres include trainees (`TRN`), spies (`SPY` — 1 professional + 1 soldier), construction workers (`CNW` — 1 professional + 1 unskilled worker), and rebels (`RBL` — a tally of would-be rebels counted within the other population segments).
 - **Cluster** — The complete game map: 100 solar systems whose locations differ from one game to the next.
 - **Colony** — A permanent installation a player establishes at a planet, in one of three forms: open-air, enclosed, or orbiting.
 - **Combat round** (`CR`) — One increment of a combat exchange; some weapons' fuel use is measured per combat round.
-- **Construction worker** (`CNW`) — A population cadre (1 professional + 1 unskilled worker) that carries out assembly and dis-assembly orders.
+- **Construction worker** (`CNW`) — A population-cadre allocation of 1 professional and 1 unskilled worker that carries out assembly and dis-assembly orders.
 - **Consumer goods** (`CNGD`) — Factory output used to pay the population.
 - **Control** — A player's claim over a planet, established by an orbiting or surface colony — or a trade station — and a declaration of control.
 - **Co-ordinates** — The three two-digit numbers (`00`–`30`, e.g. `28-02-18`) that designate a [solar system]({{< relref "game-setup.md#cluster" >}}). Stars sharing co-ordinates lie in the same system. A star appends a letter suffix to the co-ordinates (`28-02-18A`), and an orbit appends `/` and its number (`28-02-18A/5`).
@@ -33,6 +35,8 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 ## D
 
 - **Deposit** — A body of a single natural resource on a planet's surface. A planet holds up to 40 deposits, each of 1,000,000–99,000,000 units, with a fixed [yield]({{< relref "mining.md#yield" >}}).
+- **Disband** — A population order that returns soldier units to unskilled-worker status. See [Population]({{< relref "population.md#population-changes" >}}).
+- **Draft** — A population order that recruits soldiers or trainees. See [Population]({{< relref "population.md#orders" >}}).
 
 ## E
 
@@ -89,6 +93,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 ## N
 
+- **Non-combat death rate** — The per-turn population loss rate from ordinary mortality rather than combat. See [Population]({{< relref "population.md#unit-types" >}}).
 - **Nation** — The polity a single player governs. A planet holds up to 25 nations, which together form a race.
 - **Natural resource** — One of the four substances held in a planet's [deposits]({{< relref "planets.md#natural-resources" >}}): GOLD, FUEL, METS, or NMTS.
 - **Non-metallic resources** (`NMTS`) — Mined raw material (non-metals) consumed by factories.
@@ -102,7 +107,8 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 ## P
 
 - **Planet** — A body occupying an [orbit]({{< relref "game-setup.md#stars-and-orbits" >}}); the basic site for colonies, mining, and farming. One of three types, with a habitability number and natural resources. See [Planets]({{< relref "planets.md" >}}).
-- **Population unit** — A unit of citizens (100 people, or 200 for spy and construction cadres). Types: `UEM`, `USK`, `PRO`, `TRNE`, `SLD`, `SPY`, `CNW`, `RBL`.
+- **Pay** — Consumer goods or gold given to population units. Colony population pay is expressed in `CNGD`; ship crew wages are expressed in `GOLD`. See [Population]({{< relref "population.md" >}}).
+- **Population unit** — A unit of citizens. Population classes are `USK`, `PRO`, `SLD`, and `UEM`; population cadres are `TRN`, `SPY`, `CNW`, and `RBL`. See [Population]({{< relref "population.md" >}}).
 - **Probe** — A sensor scan that reports a planet in the same system: its ships and colonies, its resource deposits (type and approximate quantity), and its habitability number.
 - **Production unit** — A unit that turns inputs into output: a mine, farm, or factory. See [The Production Cycle]({{< relref "../explanation/production-cycle.md" >}}).
 - **Professional** (`PRO`) — Skilled population requiring long apprenticeships; needed to manage production units.
@@ -123,7 +129,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Soldier** (`SLD`) — Military population.
 - **Solar system** — A set of one or more stars sharing the same co-ordinates. Named by its co-ordinates alone (e.g. `12-13-14`); each of its stars adds a letter suffix.
 - **Space drive** (`SPD`) — A unit that maintains a ship's orbit and maneuvers it in combat; cannot be used for interplanetary or interstellar travel.
-- **Spy** (`SPY`) — A population cadre (1 professional + 1 soldier) that reports on other players and incites rebellion.
+- **Spy** (`SPY`) — A population-cadre allocation of 1 professional and 1 soldier that reports on other players and incites rebellion.
 - **Standard of living** (`SOL`) — A measure of population well-being, shaped by pay and rations, that bears on morale.
 - **Star** — A stellar body within a solar system. Identified by the system co-ordinates plus a letter suffix (`A`, `B`, `C`, …) — for example `12-13-14A` — which is required even in a single-star system.
 - **Starvation** — Loss of population when the actual ration falls below the survival ration (25% of a full ration). See [Food]({{< relref "food.md#starvation" >}}).
@@ -136,14 +142,14 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Technological level** (`TL`) — A unit's tech rating, which sets its mass, cost, and effectiveness.
 - **Terrestrial** — A spherical [planet]({{< relref "planets.md#types" >}}) type, not necessarily "earth-like." Habitability number 0–25.
 - **Trade station** — An installation for trade between players; it can also establish control of a planet.
-- **Trainee** (`TRNE`) — An unskilled worker being trained into a professional.
+- **Trainee** (`TRN`) — A population-cadre allocation of an unskilled worker being trained into a professional.
 - **Transport** (`TPT`) — A unit that moves units between ships and colonies and carries soldiers into combat.
 - **Trinary system** — A solar system containing three stars.
 - **Turn** — One game cycle, equal to one quarter of a Galactic standard year.
 
 ## U
 
-- **Unemployables** (`UEM`) — Non-working population (children, the elderly, and so on); all birth increases enter this category.
+- **Unemployables** (`UEM`) — All citizens not represented by the working or soldier classes; all birth increases enter this category.
 - **Unit** — Any item that may be held by a ship or colony. See [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Unskilled worker** (`USK`) — Population providing labor that needs little training.
 

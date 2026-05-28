@@ -18,18 +18,27 @@ These are the units that make up ship/colonies.
 
 ### Population units
 
-These are the citizens of the nation.
+These are the citizens of the nation. See
+[Population]({{< relref "population.md" >}}) for definitions, pay, death rates,
+population changes, population orders, and shipboard population rules.
+
+Population classes:
+
+| Code | Full name         | Notes                                               |
+| ---- | ----------------- | --------------------------------------------------- |
+| USK  | Unskilled Workers | Labor needing little training.                      |
+| PRO  | Professionals     | Skilled labor requiring long apprenticeships.       |
+| SLD  | Soldiers          | All military personnel.                             |
+| UEM  | Unemployables     | All other citizens. All birth increases enter here. |
+
+Population cadres:
 
 | Code | Full name            | Notes                                                         |
 | ---- | -------------------- | ------------------------------------------------------------- |
-| UEM  | Unemployables        | Non-working population. All birth increases enter here.       |
-| USK  | Unskilled Workers    | Labor needing little training.                                |
-| PRO  | Professionals        | Skilled labor requiring long apprenticeships.                 |
-| TRNE | Trainees             | Unskilled workers being trained as professionals.             |
-| SLD  | Soldiers             | All military personnel.                                       |
-| SPY  | Spies                | Cadre of 1 PRO + 1 SLD.                                       |
-| CNW  | Construction Workers | Cadre of 1 PRO + 1 USK.                                       |
-| RBL  | Rebels               | A tally of population willing to rebel, not a separate class. |
+| TRN  | Trainees             | Allocation of USK being trained as professionals.             |
+| SPY  | Spies                | Allocation of 1 PRO + 1 SLD.                                  |
+| CNW  | Construction Workers | Allocation of 1 PRO + 1 USK.                                  |
+| RBL  | Rebels               | A tally of population willing to rebel.                       |
 
 ### Production
 
