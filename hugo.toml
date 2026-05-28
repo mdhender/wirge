@@ -4,6 +4,9 @@
 baseURL = "https://epimethean.dev/docs"
 title = "Epimethean Challenge"
 
+# Fail the build on broken `ref`/`relref` links instead of only warning.
+refLinksErrorLevel = "ERROR"
+
 # Hextra works best with these enabled.
 enableRobotsTXT = true
 enableGitInfo = true

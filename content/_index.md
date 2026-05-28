@@ -30,52 +30,52 @@ the section that matches what you need:
 
 - 1 - [INTRODUCTION](#)
 - 2 - ~~HISTORY OF THE EMPYREAN CLUSTER~~
-- 3 - [GAME SET UP](reference/game-setup/)
-- 3.1 - [Star Lists](reference/game-setup/#star-lists)
-- 3.2 - [Solar Systems](reference/game-setup/#solar-systems)
-- 3.2.1 - [Orbits](reference/game-setup/#orbits)
-- 3.2.2 - [Home System List](reference/game-setup/#home-system)
-- 3.3 - [Planets](reference/planets/)
-- 3.3.1 - [Types](reference/planets/#types)
-- 3.3.1.1 - [Gas Giants](reference/planets/#types)
-- 3.3.1.2 - [Terrestrials](reference/planets/#types)
-- 3.3.1.3 - [Asteroids](reference/planets/#types)
-- 3.3.2 - [Habitability](reference/habitability/)
-- 3.3.3 - [Natural Resources](reference/planets/#natural-resources)
-- 3.4 - [Time Scale](reference/game-setup/#time-scale)
+- 3 - [GAME SET UP]({{< relref "reference/game-setup.md" >}})
+- 3.1 - [Star Lists]({{< relref "reference/game-setup.md#star-lists" >}})
+- 3.2 - [Solar Systems]({{< relref "reference/game-setup.md#solar-systems" >}})
+- 3.2.1 - [Orbits]({{< relref "reference/game-setup.md#orbits" >}})
+- 3.2.2 - [Home System List]({{< relref "reference/game-setup.md#home-system" >}})
+- 3.3 - [Planets]({{< relref "reference/planets.md" >}})
+- 3.3.1 - [Types]({{< relref "reference/planets.md#types" >}})
+- 3.3.1.1 - [Gas Giants]({{< relref "reference/planets.md#types" >}})
+- 3.3.1.2 - [Terrestrials]({{< relref "reference/planets.md#types" >}})
+- 3.3.1.3 - [Asteroids]({{< relref "reference/planets.md#types" >}})
+- 3.3.2 - [Habitability]({{< relref "reference/habitability.md" >}})
+- 3.3.3 - [Natural Resources]({{< relref "reference/planets.md#natural-resources" >}})
+- 3.4 - [Time Scale]({{< relref "reference/game-setup.md#time-scale" >}})
 - 3.5 - ~~Initial Print-out~~
-- 3.6 - [Initial Turn Sheet](reference/game-setup/#initial-turn-report)
-- 4 - [BASIC UNITS](reference/units/)
-- 4.1 - [Description of basic units](reference/units/#basic-units)
-- 4.2 - [Population Units](reference/units/#population-units)
+- 3.6 - [Initial Turn Sheet]({{< relref "reference/game-setup.md#initial-turn-report" >}})
+- 4 - [BASIC UNITS]({{< relref "reference/units.md" >}})
+- 4.1 - [Description of basic units]({{< relref "reference/units.md#basic-units" >}})
+- 4.2 - [Population Units]({{< relref "reference/units.md#population-units" >}})
 - 4.2.1 - Orders applicable to population units
 - 4.2.2 - Population units on ships
 - 4.2.3 - Population Charts
-- 4.3 - [Weapons](reference/units/#weapons)
-- 4.4 - [Production Units](reference/units/#production)
-- 4.4.1 - [Production Chart](reference/units/#production)
-- 4.4.2 - [Farms](reference/farming/)
-- 4.4.3 - [Mines](reference/mining/)
-- 4.4.4 - [Factories](reference/units/#production)
-- 4.5 - [Miscellaneous units](reference/units/#miscellaneous)
-- 4.5.1 - [Automation](reference/units/#miscellaneous)
-- 4.5.2 - [Consumer Goods and Food](reference/units/#materials)
-- 4.5.2.1 - [Starvation Rule](reference/food/#starvation)
-- 4.5.3 - [Life Support Units](reference/units/#miscellaneous)
-- 4.5.4 - [Hyper Engines](reference/units/#miscellaneous)
-- 4.5.5 - [Space Drives](reference/units/#miscellaneous)
-- 4.5.6 - [Sensors](reference/units/#miscellaneous)
+- 4.3 - [Weapons]({{< relref "reference/units.md#weapons" >}})
+- 4.4 - [Production Units]({{< relref "reference/units.md#production" >}})
+- 4.4.1 - [Production Chart]({{< relref "reference/units.md#production" >}})
+- 4.4.2 - [Farms]({{< relref "reference/farming.md" >}})
+- 4.4.3 - [Mines]({{< relref "reference/mining.md" >}})
+- 4.4.4 - [Factories]({{< relref "reference/units.md#production" >}})
+- 4.5 - [Miscellaneous units]({{< relref "reference/units.md#miscellaneous" >}})
+- 4.5.1 - [Automation]({{< relref "reference/units.md#miscellaneous" >}})
+- 4.5.2 - [Consumer Goods and Food]({{< relref "reference/units.md#materials" >}})
+- 4.5.2.1 - [Starvation Rule]({{< relref "reference/food.md#starvation" >}})
+- 4.5.3 - [Life Support Units]({{< relref "reference/units.md#miscellaneous" >}})
+- 4.5.4 - [Hyper Engines]({{< relref "reference/units.md#miscellaneous" >}})
+- 4.5.5 - [Space Drives]({{< relref "reference/units.md#miscellaneous" >}})
+- 4.5.6 - [Sensors]({{< relref "reference/units.md#miscellaneous" >}})
 - 4.5.6.1 - Probes
-- 4.5.7 - [Transports](reference/units/#miscellaneous)
-- 4.5.8 - [Structural Units](reference/units/#miscellaneous)
-- 4.5.9 - [Light Structural Units](reference/units/#miscellaneous)
+- 4.5.7 - [Transports]({{< relref "reference/units.md#miscellaneous" >}})
+- 4.5.8 - [Structural Units]({{< relref "reference/units.md#miscellaneous" >}})
+- 4.5.9 - [Light Structural Units]({{< relref "reference/units.md#miscellaneous" >}})
 - 5 - COLONIES AND SHIPS
 - 5.1 - Chart
 - 5.2 - Establishment
 - 6 - MANUFACTURING
 - 6.1 - Factory Groups
 - 6.2 - Labor
-- 6.3 - [Shortages](reference/shortages/)
+- 6.3 - [Shortages]({{< relref "reference/shortages.md" >}})
 - 6.4 - "Cost" Chart
 - 6.5 - No. of Factory Units Required
 - 6.6 - Retooling
@@ -91,9 +91,9 @@ the section that matches what you need:
 - 9.1.2 - Interstellar Movement
 - 9.2 - Probes
 - 9.3 - Surveys
-- 10 - [REBELLION](reference/rebellion/)
-- 10.1 - [Rebellion](reference/rebellion/#when-rebellion-occurs)
-- 10.2 - [Independent Colonies and Ships](reference/rebellion/#independent-ships-and-colonies)
+- 10 - [REBELLION]({{< relref "reference/rebellion.md" >}})
+- 10.1 - [Rebellion]({{< relref "reference/rebellion.md#when-rebellion-occurs" >}})
+- 10.2 - [Independent Colonies and Ships]({{< relref "reference/rebellion.md#independent-ships-and-colonies" >}})
 - 11 - COMBAT
 - 11.1 - Description
 - 11.2 - Military Supplies
@@ -154,7 +154,7 @@ the section that matches what you need:
 - 14.1 - News Service
 - 14.2 - Diplomatic Messages
 - 14.3 - Enforcement of Treaties and Agreements
-- 15 - [VICTORY CONDITIONS](reference/victory-conditions/)
+- 15 - [VICTORY CONDITIONS]({{< relref "reference/victory-conditions.md" >}})
 - 16 - SEQUENCE OF TURN EXECUTION
 - 17 - WRITING ORDERS
 - 17.1 - General Rules
@@ -198,4 +198,4 @@ the section that matches what you need:
 - Colophon
 
 ## Additional Documents
-- [GLOSSARY](reference/glossary/)
+- [GLOSSARY]({{< relref "reference/glossary.md" >}})
