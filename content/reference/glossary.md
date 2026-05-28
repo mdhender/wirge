@@ -28,7 +28,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Construction worker** (`CNW`) — A population cadre (1 professional + 1 unskilled worker) that carries out assembly and dis-assembly orders.
 - **Consumer goods** (`CNGD`) — Factory output used to pay the population.
 - **Control** — A player's claim over a planet, established by an orbiting or surface colony — or a trade station — and a declaration of control.
-- **Co-ordinates** — The three two-digit numbers (`00`–`30`, e.g. `28-02-18`) that designate a [solar system]({{< relref "game-setup.md#co-ordinates" >}}). Stars sharing co-ordinates lie in the same system.
+- **Co-ordinates** — The three two-digit numbers (`00`–`30`, e.g. `28-02-18`) that designate a [solar system]({{< relref "game-setup.md#cluster" >}}). Stars sharing co-ordinates lie in the same system. A star appends a letter suffix to the co-ordinates (`28-02-18A`), and an orbit appends `/` and its number (`28-02-18A/5`).
 
 ## D
 
@@ -36,6 +36,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 ## E
 
+- **Eleventh orbit** (11th orbit) — A bookkeeping slot on each star, addressed as `<star>/11` (for example `00-00-00A/11`), used to hold a ship that has arrived by an interstellar jump. It is not a planetary orbit — those run 1–10 — and never holds a planet; a ship there must move to an orbit from 1 to 10 before it can act at any planet. See [Game Setup]({{< relref "game-setup.md#11th-orbit" >}}).
 - **Empire** — *(Future rules.)* A collection of nations; the basis of a future [Empire Victory]({{< relref "victory-conditions.md" >}}). Not defined in this version of the game.
 - **Enclosed colony** (`CENC`) — A sealed surface colony, allowed on any planet; requires life support.
 - **Energy shield** (`ESH`) — A unit that absorbs energy-weapon damage.
@@ -53,7 +54,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 ## G
 
-- **Galactic standard year** — The in-game year; one [turn]({{< relref "game-setup.md#time-scale" >}}) equals one quarter of it.
+- **Galactic standard year** — The in-game year; one [turn]({{< relref "game-setup.md#turn-length" >}}) equals one quarter of it.
 - **Gas giant** — A [planet]({{< relref "planets.md#types" >}}) type whose surface colonies and natural resources sit on its moons, which are treated as part of the one planet. Habitability number 0–12.
 - **Gold** (`GOLD`) — The currency resource, used in the market and for wages.
 - **Group** — A set of like production units (mine, farm, or factory) worked together under one group number. A group number is never reused.
@@ -100,7 +101,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 ## P
 
-- **Planet** — A body occupying an [orbit]({{< relref "game-setup.md#orbits" >}}); the basic site for colonies, mining, and farming. One of three types, with a habitability number and natural resources. See [Planets]({{< relref "planets.md" >}}).
+- **Planet** — A body occupying an [orbit]({{< relref "game-setup.md#stars-and-orbits" >}}); the basic site for colonies, mining, and farming. One of three types, with a habitability number and natural resources. See [Planets]({{< relref "planets.md" >}}).
 - **Population unit** — A unit of citizens (100 people, or 200 for spy and construction cadres). Types: `UEM`, `USK`, `PRO`, `TRNE`, `SLD`, `SPY`, `CNW`, `RBL`.
 - **Probe** — A sensor scan that reports a planet in the same system: its ships and colonies, its resource deposits (type and approximate quantity), and its habitability number.
 - **Production unit** — A unit that turns inputs into output: a mine, farm, or factory. See [The Production Cycle]({{< relref "../explanation/production-cycle.md" >}}).
@@ -120,11 +121,11 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Ship** (`SHIP`) — A mobile entity that can move between orbits and systems; requires life support and cannot host factories or mines.
 - **Ship/colony** (S/C) — Collective term for an entity — that is, either a ship or a colony.
 - **Soldier** (`SLD`) — Military population.
-- **Solar system** — A set of one or more stars sharing the same co-ordinates.
+- **Solar system** — A set of one or more stars sharing the same co-ordinates. Named by its co-ordinates alone (e.g. `12-13-14`); each of its stars adds a letter suffix.
 - **Space drive** (`SPD`) — A unit that maintains a ship's orbit and maneuvers it in combat; cannot be used for interplanetary or interstellar travel.
 - **Spy** (`SPY`) — A population cadre (1 professional + 1 soldier) that reports on other players and incites rebellion.
 - **Standard of living** (`SOL`) — A measure of population well-being, shaped by pay and rations, that bears on morale.
-- **Star** — A stellar body within a solar system.
+- **Star** — A stellar body within a solar system. Identified by the system co-ordinates plus a letter suffix (`A`, `B`, `C`, …) — for example `12-13-14A` — which is required even in a single-star system.
 - **Starvation** — Loss of population when the actual ration falls below the survival ration (25% of a full ration). See [Food]({{< relref "food.md#starvation" >}}).
 - **Structural unit** (`STU`) — The framing required to build ships and colonies.
 - **Surface colony** — An open-air or enclosed colony on a planet's surface (as distinct from an orbiting colony). Only a surface colony may mine.
