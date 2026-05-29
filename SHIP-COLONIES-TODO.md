@@ -19,7 +19,7 @@ when complete."
 
 | Task | Status |
 | ---- | ------ |
-| 1 — Stub the linked-but-unconverted reference pages | TODO |
+| 1 — Stub the linked-but-unconverted reference pages | DONE |
 | 2 — Create the page and convert the comparison chart | TODO |
 | 3 — Write the "Establishment" section | TODO |
 | 4 — Wire the page into the site and apply weights | TODO |
@@ -159,7 +159,7 @@ Notes:
 
 ## Task 1 — Stub the linked-but-unconverted reference pages
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** create minimal stub pages so the links added in Tasks 2–3 resolve and
 the site builds clean. No real content from the manual yet.
