@@ -29,7 +29,7 @@ the section that matches what you need:
 ## Working Index
 
 - 1 - [INTRODUCTION](#)
-- 2 - ~~HISTORY OF THE EMPYREAN CLUSTER~~
+- 2 - ~~HISTORY OF THE CLUSTER~~
 - 3 - [GAME SET UP]({{< relref "reference/game-setup.md" >}})
 - 3.1 - [Star Lists]({{< relref "reference/game-setup.md#star-lists" >}})
 - 3.2 - [Solar Systems]({{< relref "reference/game-setup.md#solar-systems" >}})

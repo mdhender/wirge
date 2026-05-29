@@ -23,7 +23,7 @@ when complete."
 | 2 — Create the page and convert the comparison chart | DONE |
 | 3 — Write the "Establishment" section | DONE |
 | 4 — Wire the page into the site and apply weights | DONE |
-| 5 — Build, verify, and consistency pass | TODO |
+| 5 — Build, verify, and consistency pass | DONE |
 
 Keep this table in sync with the per-task **Status** lines below.
 
@@ -320,7 +320,7 @@ Working Index lines that now have real targets. No new body content.
 
 ## Task 5 — Build, verify, and consistency pass
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** confirm everything builds, links resolve, and nothing regressed.
 
