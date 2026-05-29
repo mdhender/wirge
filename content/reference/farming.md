@@ -91,7 +91,7 @@ The number of `FARM-1` units an open-air colony may place is capped by the plane
 Each FARM unit requires, regardless of group size:
 
 - 3 unskilled worker units (`USK`), or the equivalent in
-  [automation units]({{< relref "units.md#miscellaneous" >}}) (`AUT`), and
+  [automation units]({{< relref "ship-systems.md#automation" >}}) (`AUT`), and
 - 1 professional unit (`PRO`).
 
 ### Fuel

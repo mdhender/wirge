@@ -93,7 +93,7 @@ cargo (see [Shortages]({{< relref "shortages.md#mines-the-quarterly-wink" >}})).
 Each MINE unit requires, regardless of group size:
 
 - 3 unskilled worker units (`USK`), or the equivalent in
-  [automation units]({{< relref "units.md#miscellaneous" >}}) (`AUT`), and
+  [automation units]({{< relref "ship-systems.md#automation" >}}) (`AUT`), and
 - 1 professional unit (`PRO`).
 
 ### Fuel

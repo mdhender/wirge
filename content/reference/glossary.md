@@ -14,7 +14,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Assault craft** (`ASC`) — A land/space vehicle used to invade a ship or colony. See [Weapons]({{< relref "weapons.md#assault-craft" >}}).
 - **Assault weapon** (`ASW`) — A weapon carried by soldiers in surface combat. See [Weapons]({{< relref "weapons.md#assault-weapons" >}}).
 - **Asteroid** — A [planet]({{< relref "planets.md#types" >}}) type too small to be spherical; represents an entire asteroid belt and is treated as a single planet. Its habitability number is always 0.
-- **Automation** (`AUT`) — A unit that replaces unskilled workers as labor in farms, mines, and factories.
+- **Automation** (`AUT`) — A unit that replaces unskilled workers as labor in farms, mines, and factories. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#automation" >}}).
 
 ## B
 
@@ -28,7 +28,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Colony** — A permanent installation a player establishes at a planet, in one of three forms: open-air, enclosed, or orbiting.
 - **Combat round** (`CR`) — One increment of a combat exchange; some weapons' fuel use is measured per combat round.
 - **Construction worker** (`CNW`) — A population-cadre allocation of 1 professional and 1 unskilled worker that carries out assembly and dis-assembly orders.
-- **Consumer goods** (`CNGD`) — Factory output used to pay the population.
+- **Consumer goods** (`CNGD`) — Factory output used to pay the population. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#consumer-goods" >}}).
 - **Control** — A player's claim over a planet, established by an orbiting or surface colony — or a trade station — and a declaration of control.
 - **Co-ordinates** — The three two-digit numbers (`00`–`30`, e.g. `28-02-18`) that designate a [solar system]({{< relref "game-setup.md#cluster" >}}). Stars sharing co-ordinates lie in the same system. A star appends a letter suffix to the co-ordinates (`28-02-18A`), and an orbit appends `/` and its number (`28-02-18A/5`).
 
@@ -67,7 +67,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 - **Habitability number** (`HN`) — An intrinsic [planet property]({{< relref "habitability.md" >}}) (0–25) that sets how much population and farming its surface supports and whether open-air colonies are allowed.
 - **Home system** — The solar system a player starts in; its planets are described in the player's initial turn report.
-- **Hyper engine** (`HPD`) — A unit that propels a ship through hyper-space, within a system or between systems.
+- **Hyper engine** (`HEN`) — A unit that propels a ship through hyper-space, within a system or between systems. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#hyper-engines" >}}).
 - **Hyper-space** — The medium hyper engines travel through; jump range is measured in light years.
 
 ## J
@@ -76,7 +76,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 ## L
 
-- **Life support** (`LSP`) — A unit that recycles air and water; required by ships and enclosed colonies.
+- **Life support** (`LSP`) — A unit that recycles air and water; required by ships, enclosed colonies, and orbiting colonies. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#life-support" >}}).
 
 ## M
 
@@ -123,17 +123,17 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 ## S
 
-- **Sensor** (`SEN`) — A unit that reports on solar systems and on ships and colonies, and conducts probes.
+- **Sensor** (`SEN`) — A unit that reports on solar systems and on ships and colonies, and conducts probes. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#sensors" >}}).
 - **Ship** (`SHIP`) — A mobile entity that can move between orbits and systems; requires life support and cannot host factories or mines.
 - **Ship/colony** (S/C) — Collective term for an entity — that is, either a ship or a colony.
 - **Soldier** (`SLD`) — Military population.
 - **Solar system** — A set of one or more stars sharing the same co-ordinates. Named by its co-ordinates alone (e.g. `12-13-14`); each of its stars adds a letter suffix.
-- **Space drive** (`SPD`) — A unit that maintains a ship's orbit and maneuvers it in combat; cannot be used for interplanetary or interstellar travel.
+- **Space drive** (`SPD`) — A unit that maintains a ship's orbit and maneuvers it in combat; cannot be used for interplanetary or interstellar travel. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#space-drives" >}}).
 - **Spy** (`SPY`) — A population-cadre allocation of 1 professional and 1 soldier that reports on other players and incites rebellion.
 - **Standard of living** (`SOL`) — A measure of population well-being, shaped by pay and rations, that bears on morale.
 - **Star** — A stellar body within a solar system. Identified by the system co-ordinates plus a letter suffix (`A`, `B`, `C`, …) — for example `12-13-14A` — which is required even in a single-star system.
 - **Starvation** — Loss of population when the actual ration falls below the survival ration (25% of a full ration). See [Food]({{< relref "food.md#starvation" >}}).
-- **Structural unit** (`STU`) — The framing required to build ships and colonies.
+- **Structural unit** (`STU`) — The framing required to build ships and colonies. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#structural-units" >}}).
 - **Surface colony** — An open-air or enclosed colony on a planet's surface (as distinct from an orbiting colony). Only a surface colony may mine.
 - **Survey** — A scan from a ship or colony at a planet that reports its deposits' locations, types, and exact resource quantities.
 
@@ -143,7 +143,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Terrestrial** — A spherical [planet]({{< relref "planets.md#types" >}}) type, not necessarily "earth-like." Habitability number 0–25.
 - **Trade station** — An installation for trade between players; it can also establish control of a planet.
 - **Trainee** (`TRN`) — A population-cadre allocation of an unskilled worker being trained into a professional.
-- **Transport** (`TPT`) — A unit that moves units between ships and colonies and carries soldiers into combat.
+- **Transport** (`TPT`) — A unit that moves units between ships and colonies and carries soldiers into combat. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#transports" >}}).
 - **Trinary system** — A solar system containing three stars.
 - **Turn** — One game cycle, equal to one quarter of a Galactic standard year.
 

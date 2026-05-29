@@ -53,12 +53,14 @@ These are produced by FACT and may be traded. All carry a technological level.
 ### Miscellaneous
 
 These are produced by FACT and may be traded. All carry a technological level.
+See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md" >}})
+for fuel use, mass formulas, capacity formulas, and operational constraints.
 
 | Code | Full name        | Notes                                                  |
 | ---- | ---------------- | ------------------------------------------------------ |
 | AUT  | Automation       | Replace USK in FARM, MINE, and FACT.                   |
 | LSP  | Life Support     | Recycle air and water in ships and enclosed colonies.  |
-| HPD  | Hyper Engines    | Propel ships through hyper-space.                      |
+| HEN  | Hyper Engines    | Propel ships through hyper-space.                      |
 | SPD  | Space Drives     | Maintain orbit and maneuver in combat.                 |
 | SEN  | Sensors          | Report on systems, ships/colonies, and conduct probes. |
 | TPT  | Transports       | Move units between ships/colonies or assist in combat. |
