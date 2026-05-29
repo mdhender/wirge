@@ -134,7 +134,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Race** — All the nations on one planet, considered together; the basis of a future [Race Victory]({{< relref "victory-conditions.md" >}}).
 - **Ration** — The FOOD served per population unit per turn, set by a `RATION` order. A full ration is 0.25 FOOD units. See [Food]({{< relref "food.md" >}}).
 - **Rebel** (`RBL`) — A tally of population willing to rebel, not a separate class; rises with underpayment, underfeeding, and especially starvation.
-- **Research point** (`RSCH`) — Output used to pay for technological advancement.
+- **Research point** (`RSCH`) — Output used to pay for [technological advancement]({{< relref "technological-advancement.md#research" >}}).
 - **Resource** — A farmed or mined substance: FOOD, METS, NMTS, FUEL, or GOLD.
 
 ## S
@@ -157,7 +157,8 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 ## T
 
-- **Technological level** (`TL`) — A unit's tech rating, which sets its mass, cost, and effectiveness.
+- **Technological level** (`TL`) — A unit's tech rating, which sets its mass, cost, and effectiveness. A ship or colony raises its `TL` through [technological advancement]({{< relref "technological-advancement.md" >}}).
+- **Technology transfer** — Raising a ship or colony's `TL` by establishing it from, or transferring levels from, a higher-`TL` ship or colony. See [Technological Advancement]({{< relref "technological-advancement.md#technology-transfer" >}}).
 - **Terrestrial** — A spherical [planet]({{< relref "planets.md#types" >}}) type, not necessarily "earth-like." Habitability number 0–25.
 - **Trade station** — An installation for trade between players; it can also establish control of a planet.
 - **Trainee** (`TRN`) — A population-cadre allocation of an unskilled worker being trained into a professional.

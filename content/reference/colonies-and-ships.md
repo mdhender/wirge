@@ -62,3 +62,5 @@ If the transferred construction workers are insufficient to complete the
 assembly, only the proportional portion is completed. When the construction
 workers finish, they return to the ship or colony they were transferred from,
 unless the set up order specifies otherwise.
+
+A new entity inherits the establisher's [`TL`]({{< relref "technological-advancement.md#technology-transfer" >}}).

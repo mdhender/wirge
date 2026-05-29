@@ -81,7 +81,7 @@ the section that matches what you need:
 - 6.6 - [Retooling]({{< relref "reference/manufacturing.md#retooling" >}})
 - 6.7 - [Assembling]({{< relref "reference/manufacturing.md#assembling" >}})
 - 6.8 - [Dis-assembling]({{< relref "reference/manufacturing.md#dis-assembling" >}})
-- 7 - TECHNOLOGICAL ADVANCEMENT
+- 7 - [TECHNOLOGICAL ADVANCEMENT]({{< relref "reference/technological-advancement.md" >}})
 - 8 - TRADE
 - 8.1 - Trade Stations
 - 8.2 - Home Planet Markets

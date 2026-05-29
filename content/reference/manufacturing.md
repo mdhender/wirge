@@ -99,7 +99,9 @@ in a year requires three `TL-2` factory units.
 A [build change order]({{< relref "writing-orders.md" >}}) directs a factory
 group to retool — to switch the unit type it produces. Retooling takes one turn
 or more: any work in process must finish before the group retools. The turn
-report states when the group is ready to begin producing the new unit.
+report states when the group is ready to begin producing the new unit. A build
+change order can also switch a factory group from manufacturing to
+[research]({{< relref "technological-advancement.md#research" >}}).
 
 ## Assembling
 

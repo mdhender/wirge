@@ -90,7 +90,7 @@ These are produced by FACT and may be traded or consumed. All carry a technologi
 
 | Code | Full name       | Notes | Detail |
 | ---- | --------------- | ----- | ------ |
-| RSCH | Research Points | Used to pay for technological advancement. | Technological advancement page not yet converted |
+| RSCH | Research Points | Used to pay for technological advancement. | [Technological Advancement]({{< relref "technological-advancement.md" >}}) |
 
 ### Materials
 
@@ -131,7 +131,7 @@ The game engine's codes and technological levels depart from the original rule b
 - **Drive terminology and codes.** The original rule book calls `HDRV` units "hyper engines." The engine and published docs use "hyperdrive" and `HDRV`; they also use `SDRV` for space drives. These terms and codes intentionally depart from shorter rule-book-style abbreviations so they are harder to confuse with `SEN`.
 - **Structural units.** The rule book used `STU` (or `STUN`) for the base structural unit and `STUL` for a lighter, stronger version; later rule books added `SSTL` for an even lighter version. The engine replaces these with technological levels: `STU-1` replaces `STU`, and `STU-2` replaces `STUL`.
 - **Military supplies.** The rule book used `MTSP` with no TL, usable with any level of combat weapon. The engine adds a TL for consistency (`MTSP-1` replaces `MTSP`) but prohibits research to improve it.
-- **Research points.** The rule book used `RSCH` with no TL, usable to pay for any level of technological advancement. The engine adds a TL for consistency (`RSCH-1` replaces `RSCH`) but prohibits research to improve it.
+- **Research points.** The rule book used `RSCH` with no TL, usable to pay for any level of technological advancement. The engine adds a TL for consistency (`RSCH-1` replaces `RSCH`) but prohibits [research]({{< relref "technological-advancement.md#research" >}}) to improve it.
 
 {{< callout type="warning" >}}
 **TODO:** A few classifications here are provisional and should be revisited:
