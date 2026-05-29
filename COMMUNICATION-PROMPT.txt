@@ -1,0 +1,60 @@
+Create the conversion plan for the next manual section: **Communication**.
+
+This is the `wirge` docs repo — read `CLAUDE.md` first. We convert the original rule
+book (`user-manual/`, which is sacred: never edit except typos, never published) into
+published Diátaxis pages under `content/`. In the documentation's canonical order (the
+Working Index in `content/_index.md`), **Communication is section 14**, so the published
+page is `content/reference/communication.md` with **weight 150** (reference weights step by
+ten in Working-Index order: Control of Planets 140, Communication 150, Victory Conditions
+160, …; 150 is free).
+
+WRITE THE PLAN ONLY. Produce a markdown plan file in the repo root named analogously to
+the existing plans (e.g. `COMMUNICATION-TODO.md`; cf. `MANUFACTURING-TODO.md`). Do NOT
+write the reference page or modify any content pages — the plan is implemented in a later
+session.
+
+Before writing, read:
+- `CLAUDE.md` (naming/IP rules, weight convention, what is published vs. internal).
+- The Diátaxis skill `.agents/skills/diataxis/SKILL.md`, especially
+  `references/reference.rst` — reference pages must DESCRIBE ONLY.
+- `MANUFACTURING-TODO.md` (structure/house style) and `content/reference/manufacturing.md`.
+- `user-manual/communication.md` (the source — read in full) and check `notes/`.
+- The existing pages this section overlaps (below) for real anchors before linking.
+
+Model the plan on `MANUFACTURING-TODO.md`, including: a "How to use this plan" note and
+a task-status table (per-task `Status: TODO/IN PROGRESS/DONE`); a Goal; a Source-material
+section; an Overlap map (link, do not restate); a Terminology/code mapping (source term →
+engine codes, and "nation" not "player"); Conventions (front matter `title`/`weight` only;
+`relref` cross-links; fold any Markdoc `{% %}` shortcodes into prose/callouts; codes in
+backticks; no rule duplication; never brand the game "Empyrean Challenge"); resolved
+Page-weight/ordering (150); Link targets (existing vs. pending); small numbered tasks ending
+with a wiring task (turn the "14 - COMMUNICATION" Working-Index line in `content/_index.md`
+and its 14.x sub-items into `relref` links/anchors; glossary; reciprocal links) and a final
+build/verify task (`hugo --gc` clean; no `{%`; no "Empyrean Challenge"; all anchors and
+relrefs resolve; correct sidebar order); and an Out-of-scope section.
+
+Source content the plan must cover (verify against the source — don't trust this summary):
+- **News service**: each home-planet market and trade station has one; it prints ship
+  departures/arrivals, any warfare at that planet, a trade report, and inserted messages
+  (game-relevant, not over-long); who may insert/receive (home-planet rulers; owners of
+  colonies on the station's planet; visiting ships, only while visiting).
+- **Diplomatic messages**: sent with the player's turn, any length; addressable by player
+  name/ID, ship ID, or colony ID; unsigned allowed; require sender and recipient to have a
+  ship/colony at the same planet, but once contact is made messages may continue thereafter.
+- **Enforcement of treaties/agreements**: agreements are player-enforced, not engine-enforced.
+
+Known overlaps / links to wire (verify each anchor exists before linking):
+- `content/reference/trade.md` — the news service physically lives on markets/trade stations
+  (Trade is NOT yet converted; see dependency).
+- `content/reference/colonies-and-ships.md` — ships/colonies as message endpoints.
+- `content/how-to/writing-orders.md` — news-release and diplomatic-message orders (page-level
+  link; stub, anchors absent).
+- `content/reference/glossary.md` — add/relink "news service", "diplomatic message".
+
+Dependency to flag explicitly in the plan: **Trade** (Working-Index 8, where the news service
+attaches) and **Control of Planets** (13, which uses diplomatic messages for colonizing
+permission) are not yet converted. Link at page level and/or leave
+`{{< callout type="warning" >}}` TODOs rather than inventing links.
+
+Out of scope to state: the Trade and Control of Planets pages themselves, any engine code
+(the separate `pyre` repo), and editing the manual.

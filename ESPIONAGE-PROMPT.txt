@@ -1,0 +1,63 @@
+Create the conversion plan for the next manual section: **Espionage**.
+
+This is the `wirge` docs repo — read `CLAUDE.md` first. We convert the original rule
+book (`user-manual/`, which is sacred: never edit except typos, never published) into
+published Diátaxis pages under `content/`. In the documentation's canonical order (the
+Working Index in `content/_index.md`), **Espionage is section 12**, so the published page
+is `content/reference/espionage.md` with **weight 130** (reference weights step by ten in
+Working-Index order: Combat 120, Espionage 130, Control of Planets 140, …; 130 is free).
+
+WRITE THE PLAN ONLY. Produce a markdown plan file in the repo root named analogously to
+the existing plans (e.g. `ESPIONAGE-TODO.md`; cf. `MANUFACTURING-TODO.md`). Do NOT write
+the reference page or modify any content pages — the plan is implemented in a later
+session.
+
+Before writing, read:
+- `CLAUDE.md` (naming/IP rules, weight convention, what is published vs. internal).
+- The Diátaxis skill `.agents/skills/diataxis/SKILL.md`, especially
+  `references/reference.rst` — reference pages must DESCRIBE ONLY.
+- `MANUFACTURING-TODO.md` (structure/house style) and `content/reference/manufacturing.md`.
+- `user-manual/espionage.md` (the source — read in full) and check `notes/`.
+- The existing pages this section overlaps (below) for real anchors before linking.
+
+Model the plan on `MANUFACTURING-TODO.md`, including: a "How to use this plan" note and
+a task-status table (per-task `Status: TODO/IN PROGRESS/DONE`); a Goal; a Source-material
+section; an Overlap map (link, do not restate); a Terminology/code mapping (source term →
+engine codes — note the spy "functions" are coded A–F; and "nation" not "player");
+Conventions (front matter `title`/`weight` only; `relref` cross-links; fold the source's two
+`{% fnref %}` footnotes into prose/callouts; render the Spy Functions table faithfully; codes
+in backticks; no rule duplication; never brand the game "Empyrean Challenge"); resolved
+Page-weight/ordering (130); Link targets (existing vs. pending); small numbered tasks ending
+with a wiring task (turn the "12 - ESPIONAGE" Working-Index line in `content/_index.md` and
+its 12.x sub-items into `relref` links/anchors; glossary; reciprocal links) and a final
+build/verify task (`hugo --gc` clean; no `{%`; no "Empyrean Challenge"; all anchors and
+relrefs resolve; correct sidebar order); and an Out-of-scope section.
+
+Source content the plan must cover (verify against the source — don't trust this summary):
+a spy unit is one soldier unit + one professional unit and performs one function per unit
+per turn; the six functions (A Rebel Quantity and Type, B Convert Rebels, C Uncover Foreign
+Spy, D Suppress Foreign Spy, E Incite Rebellion, F Obtain Secrets), each function's effect,
+the "must be at that ship/colony" rule, persistence until re-ordered, and the
+suppression/assassination math (attackers destroy 3× the attackers' number of foreign spies;
+attackers lose 1/6 of the defenders' number; ±50% chance variance).
+
+Known overlaps / links to wire (verify each anchor exists before linking):
+- `content/reference/rebellion.md` — functions A/B/E act on rebels (count, convert, incite);
+  this page is DONE — link its anchors, don't restate rebellion rules.
+- `content/reference/units.md` / `content/reference/population.md` — soldier and professional
+  unit codes that compose a spy unit.
+- `content/reference/colonies-and-ships.md` — spies operate on ships/colonies.
+- `content/how-to/writing-orders.md` — spy orders (page-level link; the source footnote even
+  says "see Writing Orders"; stub, anchors absent).
+- `content/reference/glossary.md` — add/relink "spy unit" and the function names.
+
+Note to capture in the plan (don't resolve it here): the sample turn report in
+`user-manual/appendices.md` shows espionage types **A–G** (seven), while this section lists
+**A–F** (six). Flag this engine-vs-rulebook discrepancy for the implementer to reconcile (it
+belongs under a "Differences from the rule book" note), rather than silently picking one.
+
+Dependency to flag explicitly in the plan: **Combat** (Working-Index 11) and **Control of
+Planets** (13) are not yet converted; link at page level and/or leave
+`{{< callout type="warning" >}}` TODOs rather than inventing links.
+
+Out of scope to state: any engine code (the separate `pyre` repo) and editing the manual.

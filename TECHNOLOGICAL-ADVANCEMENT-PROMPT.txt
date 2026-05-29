@@ -1,0 +1,75 @@
+Create the conversion plan for the next manual section: **Technological Advancement**.
+
+This is the `wirge` docs repo — read `CLAUDE.md` first. We convert the original rule
+book (`user-manual/`, which is sacred: never edit except typos, never published) into
+published Diátaxis pages under `content/`. Manufacturing was just finished. The next
+section in the manual's canonical order (`user-manual/toc.json`) is **Technological
+Advancement** (Working-Index section 7), so the published page will be
+`content/reference/technological-advancement.md` with **weight 80**. Reference-page
+weights step by ten in the order of the Working Index in `content/_index.md`
+(Manufacturing 70, Technological Advancement 80, Trade 90, …); 80 is currently free.
+
+WRITE THE PLAN ONLY. Produce a markdown plan file in the repo root named analogously to
+the existing plans (e.g. `TECH-ADVANCEMENT-TODO.md`; cf. `MANUFACTURING-TODO.md`,
+`SHIP-COLONIES-TODO.md`). Do NOT write the reference page or modify any content pages —
+the plan is implemented in a later session.
+
+Before writing, read:
+- `CLAUDE.md` (naming/IP rules, weight convention, what is published vs. internal).
+- The Diátaxis skill `.agents/skills/diataxis/SKILL.md`, especially
+  `references/reference.rst` — reference pages must DESCRIBE ONLY (austere, factual,
+  no instruction or "why"); fold explanation/instruction into links.
+- `MANUFACTURING-TODO.md` (use its structure and house style as the template) and the
+  finished `content/reference/manufacturing.md`.
+- `user-manual/technological-advancement.md` (the source — read in full) and check
+  `notes/` for any tech-advancement / research prep.
+- The existing pages this section overlaps (below).
+
+Model the plan on `MANUFACTURING-TODO.md`, including: a "How to use this plan" note and
+a task-status table (per-task `Status: TODO/IN PROGRESS/DONE`); a Goal; a Source-material
+section; an Overlap map (link, do not restate); a Terminology/code mapping (source term →
+engine codes, and "nation" not "player"); Conventions (front matter `title`/`weight` only;
+`relref` cross-links; fold any Markdoc `{% %}` shortcodes into prose/callouts; codes in
+backticks; no rule duplication; never brand the game "Empyrean Challenge"); resolved
+Page-weight/ordering (80); Link targets (existing vs. pending); small numbered tasks ending
+with a wiring task (Working Index in `content/_index.md`, glossary, reciprocal links) and a
+final build/verify task (`hugo --gc` clean; no `{%`; no "Empyrean Challenge"; all anchors
+and relrefs resolve; correct sidebar order); and an Out-of-scope section.
+
+Source content the plan must cover (verify against the source — don't trust this summary):
+- Nations start at TL 1 and advance through levels consecutively. A colony's TL caps the
+  highest-TL unit its factories can build; a factory's own TL governs only output rate,
+  not the TL of what it builds; once manufactured, a unit's TL is fixed.
+- Three ways to raise a ship/colony's TL:
+  1. **Research** — a build change order switches a factory group from manufacturing to
+     research; it finishes its work in process first, then produces **1 research point per
+     factory unit × TL per year**. Include the Research Point Requirements table (TL 2 =
+     100,000, doubling each level up to TL 10 = 25,600,000).
+  2. **Technology transfer** — an established ship/colony inherits its establisher's TL;
+     multiple levels can transfer at once; a ship can only transfer levels up to its own TL.
+  3. **Buying technology** at a market or trade station.
+
+Known overlaps / links to wire (verify each anchor exists):
+- `units.md` — TL sets mass/cost/effectiveness; the `RSCH` row's Detail cell currently
+  reads "Technological advancement page not yet converted" and should be relinked to the
+  new page (as the `FACT` row was during the Manufacturing conversion); also the `RSCH-1`
+  "prohibits research to improve it" note under "Differences from the rule book".
+- `manufacturing.md#retooling` — the build change order and "finish WIP before switching"
+  behavior already live here; link it, don't restate. The research throughput (`1 × TL`
+  RSCH per factory unit per year) parallels the factory throughput (`20 × TL` MU/year)
+  documented there.
+- `writing-orders.md` (link at page level — its order-type anchors don't exist yet):
+  build change order, set up / transfer orders, market order.
+- `colonies-and-ships.md#establishment` — TL inheritance via the set up order.
+- `glossary.md` — `Technological level` and `Research point` entries already exist; decide
+  whether to relink them and/or add a "technology transfer" / "research" entry.
+- `explanation/production-cycle.md` — the four-turn year, if research timing needs it.
+
+Dependency to flag explicitly in the plan: the **Trade** section (toc 9, weight 90) is NOT
+yet converted, so "buy technology at a market or trade station" has no trade page to link.
+Decide in the plan how to handle it (e.g. link `writing-orders.md`'s market order at page
+level and/or leave a `{{< callout type="warning" >}}` TODO) rather than inventing a link.
+
+Out of scope to state: re-converting Manufacturing/retooling (owned by `manufacturing.md`),
+the Trade page itself, any engine code (lives in the separate `pyre` repo), and editing the
+manual.
