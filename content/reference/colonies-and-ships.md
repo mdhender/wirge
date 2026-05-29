@@ -11,20 +11,26 @@ entity's production capabilities and life-support requirements, see
 
 ## Comparison
 
-| Attribute | Open-air (`COPN`) | Enclosed (`CENC`) | Orbiting (`CORB`) | Ship (`SHIP`) |
-| --------- | ----------------- | ----------------- | ----------------- | ------------- |
-| Allowed per nation per planet | 1 | 1 | 1 | Any number |
-| Located on planet surface | Habitable terrestrial | Uninhabitable terrestrial | — | — |
-| Located on asteroid | — | yes | — | — |
-| Located in orbit | — | — | Any planet | Any planet |
-| Life support (`LSP`) required | no | yes | yes | yes |
-| Structural units (`STU`) per unit of mass | 1 | 5 | 10 | 10 |
-| Size limitation | none | none | none | none |
+| Attribute                     | Open-air (`COPN`) | Enclosed (`CENC`) | Orbiting (`CORB`) | Ship (`SHIP`) |
+| ----------------------------- | ----------------- | ----------------- | ----------------- | ------------- |
+| Allowed per nation per planet | 1                 | 1                 | 1                 | Any number    |
+| Located on planet surface     | only if HN > 0    | yes               | no                | no            |
+| Located on asteroid surface   | no                | yes               | no                | no            |
+| Located in orbit              | no                | no                | Any planet        | Any planet    |
+| Life support (`LSP`) required | no                | yes               | yes               | yes           |
+| `STU-1` per unit of mass      | 1                 | 5                 | 10                | 10            |
+| `STU-2` per unit of mass      | 1                 | 5                 | 10                | 10            |
+| Size limitation               | none              | none              | none              | none          |
 
 {{< callout type="info" >}}
 A nation may have one open-air colony, one enclosed colony, one orbiting colony,
 and any number of ships at a single planet.
 {{< /callout >}}
+
+An `STU-2` substitutes for an `STU-1` one-for-one, so an entity needs the same
+count of either structural-unit type; see
+[Structural Units]({{< relref "ship-systems.md#structural-units" >}}) for the
+mass and manufacturing differences between them.
 
 When counting the structural units an entity requires, units held in
 [storage]({{< relref "mass.md#storage" >}}) count as only half their
