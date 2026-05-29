@@ -47,7 +47,7 @@ These are produced by FACT and may be traded. All carry a technological level.
 | Code | Full name | Notes | Detail |
 | ---- | --------- | ----- | ------ |
 | MINE | Mines     | Extract resources from deposits. | [Mining]({{< relref "mining.md" >}}) |
-| FACT | Factories | Manufacture units. | [Shortages]({{< relref "shortages.md" >}}); manufacturing page not yet converted |
+| FACT | Factories | Manufacture units. | [Manufacturing]({{< relref "manufacturing.md" >}}); [Shortages]({{< relref "shortages.md" >}}) |
 | FARM | Farms     | Produce food. | [Farming]({{< relref "farming.md" >}}) |
 
 ### Miscellaneous

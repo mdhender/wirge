@@ -65,7 +65,8 @@ is issued, the group is only *formed*: production is calculated earlier in the t
 so the new group does nothing yet. On the next turn it claims its inputs, consumes the
 materials to open the work at 0%, and advances it 25% each turn it stays supplied.
 When the work reaches completion it is delivered to cargo and the group starts the
-next item.
+next item. See [Manufacturing]({{< relref "../reference/manufacturing.md" >}}) for
+factory-group labor and build costs.
 
 So an order issued on turn 1 delivers on turn 5:
 

@@ -19,11 +19,11 @@ to DONE when complete."
 
 | Task | Status |
 | ---- | ------ |
-| 1 — Create the page; Factory Groups + Labor | TODO |
-| 2 — Build costs + factory-units-required | TODO |
-| 3 — Retooling, Assembling, Dis-assembling | TODO |
-| 4 — Wire the page into the site and apply weight | TODO |
-| 5 — Build, verify, and consistency pass | TODO |
+| 1 — Create the page; Factory Groups + Labor | DONE |
+| 2 — Build costs + factory-units-required | DONE |
+| 3 — Retooling, Assembling, Dis-assembling | DONE |
+| 4 — Wire the page into the site and apply weight | DONE |
+| 5 — Build, verify, and consistency pass | DONE |
 
 Keep this table in sync with the per-task **Status** lines below.
 
@@ -155,7 +155,7 @@ conversion does not need a tech-advancement page.
 
 ## Task 1 — Create the page; Factory Groups + Labor
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** create `content/reference/manufacturing.md` with front matter, a short
 intro, a `## Factory groups` section, and a `## Labor` section with the labor
@@ -206,7 +206,7 @@ chart.
 
 ## Task 2 — Build costs + factory-units-required
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add the materials cost chart and the factory-throughput rule.
 
@@ -239,7 +239,7 @@ chart.
 
 ## Task 3 — Retooling, Assembling, Dis-assembling
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add the three order-driven operations.
 
@@ -271,7 +271,7 @@ chart.
 
 ## Task 4 — Wire the page into the site and apply weight
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** make the page reachable and link the Working Index lines that now have
 a real target. No new body content.
@@ -309,7 +309,7 @@ a real target. No new body content.
 
 ## Task 5 — Build, verify, and consistency pass
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** confirm everything builds, links resolve, and nothing regressed.
 

@@ -72,15 +72,15 @@ the section that matches what you need:
 - 5 - [COLONIES AND SHIPS]({{< relref "reference/colonies-and-ships.md" >}})
 - 5.1 - [Chart]({{< relref "reference/colonies-and-ships.md" >}})
 - 5.2 - [Establishment]({{< relref "reference/colonies-and-ships.md#establishment" >}})
-- 6 - MANUFACTURING
-- 6.1 - Factory Groups
-- 6.2 - Labor
+- 6 - [MANUFACTURING]({{< relref "reference/manufacturing.md" >}})
+- 6.1 - [Factory Groups]({{< relref "reference/manufacturing.md#factory-groups" >}})
+- 6.2 - [Labor]({{< relref "reference/manufacturing.md#labor" >}})
 - 6.3 - [Shortages]({{< relref "reference/shortages.md" >}})
-- 6.4 - "Cost" Chart
-- 6.5 - No. of Factory Units Required
-- 6.6 - Retooling
-- 6.7 - Assembling
-- 6.8 - Dis-assembling
+- 6.4 - ["Cost" Chart]({{< relref "reference/manufacturing.md#build-costs" >}})
+- 6.5 - [No. of Factory Units Required]({{< relref "reference/manufacturing.md#factory-units-required" >}})
+- 6.6 - [Retooling]({{< relref "reference/manufacturing.md#retooling" >}})
+- 6.7 - [Assembling]({{< relref "reference/manufacturing.md#assembling" >}})
+- 6.8 - [Dis-assembling]({{< relref "reference/manufacturing.md#dis-assembling" >}})
 - 7 - TECHNOLOGICAL ADVANCEMENT
 - 8 - TRADE
 - 8.1 - Trade Stations

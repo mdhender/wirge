@@ -11,7 +11,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 - **Anti-missile** (`ANM`) — A weapon launched by a missile launcher to destroy incoming missiles. See [Weapons]({{< relref "weapons.md#anti-missiles" >}}).
 - **Approximation** — A report value rounded or obscured by the game rather than exact. Sensor and probe reports often give approximate masses, quantities, or production-unit counts.
-- **Assembly** — An order family that forms or disassembles units, including `SPY` and `CNW` population-cadre allocations. See [Population]({{< relref "population.md#orders" >}}).
+- **Assembly** — An order family that forms or disassembles units, including `SPY` and `CNW` population-cadre allocations, and makes operational units functional. See [Population]({{< relref "population.md#orders" >}}) and [Manufacturing]({{< relref "manufacturing.md#assembling" >}}).
 - **Assault craft** (`ASC`) — A land/space vehicle used to invade a ship or colony. See [Weapons]({{< relref "weapons.md#assault-craft" >}}).
 - **Assault weapon** (`ASW`) — A weapon carried by soldiers in surface combat. See [Weapons]({{< relref "weapons.md#assault-weapons" >}}).
 - **Asteroid** — A [planet]({{< relref "planets.md#types" >}}) type too small to be spherical; represents an entire asteroid belt and is treated as a single planet. Its habitability number is always 0.
@@ -21,6 +21,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 - **Binary system** — A [solar system]({{< relref "game-setup.md#solar-systems" >}}) containing two stars that share one set of co-ordinates.
 - **Birth increase** — Population growth (colonies only) that enters the `UEM` class. See [Population]({{< relref "population.md#population-changes" >}}).
+- **Build change order** — An order that directs a factory group to retool, switching the unit type it produces. See [Manufacturing]({{< relref "manufacturing.md#retooling" >}}).
 
 ## C
 
@@ -37,7 +38,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 - **Deposit** — A body of a single natural resource on a planet's surface. A planet holds up to 40 deposits, each of 1,000,000–99,000,000 units, with a fixed [yield]({{< relref "mining.md#yield" >}}).
 - **Deep space** — Any location that is not an interplanetary or interstellar jump destination. Hyperdrive jumps cannot end in deep space.
-- **Disassembly** — The reverse of assembly: an order effect that breaks a cadre or unit allocation back into its component units.
+- **Disassembly** — The reverse of assembly: an order effect that breaks a cadre or unit allocation back into its component units, with a 10% loss except for `SPY` and `CNW`. See [Manufacturing]({{< relref "manufacturing.md#dis-assembling" >}}).
 - **Disband** — A population order that returns soldier units to unskilled-worker status. See [Population]({{< relref "population.md#population-changes" >}}).
 - **Draft** — A population order that recruits soldiers or trainees. See [Population]({{< relref "population.md#orders" >}}).
 
@@ -53,7 +54,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 ## F
 
 - **Factory** (`FACT`) — A [production unit]({{< relref "units.md#production" >}}) that manufactures other units from materials.
-- **Factory group** — A set of `FACT` units that manufacture units together, tracked in four quarter buckets toward completion.
+- **Factory group** — A set of `FACT` units that manufacture units together, tracked in four quarter buckets toward completion. See [Manufacturing]({{< relref "manufacturing.md#factory-groups" >}}).
 - **Farm** (`FARM`) — A production unit that grows FOOD, delivering its harvest once a year. See [Farming]({{< relref "farming.md" >}}).
 - **Farm group** — A set of `FARM` units that grow FOOD together, tracked in four quarter buckets toward harvest.
 - **Food** (`FOOD`) — The resource that feeds the population, produced by farms. See [Food]({{< relref "food.md" >}}).
@@ -114,6 +115,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 ## O
 
 - **Open-air colony** (`COPN`) — A surface colony exposed to the planet's environment; allowed only where HN > 0, and the only colony that may use `FARM-1`.
+- **Operational unit** — A unit that must be assembled after coming out of storage before it will function: `SDRV`, `SEN`, `AUT`, `LSP`, `EWP`, `ESH`, `MINE`, `FACT`, `FARM`, `HDRV`, `STU-1`, `STU-2`, or `MSL`. See [Manufacturing]({{< relref "manufacturing.md#assembling" >}}).
 - **Orbit** — One of a star's ten numbered positions (1 closest, 10 farthest); any may hold a planet.
 - **Orbiting colony** (`CORB`) — A colony in orbit around a planet; requires life support and cannot mine.
 
