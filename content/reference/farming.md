@@ -51,22 +51,22 @@ group's units may sit in different buckets at once.
 Annual output per farm unit depends on its technological level. The harvest
 delivers the **full annual amount at once**, not spread across the year.
 
-| Tech level | Annual output (FOOD) | Fuel per turn |
-| ---------- | -------------------- | ------------- |
-| FARM-1     | 100                  | 0.5           |
-| FARM-2     | 40                   | 1.0           |
-| FARM-3     | 60                   | 1.5           |
-| FARM-4     | 80                   | 2.0           |
-| FARM-5     | 100                  | 2.5           |
-| FARM-6     | 120                  | 6.0           |
-| FARM-7     | 140                  | 7.0           |
-| FARM-8     | 160                  | 8.0           |
-| FARM-9     | 180                  | 9.0           |
-| FARM-10    | 200                  | 10.0          |
+| Tech level | Annual output (FOOD) | Fuel per turn | Mass |
+| ---------- | -------------------- | ------------- | ---- |
+| FARM-1     | 100                  | 0.5           | 7 MU |
+| FARM-2     | 40                   | 1.0           | 8 MU |
+| FARM-3     | 60                   | 1.5           | 9 MU |
+| FARM-4     | 80                   | 2.0           | 10 MU |
+| FARM-5     | 100                  | 2.5           | 11 MU |
+| FARM-6     | 120                  | 6.0           | 12 MU |
+| FARM-7     | 140                  | 7.0           | 13 MU |
+| FARM-8     | 160                  | 8.0           | 14 MU |
+| FARM-9     | 180                  | 9.0           | 15 MU |
+| FARM-10    | 200                  | 10.0          | 16 MU |
 
 Output is **20 × TL** food units a year, with one exception: `FARM-1` produces 100,
 not 20. Fuel is **0.5 × TL** per turn through `FARM-5`, then jumps to **1 × TL** from
-`FARM-6` up, because those farms run on artificial sunlight.
+`FARM-6` up, because those farms run on artificial sunlight. Mass is **6 + TL**.
 
 ## Types and placement
 

@@ -6,8 +6,9 @@ weight: 55
 Population units represent the people held by a ship or colony. Population
 classes represent 100 people. Population cadres are tracked separately from the
 main classes, but they are not separate population classes. Census counts remain
-in the main classes; cadre counts show where those citizens are allocated. Spy
-and construction-worker cadres represent 200 people.
+in the main classes. Non-`RBL` cadre counts are detailed in a separate turn-report
+chart; `RBL` is hidden unless discovered by a spy. Spy and construction-worker
+cadres represent 200 people.
 
 For FOOD consumption, rationing, morale, and starvation, see
 [Food]({{< relref "food.md" >}}).
@@ -44,7 +45,22 @@ Rebel counts are never reported directly. The engine tracks `RBL`, but a player 
 
 Players cannot set pay rates for cadres.
 
-Cadre counts are reported separately from population-class census totals.
+{{< callout type="info" >}}
+The original rule book says pay rates for all population classes may be
+adjusted. The engine applies player-set pay rates to population classes, while
+cadre pay is derived from the classes allocated to the cadre.
+{{< /callout >}}
+
+Cadre counts are never included in population-class census totals. `TRN`, `SPY`,
+and `CNW` are detailed in a separate turn-report chart; `RBL` is not reported
+there.
+
+| Cadre | Standard CNGD pay per turn | Non-combat death rate per turn |
+| ----- | -------------------------- | ------------------------------ |
+| `TRN` | Same as the underlying `USK` unit | Same as the underlying `USK` unit |
+| `SPY` | 0.625 (0.375 + 0.250) | 0.0625% |
+| `CNW` | 0.500 (0.375 + 0.125) | 0.0625% |
+| `RBL` | N/A | N/A |
 
 ## Population Changes
 
@@ -63,6 +79,7 @@ Cadre counts are reported separately from population-class census totals.
 | Rebel increase | `RBL` increases when the standard of living decreases — e.g. when the population is underpaid, underfed, or starving. |
 
 Total population in census reports excludes cadres because cadres are already counted within other population classes.
+The hidden `RBL` tally does not affect `UEM` maturation.
 
 ## Orders
 

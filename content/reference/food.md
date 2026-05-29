@@ -8,6 +8,8 @@ weight: 65
 A **full ration** (`Rf`) of FOOD is 0.25 units per population unit per turn.
 This is the default ration for every new ship or colony.
 
+One FOOD unit has a mass of 6 MU.
+
 Players may set the **actual ration** (`Ra`) for a ship or colony by issuing a
 `RATION` order.
 

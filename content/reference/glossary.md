@@ -10,6 +10,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 ## A
 
 - **Anti-missile** (`ANM`) — A weapon launched by a missile launcher to destroy incoming missiles. See [Weapons]({{< relref "weapons.md#anti-missiles" >}}).
+- **Approximation** — A report value rounded or obscured by the game rather than exact. Sensor and probe reports often give approximate masses, quantities, or production-unit counts.
 - **Assembly** — An order family that forms or disassembles units, including `SPY` and `CNW` population-cadre allocations. See [Population]({{< relref "population.md#orders" >}}).
 - **Assault craft** (`ASC`) — A land/space vehicle used to invade a ship or colony. See [Weapons]({{< relref "weapons.md#assault-craft" >}}).
 - **Assault weapon** (`ASW`) — A weapon carried by soldiers in surface combat. See [Weapons]({{< relref "weapons.md#assault-weapons" >}}).
@@ -35,6 +36,8 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 ## D
 
 - **Deposit** — A body of a single natural resource on a planet's surface. A planet holds up to 40 deposits, each of 1,000,000–99,000,000 units, with a fixed [yield]({{< relref "mining.md#yield" >}}).
+- **Deep space** — Any location that is not an interplanetary or interstellar jump destination. Hyperdrive jumps cannot end in deep space.
+- **Disassembly** — The reverse of assembly: an order effect that breaks a cadre or unit allocation back into its component units.
 - **Disband** — A population order that returns soldier units to unskilled-worker status. See [Population]({{< relref "population.md#population-changes" >}}).
 - **Draft** — A population order that recruits soldiers or trainees. See [Population]({{< relref "population.md#orders" >}}).
 
@@ -54,6 +57,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Farm** (`FARM`) — A production unit that grows FOOD, delivering its harvest once a year. See [Farming]({{< relref "farming.md" >}}).
 - **Farm group** — A set of `FARM` units that grow FOOD together, tracked in four quarter buckets toward harvest.
 - **Food** (`FOOD`) — The resource that feeds the population, produced by farms. See [Food]({{< relref "food.md" >}}).
+- **Full ration** — 0.25 FOOD units per population unit per turn. See [Food]({{< relref "food.md#rations" >}}).
 - **Fuel** (`FUEL`) — The resource that powers mines, farms, factories, engines, and combat.
 
 ## G
@@ -67,8 +71,14 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 - **Habitability number** (`HN`) — An intrinsic [planet property]({{< relref "habitability.md" >}}) (0–25) that sets how much population and farming its surface supports and whether open-air colonies are allowed.
 - **Home system** — The solar system a player starts in; its planets are described in the player's initial turn report.
+- **Hyper engine** — The original rule-book term for a hyperdrive.
 - **Hyperdrive** (`HDRV`) — A unit that propels a ship through hyper-space, within a system or between systems. The original rule book calls this a hyper engine. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#hyperdrives" >}}).
 - **Hyper-space** — The medium hyperdrives travel through; jump range is measured in light years.
+
+## I
+
+- **Interplanetary location** — A legal jump endpoint inside a solar system. Interplanetary jumps are always treated as 0.1 light years. See [Hyperdrives]({{< relref "ship-systems.md#hyperdrives" >}}).
+- **Interstellar location** — A legal jump endpoint between solar systems. Interstellar distances come from the player's Star List. See [Hyperdrives]({{< relref "ship-systems.md#hyperdrives" >}}).
 
 ## J
 
@@ -76,11 +86,14 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 ## L
 
+- **Light structural unit** (`STU-2`) — The engine representation of the rule book's light structural unit. It substitutes for regular structural units and can be built only by orbiting colonies. See [Structural Units]({{< relref "ship-systems.md#structural-units" >}}).
+- **Light year** — The distance unit used for hyperdrive jump range and interstellar jump distance.
 - **Life support** (`LSP`) — A unit that recycles air and water; required by ships, enclosed colonies, and orbiting colonies. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#life-support" >}}).
 
 ## M
 
 - **Market** — The home-planet market (and trade stations) where gold is exchanged for consumer goods and units are traded.
+- **Material** — In transport rules, resources, basic units other than population, research points, and technological levels. See [Transports]({{< relref "ship-systems.md#transports" >}}).
 - **Mass unit** (`MU`) — The standard measure of mass, and of resource quantity.
 - **Metallic resources** (`METS`) — Mined raw material (metals other than gold) consumed by factories.
 - **Military robot** (`MRBT`) — A unit that replaces soldier units in combat. See [Weapons]({{< relref "weapons.md#military-robots" >}}).
@@ -93,7 +106,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 ## N
 
-- **Non-combat death rate** — The per-turn population loss rate from ordinary mortality rather than combat. See [Population]({{< relref "population.md#unit-types" >}}).
+- **Non-combat death rate** — The per-turn population loss rate from ordinary mortality rather than combat. See [Population]({{< relref "population.md#population-classes" >}}).
 - **Nation** — The polity a single player governs. A planet holds up to 25 nations, which together form a race.
 - **Natural resource** — One of the four substances held in a planet's [deposits]({{< relref "planets.md#natural-resources" >}}): GOLD, FUEL, METS, or NMTS.
 - **Non-metallic resources** (`NMTS`) — Mined raw material (non-metals) consumed by factories.
@@ -112,6 +125,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Probe** — A sensor scan that reports a planet in the same system: its ships and colonies, its resource deposits (type and approximate quantity), and its habitability number.
 - **Production unit** — A unit that turns inputs into output: a mine, farm, or factory. See [The Production Cycle]({{< relref "../explanation/production-cycle.md" >}}).
 - **Professional** (`PRO`) — Skilled population requiring long apprenticeships; needed to manage production units.
+- **Propulsion capacity** — The mass a hyperdrive can move through hyper-space: 1,000 x TL MU per operating hyperdrive. See [Hyperdrives]({{< relref "ship-systems.md#hyperdrives" >}}).
 
 ## R
 
@@ -135,6 +149,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Starvation** — Loss of population when the actual ration falls below the survival ration (25% of a full ration). See [Food]({{< relref "food.md#starvation" >}}).
 - **Structural unit** (`STU`) — The framing required to build ships and colonies. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#structural-units" >}}).
 - **Surface colony** — An open-air or enclosed colony on a planet's surface (as distinct from an orbiting colony). Only a surface colony may mine.
+- **Survival ration** — The minimum ration needed to avoid starvation. For planned rationing, it is 25% of a full ration. See [Starvation]({{< relref "food.md#starvation" >}}).
 - **Survey** — A scan from a ship or colony at a planet that reports its deposits' locations, types, and exact resource quantities.
 
 ## T
@@ -144,6 +159,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Trade station** — An installation for trade between players; it can also establish control of a planet.
 - **Trainee** (`TRN`) — A population-cadre allocation of an unskilled worker being trained into a professional.
 - **Transport** (`TPT`) — A unit that moves units between ships and colonies and carries soldiers into combat. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#transports" >}}).
+- **Thrust factor** — A space drive's combat maneuver value: TL^2 x 1,000. A ship's combat movement is total thrust factor divided by ship mass. See [Space Drives]({{< relref "ship-systems.md#space-drives" >}}).
 - **Trinary system** — A solar system containing three stars.
 - **Turn** — One game cycle, equal to one quarter of a Galactic standard year.
 

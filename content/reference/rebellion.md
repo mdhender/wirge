@@ -18,11 +18,13 @@ rebels are tracked alongside the population classes, see
 A rebel (`RBL`) is a citizen within an existing population class who is willing
 to rebel. Rebels are a **tally**, not a separate population class:
 
-- Rebel counts are drawn from the existing population segments (`USK`, `PRO`,
+- Rebel counts are drawn from the existing population classes (`USK`, `PRO`,
   `SLD`, `UEM`); those people remain counted in their own classes.
 - Rebels have no pay rate and no death rate of their own.
-- Total population in census reports **excludes** rebels, because they are
-  already counted within the population classes.
+- Total population in census reports excludes cadres, including `RBL`, because
+  those people are already counted within the population classes.
+- Unlike `TRN`, `SPY`, and `CNW`, `RBL` is not detailed in the separate cadre
+  turn-report chart.
 
 {{< callout type="info" >}}
 Rebel counts are never reported directly. A player learns the number of rebels —

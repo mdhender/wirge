@@ -3,9 +3,9 @@ title: Units
 weight: 50
 ---
 
-Every unit that may be held by a ship or colony in Epimethean Challenge, with its
-code, whether it carries a technological level (TL), its category, and a short
-description.
+Every unit that may be held by a ship or colony in Epimethean Challenge. This
+catalog gives the engine code, category, and a short description; detailed
+formulas and constraints live on the linked reference pages.
 
 A unit's TL determines its mass, cost, and effectiveness. The codes in the _Code_
 column are the game engine's authoritative codes. Where they differ from the
@@ -14,7 +14,7 @@ book](#differences-from-the-rule-book).
 
 ## Basic units
 
-These are the units that make up ship/colonies.
+These are the units that make up ships and colonies.
 
 ### Population units
 
@@ -24,31 +24,31 @@ population changes, population orders, and shipboard population rules.
 
 Population classes:
 
-| Code | Full name         | Notes                                               |
-| ---- | ----------------- | --------------------------------------------------- |
-| USK  | Unskilled Workers | Labor needing little training.                      |
-| PRO  | Professionals     | Skilled labor requiring long apprenticeships.       |
-| SLD  | Soldiers          | All military personnel.                             |
-| UEM  | Unemployables     | All other citizens. All birth increases enter here. |
+| Code | Full name         | Notes | Detail |
+| ---- | ----------------- | ----- | ------ |
+| USK  | Unskilled Workers | Labor needing little training. | [Population]({{< relref "population.md#population-classes" >}}) |
+| PRO  | Professionals     | Skilled labor requiring long apprenticeships. | [Population]({{< relref "population.md#population-classes" >}}) |
+| SLD  | Soldiers          | All military personnel. | [Population]({{< relref "population.md#population-classes" >}}) |
+| UEM  | Unemployables     | All other citizens. All birth increases enter here. | [Population]({{< relref "population.md#population-classes" >}}) |
 
 Population cadres:
 
-| Code | Full name            | Notes                                                         |
-| ---- | -------------------- | ------------------------------------------------------------- |
-| TRN  | Trainees             | Allocation of USK being trained as professionals.             |
-| SPY  | Spies                | Allocation of 1 PRO + 1 SLD.                                  |
-| CNW  | Construction Workers | Allocation of 1 PRO + 1 USK.                                  |
-| RBL  | Rebels               | A tally of population willing to rebel.                       |
+| Code | Full name            | Notes | Detail |
+| ---- | -------------------- | ----- | ------ |
+| TRN  | Trainees             | Allocation of USK being trained as professionals. | [Population]({{< relref "population.md#population-cadres" >}}) |
+| SPY  | Spies                | Allocation of 1 PRO + 1 SLD. | [Population]({{< relref "population.md#population-cadres" >}}) |
+| CNW  | Construction Workers | Allocation of 1 PRO + 1 USK. | [Population]({{< relref "population.md#population-cadres" >}}) |
+| RBL  | Rebels               | A tally of population willing to rebel. | [Rebellion]({{< relref "rebellion.md" >}}) |
 
 ### Production
 
 These are produced by FACT and may be traded. All carry a technological level.
 
-| Code | Full name | Notes                            |
-| ---- | --------- | -------------------------------- |
-| MINE | Mines     | Extract resources from deposits. |
-| FACT | Factories | Manufacture units.               |
-| FARM | Farms     | Produce food.                    |
+| Code | Full name | Notes | Detail |
+| ---- | --------- | ----- | ------ |
+| MINE | Mines     | Extract resources from deposits. | [Mining]({{< relref "mining.md" >}}) |
+| FACT | Factories | Manufacture units. | [Shortages]({{< relref "shortages.md" >}}); manufacturing page not yet converted |
+| FARM | Farms     | Produce food. | [Farming]({{< relref "farming.md" >}}) |
 
 ### Miscellaneous
 
@@ -56,15 +56,15 @@ These are produced by FACT and may be traded. All carry a technological level.
 See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md" >}})
 for fuel use, mass formulas, capacity formulas, and operational constraints.
 
-| Code | Full name        | Notes                                                  |
-| ---- | ---------------- | ------------------------------------------------------ |
-| AUT  | Automation       | Replace USK in FARM, MINE, and FACT.                   |
-| LSP  | Life Support     | Recycle air and water in ships and enclosed colonies.  |
-| HDRV | Hyperdrives      | Propel ships through hyper-space.                      |
-| SDRV | Space Drives     | Maintain orbit and maneuver in combat.                 |
-| SEN  | Sensors          | Report on systems, ships/colonies, and conduct probes. |
-| TPT  | Transports       | Move units between ships/colonies or assist in combat. |
-| STU  | Structural Units | Frame for ships and colonies.                          |
+| Code | Full name        | Notes | Detail |
+| ---- | ---------------- | ----- | ------ |
+| AUT  | Automation       | Replace USK in FARM, MINE, and FACT. | [Automation]({{< relref "ship-systems.md#automation" >}}) |
+| LSP  | Life Support     | Recycle air and water in ships and enclosed colonies. | [Life Support]({{< relref "ship-systems.md#life-support" >}}) |
+| HDRV | Hyperdrives      | Propel ships through hyper-space. | [Hyperdrives]({{< relref "ship-systems.md#hyperdrives" >}}) |
+| SDRV | Space Drives     | Maintain orbit and maneuver in combat. | [Space Drives]({{< relref "ship-systems.md#space-drives" >}}) |
+| SEN  | Sensors          | Report on systems, ships/colonies, and conduct probes. | [Sensors]({{< relref "ship-systems.md#sensors" >}}) |
+| TPT  | Transports       | Move units between ships/colonies or assist in combat. | [Transports]({{< relref "ship-systems.md#transports" >}}) |
+| STU  | Structural Units | Frame for ships and colonies. | [Structural Units]({{< relref "ship-systems.md#structural-units" >}}) |
 
 ### Weapons
 
@@ -72,45 +72,45 @@ These are produced by FACT and may be traded or consumed. All carry a technologi
 See [Weapons]({{< relref "weapons.md" >}}) for fuel use, mass formulas, TL
 behavior, and stated combat applicability.
 
-| Code | Full name         | Notes                                              |
-| ---- | ----------------- | -------------------------------------------------- |
-| ASW  | Assault Weapons   | Carried by SLD in surface combat.                  |
-| ASC  | Assault Craft     | Land/space vehicles used to invade ships/colonies. |
-| MRBT | Military Robots   | Replace SLD units in combat.                       |
-| MSS  | Missiles          | Indirect combat weapon.                            |
-| MSL  | Missile Launchers | Launch MSS and ANM.                                |
-| ANM  | Anti-Missiles     | Destroy incoming MSS.                              |
-| EWP  | Energy Weapons    | Line of sight combat weapon.                       |
-| ESH  | Energy Shields    | Absorb EWP damage.                                 |
-| MTSP | Military Supplies | SLD combat supplies.                               |
+| Code | Full name         | Notes | Detail |
+| ---- | ----------------- | ----- | ------ |
+| ASW  | Assault Weapons   | Carried by SLD in surface combat. | [Weapons]({{< relref "weapons.md#assault-weapons" >}}) |
+| ASC  | Assault Craft     | Land/space vehicles used to invade ships/colonies. | [Weapons]({{< relref "weapons.md#assault-craft" >}}) |
+| MRBT | Military Robots   | Replace SLD units in combat. | [Weapons]({{< relref "weapons.md#military-robots" >}}) |
+| MSS  | Missiles          | Indirect combat weapon. | [Weapons]({{< relref "weapons.md#missiles" >}}) |
+| MSL  | Missile Launchers | Launch MSS and ANM. | [Weapons]({{< relref "weapons.md#missile-launchers" >}}) |
+| ANM  | Anti-Missiles     | Destroy incoming MSS. | [Weapons]({{< relref "weapons.md#anti-missiles" >}}) |
+| EWP  | Energy Weapons    | Line-of-sight combat weapon. | [Weapons]({{< relref "weapons.md#energy-weapons" >}}) |
+| ESH  | Energy Shields    | Absorb EWP damage. | [Weapons]({{< relref "weapons.md#energy-shields" >}}) |
+| MTSP | Military Supplies | SLD combat supplies. | [Weapons]({{< relref "weapons.md#military-supplies" >}}) |
 
 ### Prototypes
 
 These are produced by FACT and may be traded or consumed. All carry a technological level.
 
-| Code | Full name       | Notes                                      |
-| ---- | --------------- | ------------------------------------------ |
-| RSCH | Research Points | Used to pay for technological advancement. |
+| Code | Full name       | Notes | Detail |
+| ---- | --------------- | ----- | ------ |
+| RSCH | Research Points | Used to pay for technological advancement. | Technological advancement page not yet converted |
 
 ### Materials
 
 These are produced by FACT and may be traded or consumed. None carry a technological level.
 
-| Code | Full name      | Notes                       |
-| ---- | -------------- | --------------------------- |
-| CNGD | Consumer Goods | Used to pay the population. |
+| Code | Full name      | Notes | Detail |
+| ---- | -------------- | ----- | ------ |
+| CNGD | Consumer Goods | Used to pay the population. | [Consumer Goods]({{< relref "ship-systems.md#consumer-goods" >}}) |
 
 ### Resources
 
 These are farmed or mined, not produced by FACT. None carry a technological level.
 
-| Code | Full name              | Source | Notes                                                |
-| ---- | ---------------------- | ------ | ---------------------------------------------------- |
-| FOOD | Food                   | FARM   | Feeds the population.                                |
-| METS | Metallic Resources     | MINE   | Raw material consumed by factories to build units.   |
-| NMTS | Non-Metallic Resources | MINE   | Raw material consumed by factories to build units.   |
-| FUEL | Fuel                   | MINE   | Powers mines, farms, factories, engines, and combat. |
-| GOLD | Gold                   | MINE   | Currency used in the market and for wages.           |
+| Code | Full name              | Source | Notes | Detail |
+| ---- | ---------------------- | ------ | ----- | ------ |
+| FOOD | Food                   | FARM   | Feeds the population. | [Food]({{< relref "food.md" >}}) |
+| METS | Metallic Resources     | MINE   | Raw material consumed by factories to build units. | [Mining]({{< relref "mining.md" >}}) |
+| NMTS | Non-Metallic Resources | MINE   | Raw material consumed by factories to build units. | [Mining]({{< relref "mining.md" >}}) |
+| FUEL | Fuel                   | MINE   | Powers mines, farms, factories, engines, and combat. | [Mining]({{< relref "mining.md" >}}) |
+| GOLD | Gold                   | MINE   | Currency used in the market and for wages. | [Mining]({{< relref "mining.md" >}}) |
 
 ## Entities
 
