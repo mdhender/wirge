@@ -60,8 +60,8 @@ for fuel use, mass formulas, capacity formulas, and operational constraints.
 | ---- | ---------------- | ------------------------------------------------------ |
 | AUT  | Automation       | Replace USK in FARM, MINE, and FACT.                   |
 | LSP  | Life Support     | Recycle air and water in ships and enclosed colonies.  |
-| HEN  | Hyper Engines    | Propel ships through hyper-space.                      |
-| SPD  | Space Drives     | Maintain orbit and maneuver in combat.                 |
+| HDRV | Hyperdrives      | Propel ships through hyper-space.                      |
+| SDRV | Space Drives     | Maintain orbit and maneuver in combat.                 |
 | SEN  | Sensors          | Report on systems, ships/colonies, and conduct probes. |
 | TPT  | Transports       | Move units between ships/colonies or assist in combat. |
 | STU  | Structural Units | Frame for ships and colonies.                          |
@@ -128,6 +128,7 @@ Entities are ships or colonies and are frequently called "S/C" units in reports 
 The game engine's codes and technological levels depart from the original rule book and sample turn reports in a few places:
 
 - **Codes.** The engine uses longer, more readable codes (for example `MINE`, `FACT`, and `FARM`) in place of the rule book's shorter forms (`MIN`, `FCT`, `FRM`).
+- **Drive terminology and codes.** The original rule book calls `HDRV` units "hyper engines." The engine and published docs use "hyperdrive" and `HDRV`; they also use `SDRV` for space drives. These terms and codes intentionally depart from shorter rule-book-style abbreviations so they are harder to confuse with `SEN`.
 - **Structural units.** The rule book used `STU` (or `STUN`) for the base structural unit and `STUL` for a lighter, stronger version; later rule books added `SSTL` for an even lighter version. The engine replaces these with technological levels: `STU-1` replaces `STU`, and `STU-2` replaces `STUL`.
 - **Military supplies.** The rule book used `MTSP` with no TL, usable with any level of combat weapon. The engine adds a TL for consistency (`MTSP-1` replaces `MTSP`) but prohibits research to improve it.
 - **Research points.** The rule book used `RSCH` with no TL, usable to pay for any level of technological advancement. The engine adds a TL for consistency (`RSCH-1` replaces `RSCH`) but prohibits research to improve it.

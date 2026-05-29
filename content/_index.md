@@ -62,7 +62,7 @@ the section that matches what you need:
 - 4.5.2 - [Consumer Goods and Food]({{< relref "reference/ship-systems.md#consumer-goods" >}})
 - 4.5.2.1 - [Starvation Rule]({{< relref "reference/food.md#starvation" >}})
 - 4.5.3 - [Life Support Units]({{< relref "reference/ship-systems.md#life-support" >}})
-- 4.5.4 - [Hyper Engines]({{< relref "reference/ship-systems.md#hyper-engines" >}})
+- 4.5.4 - [Hyperdrives]({{< relref "reference/ship-systems.md#hyperdrives" >}})
 - 4.5.5 - [Space Drives]({{< relref "reference/ship-systems.md#space-drives" >}})
 - 4.5.6 - [Sensors]({{< relref "reference/ship-systems.md#sensors" >}})
 - 4.5.6.1 - [Probes]({{< relref "reference/ship-systems.md#sensors" >}})

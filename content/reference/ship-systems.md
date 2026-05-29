@@ -17,8 +17,8 @@ For the full unit catalog and code differences from the original rule book, see
 | `AUT` | Automation | Replaces `USK` labor in `FARM`, `MINE`, and `FACT` production. | 0 | 4 x TL MU |
 | `CNGD` | Consumer goods | Pays colony population. | 0 | 0.6 MU |
 | `LSP` | Life support | Supports population in ships, enclosed colonies, and orbiting colonies. | TL FUEL per turn | 8 x TL MU |
-| `HEN` | Hyper engine | Moves ships through hyper-space. | 40 FUEL x distance jumped per operating engine | 45 x TL MU |
-| `SPD` | Space drive | Maintains ship orbit and maneuvers in combat. | TL^2 FUEL per combat round | 25 x TL MU |
+| `HDRV` | Hyperdrive | Moves ships through hyper-space. | 40 FUEL x distance jumped per operating hyperdrive | 45 x TL MU |
+| `SDRV` | Space drive | Maintains ship orbit and maneuvers in combat. | TL^2 FUEL per combat round | 25 x TL MU |
 | `SEN` | Sensor | Reports systems, ships, colonies, and probes planets. | TL / 20 FUEL per turn | 2,998 + (2 x TL) MU |
 | `TPT` | Transport | Transfers population and material at a planet; carries soldiers in combat. | TL^2 / 10 FUEL per turn, proportional to capacity used | 4 x TL MU |
 | `STU` | Structural unit | Provides the frame for ships and colonies. | 0 | 0.5 MU for `STU-1`; 0.05 MU for `STU-2` |
@@ -89,30 +89,30 @@ For example, one `LSP-5` supports 25 population units.
 | Fuel use | TL FUEL per turn |
 | Mass | 8 x TL MU |
 
-## Hyper Engines
+## Hyperdrives
 
-`HEN` units propel ships through hyper-space, both within a solar system and
+`HDRV` units propel ships through hyper-space, both within a solar system and
 between solar systems. They are used only by ships.
 
 | Field | Value |
 | ----- | ----- |
-| Code | `HEN` |
-| Full name | Hyper engine |
+| Code | `HDRV` |
+| Full name | Hyperdrive |
 | Jump range | TL light years |
-| Propulsion capacity | 1,000 x TL MU per engine |
-| Fuel use | 40 FUEL x distance jumped per operating engine |
+| Propulsion capacity | 1,000 x TL MU per hyperdrive |
+| Fuel use | 40 FUEL x distance jumped per operating hyperdrive |
 | Mass | 45 x TL MU |
 
-A ship may carry any number of hyper engines. All hyper engines on a ship should
-be the same TL. If a ship has mixed-TL hyper engines, the lowest TL sets the
+A ship may carry any number of hyperdrives. All hyperdrives on a ship should
+be the same TL. If a ship has mixed-TL hyperdrives, the lowest TL sets the
 ship's jump range.
 
-When a ship jumps, only the number of hyper engines required by the ship's mass
-operate and consume fuel. The mass of the ship's hyper engines is excluded when
+When a ship jumps, only the number of hyperdrives required by the ship's mass
+operate and consume fuel. The mass of the ship's hyperdrives is excluded when
 calculating how many engines are required.
 
 ```text
-engines required = ceiling(non-HEN ship mass / (1,000 x engine TL))
+hyperdrives required = ceiling(non-HDRV ship mass / (1,000 x hyperdrive TL))
 ```
 
 For jump distance:
@@ -127,7 +127,7 @@ end in deep space.
 
 ## Space Drives
 
-`SPD` units maintain a ship's orbit around a planet and maneuver the ship in
+`SDRV` units maintain a ship's orbit around a planet and maneuver the ship in
 combat. Every ship must have at least one space drive. A ship's space drives do
 not have to share the same TL.
 
@@ -136,7 +136,7 @@ They cannot be used for interplanetary or interstellar travel.
 
 | Field | Value |
 | ----- | ----- |
-| Code | `SPD` |
+| Code | `SDRV` |
 | Full name | Space drive |
 | Ship requirement | At least 1 per ship |
 | Fuel use | TL^2 FUEL per combat round |

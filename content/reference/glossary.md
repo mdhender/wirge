@@ -67,8 +67,8 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 - **Habitability number** (`HN`) — An intrinsic [planet property]({{< relref "habitability.md" >}}) (0–25) that sets how much population and farming its surface supports and whether open-air colonies are allowed.
 - **Home system** — The solar system a player starts in; its planets are described in the player's initial turn report.
-- **Hyper engine** (`HEN`) — A unit that propels a ship through hyper-space, within a system or between systems. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#hyper-engines" >}}).
-- **Hyper-space** — The medium hyper engines travel through; jump range is measured in light years.
+- **Hyperdrive** (`HDRV`) — A unit that propels a ship through hyper-space, within a system or between systems. The original rule book calls this a hyper engine. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#hyperdrives" >}}).
+- **Hyper-space** — The medium hyperdrives travel through; jump range is measured in light years.
 
 ## J
 
@@ -128,7 +128,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Ship/colony** (S/C) — Collective term for an entity — that is, either a ship or a colony.
 - **Soldier** (`SLD`) — Military population.
 - **Solar system** — A set of one or more stars sharing the same co-ordinates. Named by its co-ordinates alone (e.g. `12-13-14`); each of its stars adds a letter suffix.
-- **Space drive** (`SPD`) — A unit that maintains a ship's orbit and maneuvers it in combat; cannot be used for interplanetary or interstellar travel. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#space-drives" >}}).
+- **Space drive** (`SDRV`) — A unit that maintains a ship's orbit and maneuvers it in combat; cannot be used for interplanetary or interstellar travel. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#space-drives" >}}).
 - **Spy** (`SPY`) — A population-cadre allocation of 1 professional and 1 soldier that reports on other players and incites rebellion.
 - **Standard of living** (`SOL`) — A measure of population well-being, shaped by pay and rations, that bears on morale.
 - **Star** — A stellar body within a solar system. Identified by the system co-ordinates plus a letter suffix (`A`, `B`, `C`, …) — for example `12-13-14A` — which is required even in a single-star system.
