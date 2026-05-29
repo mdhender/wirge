@@ -128,13 +128,14 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Production unit** — A unit that turns inputs into output: a mine, farm, or factory. See [The Production Cycle]({{< relref "../explanation/production-cycle.md" >}}).
 - **Professional** (`PRO`) — Skilled population requiring long apprenticeships; needed to manage production units.
 - **Propulsion capacity** — The mass a hyperdrive can move through hyper-space: 1,000 x TL MU per operating hyperdrive. See [Hyperdrives]({{< relref "ship-systems.md#hyperdrives" >}}).
+- **Prototype** (`PRTO`) — A storable, tradeable unit (`PRTO-N`) formed from accumulated `RSCH-N`; a colony consumes one with an upgrade order to raise its own or a target entity's `TL`. See [Upgrading]({{< relref "technological-advancement.md#upgrading" >}}).
 
 ## R
 
 - **Race** — All the nations on one planet, considered together; the basis of a future [Race Victory]({{< relref "victory-conditions.md" >}}).
 - **Ration** — The FOOD served per population unit per turn, set by a `RATION` order. A full ration is 0.25 FOOD units. See [Food]({{< relref "food.md" >}}).
 - **Rebel** (`RBL`) — A tally of population willing to rebel, not a separate class; rises with underpayment, underfeeding, and especially starvation.
-- **Research point** (`RSCH`) — Output used to pay for [technological advancement]({{< relref "technological-advancement.md#research" >}}).
+- **Research point** (`RSCH`) — Output a researching factory group manufactures (`RSCH-N`, at the level researched); accumulates in storage until it forms a [prototype]({{< relref "technological-advancement.md#research" >}}).
 - **Resource** — A farmed or mined substance: FOOD, METS, NMTS, FUEL, or GOLD.
 
 ## S

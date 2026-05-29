@@ -86,11 +86,13 @@ behavior, and stated combat applicability.
 
 ### Prototypes
 
-These are produced by FACT and may be traded or consumed. All carry a technological level.
+These may be traded or consumed and all carry a technological level. `RSCH` is
+produced by FACT; `PRTO` is formed by the engine from accumulated `RSCH`.
 
 | Code | Full name       | Notes | Detail |
 | ---- | --------------- | ----- | ------ |
-| RSCH | Research Points | Used to pay for technological advancement. | [Technological Advancement]({{< relref "technological-advancement.md" >}}) |
+| RSCH | Research Points | Manufactured by a researching factory group; accumulates toward a prototype. | [Technological Advancement]({{< relref "technological-advancement.md#research" >}}) |
+| PRTO | Prototype       | Formed from accumulated `RSCH`; consumed by a colony's upgrade order to raise a colony's or ship's `TL`. | [Technological Advancement]({{< relref "technological-advancement.md#upgrading" >}}) |
 
 ### Materials
 
@@ -136,6 +138,6 @@ The game engine's codes and technological levels depart from the original rule b
 {{< callout type="warning" >}}
 **TODO:** A few classifications here are provisional and should be revisited:
 
-- The _Prototypes_ category (currently only RSCH) is a placeholder. Revisit it when we design the Cargo section of the ship/colony turn reports; that work should clarify how RSCH, CNGD, and other factory output are grouped.
+- The _Prototypes_ category (RSCH and PRTO) is a placeholder. Revisit it when we design the Cargo section of the ship/colony turn reports; that work should clarify how RSCH, CNGD, and other factory output are grouped.
 - GOLD is listed as a resource with a MINE source as a stopgap. The rule book gives GOLD no source; reclassify it once we settle how pay and trade work with CNGD.
 {{< /callout >}}

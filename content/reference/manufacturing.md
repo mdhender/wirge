@@ -22,8 +22,10 @@ through the year and how a shortage delays delivery, see
 
 ## Labor
 
-A factory group consumes `PRO` and `USK` each turn in proportion to its factory
-units. A larger group is more efficient and spends less labor per factory unit.
+A factory group requires `PRO` and `USK` each turn in proportion to its factory
+units; the [labor]({{< relref "population.md#labor" >}}) returns to the pool at
+the end of the turn. A larger group is more efficient and needs less labor per
+factory unit.
 
 | Factory units in group | `PRO` per `FACT` | `USK` per `FACT` |
 | ---------------------- | ---------------- | ---------------- |
@@ -81,7 +83,10 @@ The two are equivalent in the total structural mass and cost needed to enclose a
 given mass; only the per-unit cost and the count required change. When this
 lands, update the `STU-2` cost row above and the per-mass structural counts (and
 the one-for-one substitution note) in the
-[Comparison chart]({{< relref "colonies-and-ships.md#comparison" >}}).
+[Comparison chart]({{< relref "colonies-and-ships.md#comparison" >}}). It also
+makes an `STU-2` hull cheaper to
+[upgrade]({{< relref "technological-advancement.md#upgrading" >}}), since the
+labor scales with the structural-unit count; note that there once it holds.
 {{< /callout >}}
 
 ## Factory units required

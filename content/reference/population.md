@@ -62,6 +62,19 @@ there.
 | `CNW` | 0.500 (0.375 + 0.125) | 0.0625% |
 | `RBL` | N/A | N/A |
 
+## Labor
+
+Population supplies the labor that every process requires each turn —
+[farming]({{< relref "farming.md" >}}),
+[mining]({{< relref "mining.md" >}}),
+[manufacturing]({{< relref "manufacturing.md" >}}),
+[assembling]({{< relref "manufacturing.md#assembling" >}}),
+[upgrading]({{< relref "technological-advancement.md#upgrading" >}}), combat, and
+the rest. A process draws the labor it needs from the ship or colony's pool for
+the turn and returns it to the pool at the end of the turn; labor is never
+consumed. A process that cannot draw the labor it requires is throttled — see
+[Shortages]({{< relref "shortages.md" >}}).
+
 ## Population Changes
 
 | Change | Rule |
