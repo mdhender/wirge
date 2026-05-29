@@ -29,11 +29,13 @@ also be bought at a station; see
 
 A nation establishes a trade station with a
 [set up order]({{< relref "colonies-and-ships.md#establishment" >}}) that states
-the words "trade station". The minimum size of a trade station is **3,000
-structural units** ([`STU`]({{< relref "ship-systems.md#structural-units" >}})),
-**500 life support units** ([`LSP`]({{< relref "ship-systems.md#life-support" >}})),
-and **100 [`PRO`]({{< relref "units.md#population-units" >}})**. There is no
-maximum size.
+the words "trade station". The minimum size of a trade station is enough
+[structure]({{< relref "ship-systems.md#structural-units" >}}) to enclose **300
+[mass units]({{< relref "mass.md" >}})** — the rule book's 3,000 structural units
+at an [orbiting colony's rate]({{< relref "colonies-and-ships.md#comparison" >}})
+of 10 structural units per mass unit — together with **500 life support units**
+([`LSP`]({{< relref "ship-systems.md#life-support" >}})) and **100
+[`PRO`]({{< relref "units.md#population-units" >}})**. There is no maximum size.
 
 Trade stations carry a news service.
 
