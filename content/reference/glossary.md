@@ -73,6 +73,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 - **Habitability number** (`HN`) — An intrinsic [planet property]({{< relref "habitability.md" >}}) (0–25) that sets how much population and farming its surface supports and whether open-air colonies are allowed.
 - **Home system** — The solar system a player starts in; its planets are described in the player's initial turn report.
+- **Hull** — The structural frame of a ship or colony, formed from structural units (`STU`). Its size sets the labor an [upgrade]({{< relref "technological-advancement.md#upgrading" >}}) costs. See [Structural Units]({{< relref "ship-systems.md#structural-units" >}}).
 - **Hyper engine** — The original rule-book term for a hyperdrive.
 - **Hyperdrive** (`HDRV`) — A unit that propels a ship through hyper-space, within a system or between systems. The original rule book calls this a hyper engine. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#hyperdrives" >}}).
 - **Hyper-space** — The medium hyperdrives travel through; jump range is measured in light years.
