@@ -56,7 +56,6 @@ of the unit being built.
 | Farm (`FARM`)              | 4 + TL          | 2 + TL          |
 | Hyperdrive (`HDRV`)        | 25 × TL         | 20 × TL         |
 | Life support (`LSP`)       | 3 × TL          | 5 × TL          |
-| Light structural (`STU-2`) | 0.01            | 0.04            |
 | Military robot (`MRBT`)    | 10 + TL         | 10 + TL         |
 | Military supplies (`MTSP`) | 0.02            | 0.02            |
 | Mine (`MINE`)              | 5 + TL          | 5 + TL          |
@@ -70,6 +69,20 @@ of the unit being built.
 
 `STU-2` is built only by orbiting colonies, which do not build `STU-1`; see
 [Structural Units]({{< relref "ship-systems.md#structural-units" >}}).
+
+{{< callout type="warning" >}}
+**TODO:** Structural-unit TL scaling is being revised. Today each TL step makes
+an `STU` one-tenth the mass and cost of the level below (`STU-1` = 0.1 `METS` /
+0.4 `NMTS`, `STU-2` = 0.01 / 0.04) while every unit encloses the same mass, so an
+`STU-2` substitutes one-for-one for an `STU-1`. The planned model instead gives
+every level the same mass and cost as `STU-1` (0.1 `METS` / 0.4 `NMTS`) and has
+each TL step enclose ten times as much mass, so one `STU-2` replaces ten `STU-1`.
+The two are equivalent in the total structural mass and cost needed to enclose a
+given mass; only the per-unit cost and the count required change. When this
+lands, update the `STU-2` cost row above and the per-mass structural counts (and
+the one-for-one substitution note) in the
+[Comparison chart]({{< relref "colonies-and-ships.md#comparison" >}}).
+{{< /callout >}}
 
 ## Factory units required
 
