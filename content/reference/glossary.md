@@ -26,7 +26,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 - **Cadre** — A population allocation tracked separately from census totals. Includes `TRN`, `SPY`, `CNW`, and `RBL`.
 - **Cluster** — The complete game map: 100 solar systems whose locations differ from one game to the next.
-- **Colony** — A permanent installation a player establishes at a planet, in one of three forms: open-air, enclosed, or orbiting.
+- **Colony** — A permanent installation a player establishes at a planet, in one of three forms: open-air, enclosed, or orbiting. See [Colonies and Ships]({{< relref "colonies-and-ships.md" >}}).
 - **Combat round** (`CR`) — One increment of a combat exchange; some weapons' fuel use is measured per combat round.
 - **Construction worker** (`CNW`) — A population-cadre allocation of 1 professional and 1 unskilled worker that carries out assembly and dis-assembly orders.
 - **Consumer goods** (`CNGD`) — Factory output used to pay the population. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#consumer-goods" >}}).
@@ -48,7 +48,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Enclosed colony** (`CENC`) — A sealed surface colony, allowed on any planet; requires life support.
 - **Energy shield** (`ESH`) — A unit that absorbs energy-weapon damage. See [Weapons]({{< relref "weapons.md#energy-shields" >}}).
 - **Energy weapon** (`EWP`) — A line-of-sight combat weapon. See [Weapons]({{< relref "weapons.md#energy-weapons" >}}).
-- **Entity** — A ship or colony. Often written "S/C" (ship/colony) in reports and documentation.
+- **Entity** — A ship or colony. Often written "S/C" (ship/colony) in reports and documentation. See [Colonies and Ships]({{< relref "colonies-and-ships.md" >}}).
 
 ## F
 
@@ -138,6 +138,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 ## S
 
 - **Sensor** (`SEN`) — A unit that reports on solar systems and on ships and colonies, and conducts probes. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#sensors" >}}).
+- **Set up order** — An order that establishes a new ship or colony by transferring materials from an existing entity at the same location. See [Colonies and Ships]({{< relref "colonies-and-ships.md#establishment" >}}).
 - **Ship** (`SHIP`) — A mobile entity that can move between orbits and systems; requires life support and cannot host factories or mines.
 - **Ship/colony** (S/C) — Collective term for an entity — that is, either a ship or a colony.
 - **Soldier** (`SLD`) — Military population.

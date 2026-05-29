@@ -22,7 +22,7 @@ when complete."
 | 1 — Stub the linked-but-unconverted reference pages | DONE |
 | 2 — Create the page and convert the comparison chart | DONE |
 | 3 — Write the "Establishment" section | DONE |
-| 4 — Wire the page into the site and apply weights | TODO |
+| 4 — Wire the page into the site and apply weights | DONE |
 | 5 — Build, verify, and consistency pass | TODO |
 
 Keep this table in sync with the per-task **Status** lines below.
@@ -281,7 +281,7 @@ section describing the set up order and the materials it must carry.
 
 ## Task 4 — Wire the page into the site and apply weights
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** make the new page reachable, apply the weight resolution, and link the
 Working Index lines that now have real targets. No new body content.

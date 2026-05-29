@@ -1,6 +1,6 @@
 ---
 title: Mining
-weight: 60
+weight: 58
 ---
 
 **Mining** extracts natural resources from a planet's

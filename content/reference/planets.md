@@ -33,7 +33,7 @@ type and the surface limits derived from the HN.
 
 ## What a planet can hold
 
-A player may establish at most one open colony, one enclosed colony, and one orbiting colony at a single planet, plus any number of ships.
+A player may establish at most one open colony, one enclosed colony, and one orbiting colony at a single planet, plus any number of ships; see [Colonies and Ships]({{< relref "colonies-and-ships.md" >}}) for this limit across all entity types.
 What types of colonies are allowed depends on the planet's type and HN:
 
 | Planet          | Open Colony | Enclosed Colony | Orbiting Colony |

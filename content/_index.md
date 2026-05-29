@@ -69,9 +69,9 @@ the section that matches what you need:
 - 4.5.7 - [Transports]({{< relref "reference/ship-systems.md#transports" >}})
 - 4.5.8 - [Structural Units]({{< relref "reference/ship-systems.md#structural-units" >}})
 - 4.5.9 - [Light Structural Units]({{< relref "reference/ship-systems.md#structural-units" >}})
-- 5 - COLONIES AND SHIPS
-- 5.1 - Chart
-- 5.2 - Establishment
+- 5 - [COLONIES AND SHIPS]({{< relref "reference/colonies-and-ships.md" >}})
+- 5.1 - [Chart]({{< relref "reference/colonies-and-ships.md" >}})
+- 5.2 - [Establishment]({{< relref "reference/colonies-and-ships.md#establishment" >}})
 - 6 - MANUFACTURING
 - 6.1 - Factory Groups
 - 6.2 - Labor
@@ -156,15 +156,15 @@ the section that matches what you need:
 - 14.3 - Enforcement of Treaties and Agreements
 - 15 - [VICTORY CONDITIONS]({{< relref "reference/victory-conditions.md" >}})
 - 16 - SEQUENCE OF TURN EXECUTION
-- 17 - WRITING ORDERS
+- 17 - [WRITING ORDERS]({{< relref "reference/writing-orders.md" >}})
 - 17.1 - General Rules
 - 17.2 - List of Orders
 - 17.2.1 - Combat orders
-- 17.2.2 - Set Up Orders
-- 17.2.3 - Assembly orders
+- 17.2.2 - [Set Up Orders]({{< relref "reference/writing-orders.md" >}})
+- 17.2.3 - [Assembly orders]({{< relref "reference/writing-orders.md" >}})
 - 17.2.4 - Dis-assembly orders
 - 17.2.5 - Build Change Orders
-- 17.2.6 - Transfer Orders
+- 17.2.6 - [Transfer Orders]({{< relref "reference/writing-orders.md" >}})
 - 17.2.7 - Mining Change Orders
 - 17.2.8 - Market Order
 - 17.2.9 - Survey Orders
@@ -188,8 +188,8 @@ the section that matches what you need:
 - A.3 - GROUPS
 - A.4 - HABITABILITY NUMBER
 - A.5 - HYPER SPACE
-- A.6 - MASS
-- A.7 - STORAGE
+- A.6 - [MASS]({{< relref "reference/mass.md" >}})
+- A.7 - [STORAGE]({{< relref "reference/mass.md#storage" >}})
 - Appendix B
 - B.1 - QUANTITIES REPRESENTED BY UNITS
 - Appendix C: Sample Documents
