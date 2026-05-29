@@ -21,7 +21,7 @@ when complete."
 | ---- | ------ |
 | 1 — Stub the linked-but-unconverted reference pages | DONE |
 | 2 — Create the page and convert the comparison chart | DONE |
-| 3 — Write the "Establishment" section | TODO |
+| 3 — Write the "Establishment" section | DONE |
 | 4 — Wire the page into the site and apply weights | TODO |
 | 5 — Build, verify, and consistency pass | TODO |
 
@@ -239,7 +239,7 @@ codes. Fold both footnotes in.
 
 ## Task 3 — Write the "Establishment" section
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** convert the source's "Establishment" prose into a `## Establishment`
 section describing the set up order and the materials it must carry.

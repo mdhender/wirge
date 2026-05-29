@@ -30,3 +30,29 @@ When counting the structural units an entity requires, units held in
 [storage]({{< relref "mass.md#storage" >}}) count as only half their
 [mass]({{< relref "mass.md" >}}), and the mass of the structural units housing
 the entity is not counted at all.
+
+## Establishment
+
+A **set up order** establishes a new entity (see
+[Writing Orders]({{< relref "writing-orders.md" >}})). It transfers materials —
+any type and amount, including population — from an existing ship or colony at
+the same location to the new site. A set up order is used only for establishment
+and precludes [transfer]({{< relref "writing-orders.md" >}}) and
+[assembly]({{< relref "writing-orders.md" >}}) orders on that entity.
+
+A set up order must transfer:
+
+- **Structural units (`STU`)** — the frame for the entity. See
+  [Structural Units]({{< relref "ship-systems.md#structural-units" >}}).
+- **Either farm units (`FARM`), or enough food (`FOOD`) to feed the population
+  for at least one turn.** See [Farming]({{< relref "farming.md" >}}) and
+  [Food]({{< relref "food.md" >}}).
+- **At least one population unit.** An unpopulated entity is available for
+  control by any other nation that installs a population unit there.
+- **Enough construction workers (`CNW`) to assemble the entity.** See
+  [Units]({{< relref "units.md" >}}).
+
+If the transferred construction workers are insufficient to complete the
+assembly, only the proportional portion is completed. When the construction
+workers finish, they return to the ship or colony they were transferred from,
+unless the set up order specifies otherwise.
