@@ -29,6 +29,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Cluster** — The complete game map: 100 solar systems whose locations differ from one game to the next.
 - **Colony** — A permanent installation a player establishes at a planet, in one of three forms: open-air, enclosed, or orbiting. See [Colonies and Ships]({{< relref "colonies-and-ships.md" >}}).
 - **Combat round** (`CR`) — One increment of a combat exchange; some weapons' fuel use is measured per combat round.
+- **Commission** — The 1% fee a seller pays a trade station on a completed trade; the station keeps it and may use it for any purpose. See [Trade]({{< relref "trade.md#trade-stations" >}}).
 - **Construction worker** (`CNW`) — A population-cadre allocation of 1 professional and 1 unskilled worker that carries out assembly and dis-assembly orders.
 - **Consumer goods** (`CNGD`) — Factory output used to pay the population. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#consumer-goods" >}}).
 - **Control** — A player's claim over a planet, established by an orbiting or surface colony — or a trade station — and a declaration of control.
@@ -93,7 +94,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 ## M
 
-- **Market** — The home-planet market (and trade stations) where gold is exchanged for consumer goods and units are traded.
+- **Market** — A home-planet market (and trade stations) where gold is exchanged for consumer goods and units are traded. See [Trade]({{< relref "trade.md#home-planet-markets" >}}).
 - **Material** — In transport rules, resources, basic units other than population, research points, and technological levels. See [Transports]({{< relref "ship-systems.md#transports" >}}).
 - **Mass unit** (`MU`) — The standard measure of mass, and of resource quantity.
 - **Metallic resources** (`METS`) — Mined raw material (metals other than gold) consumed by factories.
@@ -161,7 +162,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Technological level** (`TL`) — A unit's tech rating, which sets its mass, cost, and effectiveness. A ship or colony raises its `TL` through [technological advancement]({{< relref "technological-advancement.md" >}}).
 - **Technology transfer** — Raising a ship or colony's `TL` by establishing it from, or transferring levels from, a higher-`TL` ship or colony. See [Technological Advancement]({{< relref "technological-advancement.md#technology-transfer" >}}).
 - **Terrestrial** — A spherical [planet]({{< relref "planets.md#types" >}}) type, not necessarily "earth-like." Habitability number 0–25.
-- **Trade station** — An installation for trade between players; it can also establish control of a planet.
+- **Trade station** — An orbiting colony whose only function is trade between nations; it can also establish control of a planet. See [Trade]({{< relref "trade.md#trade-stations" >}}).
 - **Trainee** (`TRN`) — A population-cadre allocation of an unskilled worker being trained into a professional.
 - **Transport** (`TPT`) — A unit that moves units between ships and colonies and carries soldiers into combat. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#transports" >}}).
 - **Thrust factor** — A space drive's combat maneuver value: TL^2 x 1,000. A ship's combat movement is total thrust factor divided by ship mass. See [Space Drives]({{< relref "ship-systems.md#space-drives" >}}).

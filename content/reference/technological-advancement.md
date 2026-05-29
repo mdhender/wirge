@@ -124,13 +124,9 @@ the captured `PRTO` rather than seizing it.
 
 ## Buying technology
 
-A `PRTO` can be bought at a market or trade station, through the
+A `PRTO` can be bought at a
+[market or trade station]({{< relref "trade.md" >}}), through the
 [market order]({{< relref "writing-orders.md" >}}). Like a researched or
 transferred prototype, a purchased `PRTO` raises no `TL` on its own; a separate
 [upgrade order](#upgrading) applies it, and the buyer holds it under the same
 limits as any other prototype.
-
-{{< callout type="warning" >}}
-**TODO:** The Trade reference page (markets and trade stations) is not yet
-converted. Link the market and trade-station detail here once it exists.
-{{< /callout >}}
