@@ -67,6 +67,8 @@ These are produced by FACT and may be traded. All carry a technological level.
 ### Weapons
 
 These are produced by FACT and may be traded or consumed. All carry a technological level.
+See [Weapons]({{< relref "weapons.md" >}}) for fuel use, mass formulas, TL
+behavior, and stated combat applicability.
 
 | Code | Full name         | Notes                                              |
 | ---- | ----------------- | -------------------------------------------------- |

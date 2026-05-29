@@ -51,7 +51,7 @@ the section that matches what you need:
 - 4.2.1 - [Orders applicable to population units]({{< relref "reference/population.md#orders" >}})
 - 4.2.2 - [Population units on ships]({{< relref "reference/population.md#ships" >}})
 - 4.2.3 - [Population Charts]({{< relref "reference/population.md#population-classes" >}})
-- 4.3 - [Weapons]({{< relref "reference/units.md#weapons" >}})
+- 4.3 - [Weapons]({{< relref "reference/weapons.md" >}})
 - 4.4 - [Production Units]({{< relref "reference/units.md#production" >}})
 - 4.4.1 - [Production Chart]({{< relref "reference/units.md#production" >}})
 - 4.4.2 - [Farms]({{< relref "reference/farming.md" >}})

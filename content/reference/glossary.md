@@ -9,10 +9,10 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 ## A
 
-- **Anti-missile** (`ANM`) — A weapon launched by a missile launcher to destroy incoming missiles.
+- **Anti-missile** (`ANM`) — A weapon launched by a missile launcher to destroy incoming missiles. See [Weapons]({{< relref "weapons.md#anti-missiles" >}}).
 - **Assembly** — An order family that forms or disassembles units, including `SPY` and `CNW` population-cadre allocations. See [Population]({{< relref "population.md#orders" >}}).
-- **Assault craft** (`ASC`) — A land/space vehicle used to invade a ship or colony.
-- **Assault weapon** (`ASW`) — A weapon carried by soldiers in surface combat.
+- **Assault craft** (`ASC`) — A land/space vehicle used to invade a ship or colony. See [Weapons]({{< relref "weapons.md#assault-craft" >}}).
+- **Assault weapon** (`ASW`) — A weapon carried by soldiers in surface combat. See [Weapons]({{< relref "weapons.md#assault-weapons" >}}).
 - **Asteroid** — A [planet]({{< relref "planets.md#types" >}}) type too small to be spherical; represents an entire asteroid belt and is treated as a single planet. Its habitability number is always 0.
 - **Automation** (`AUT`) — A unit that replaces unskilled workers as labor in farms, mines, and factories.
 
@@ -43,8 +43,8 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Eleventh orbit** (11th orbit) — A bookkeeping slot on each star, addressed as `<star>/11` (for example `00-00-00A/11`), used to hold a ship that has arrived by an interstellar jump. It is not a planetary orbit — those run 1–10 — and never holds a planet; a ship there must move to an orbit from 1 to 10 before it can act at any planet. See [Game Setup]({{< relref "game-setup.md#11th-orbit" >}}).
 - **Empire** — *(Future rules.)* A collection of nations; the basis of a future [Empire Victory]({{< relref "victory-conditions.md" >}}). Not defined in this version of the game.
 - **Enclosed colony** (`CENC`) — A sealed surface colony, allowed on any planet; requires life support.
-- **Energy shield** (`ESH`) — A unit that absorbs energy-weapon damage.
-- **Energy weapon** (`EWP`) — A line-of-sight combat weapon.
+- **Energy shield** (`ESH`) — A unit that absorbs energy-weapon damage. See [Weapons]({{< relref "weapons.md#energy-shields" >}}).
+- **Energy weapon** (`EWP`) — A line-of-sight combat weapon. See [Weapons]({{< relref "weapons.md#energy-weapons" >}}).
 - **Entity** — A ship or colony. Often written "S/C" (ship/colony) in reports and documentation.
 
 ## F
@@ -83,12 +83,12 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Market** — The home-planet market (and trade stations) where gold is exchanged for consumer goods and units are traded.
 - **Mass unit** (`MU`) — The standard measure of mass, and of resource quantity.
 - **Metallic resources** (`METS`) — Mined raw material (metals other than gold) consumed by factories.
-- **Military robot** (`MRBT`) — A unit that replaces soldier units in combat.
-- **Military supplies** (`MTSP`) — Ammunition, medicines, and the like, consumed by soldiers during combat.
+- **Military robot** (`MRBT`) — A unit that replaces soldier units in combat. See [Weapons]({{< relref "weapons.md#military-robots" >}}).
+- **Military supplies** (`MTSP`) — Ammunition, medicines, and the like, consumed by soldiers during combat. See [Weapons]({{< relref "weapons.md#military-supplies" >}}).
 - **Mine** (`MINE`) — A production unit that extracts a resource from a deposit; works only at a surface colony. See [Mining]({{< relref "mining.md" >}}).
 - **Mine group** — A set of `MINE` units assigned to a single deposit. Each deposit has at most one mine group.
-- **Missile** (`MSS`) — An indirect combat weapon launched by a missile launcher.
-- **Missile launcher** (`MSL`) — A unit that launches missiles and anti-missiles.
+- **Missile** (`MSS`) — An indirect combat weapon launched by a missile launcher. See [Weapons]({{< relref "weapons.md#missiles" >}}).
+- **Missile launcher** (`MSL`) — A unit that launches missiles and anti-missiles. See [Weapons]({{< relref "weapons.md#missile-launchers" >}}).
 - **Morale** — A population's contentment; declines when the actual ration falls below a full ration. See [Food]({{< relref "food.md#morale" >}}).
 
 ## N
@@ -155,7 +155,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 ## W
 
-- **Weapon** — A combat unit: `ASW`, `ASC`, `MRBT`, `MSS`, `MSL`, `ANM`, `EWP`, `ESH`, or `MTSP`. See [Units]({{< relref "units.md#weapons" >}}).
+- **Weapon** — A combat unit: `ASW`, `ASC`, `MRBT`, `MSS`, `MSL`, `ANM`, `EWP`, `ESH`, or `MTSP`. See [Weapons]({{< relref "weapons.md" >}}).
 - **Work in process** (`WIP`) — A production unit's accumulated progress toward its output, advancing 25% per active turn. See [Shortages]({{< relref "shortages.md#work-in-process-and-timing" >}}).
 
 ## Y
