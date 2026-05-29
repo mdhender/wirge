@@ -20,7 +20,7 @@ when complete."
 | Task | Status |
 | ---- | ------ |
 | 1 — Stub the linked-but-unconverted reference pages | DONE |
-| 2 — Create the page and convert the comparison chart | TODO |
+| 2 — Create the page and convert the comparison chart | DONE |
 | 3 — Write the "Establishment" section | TODO |
 | 4 — Wire the page into the site and apply weights | TODO |
 | 5 — Build, verify, and consistency pass | TODO |
@@ -33,9 +33,12 @@ Keep this table in sync with the per-task **Status** lines below.
 
 Produce one authoritative reference page describing the four entity types (open,
 enclosed, and orbiting colonies, and ships) and how a player **establishes** one
-with a set up order. The page must match the house style of the existing
-reference pages and must not duplicate rules that already live elsewhere — it
-links to them instead.
+with a set up order.
+
+Use the Diátaxis skill (.agents/skills/diataxis/SKILL.md) when writing documentation.
+
+The page must match the style of the existing reference pages and must not duplicate
+rules that already live elsewhere — it links to them instead.
 
 ## Source material
 
@@ -187,7 +190,7 @@ the site builds clean. No real content from the manual yet.
 
 ## Task 2 — Create the page and convert the comparison chart
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** create `content/reference/colonies-and-ships.md` with front matter, a
 short intro, and the comparison chart converted to a Hugo table using engine
