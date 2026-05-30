@@ -51,7 +51,9 @@ occurs. A captured ship or colony also gains rebels at the moment of transfer
 ## Learning rebel counts
 
 Because rebel counts are never reported directly, a player must station a `SPY`
-to gather the information. The spy functions that bear on rebellion:
+to gather the information. The
+[spy functions]({{< relref "espionage.md#spy-functions" >}}) that bear on
+rebellion:
 
 | Function | Effect |
 | -------- | ------ |

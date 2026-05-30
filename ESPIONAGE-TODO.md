@@ -18,10 +18,10 @@ DONE when complete."
 
 | Task | Status |
 | ---- | ------ |
-| 1 — Create the page; intro + Spy Functions table + functions A–C | TODO |
-| 2 — Functions D–F (suppression math) | TODO |
-| 3 — Wire the page into the site and apply weight | TODO |
-| 4 — Build, verify, and consistency pass | TODO |
+| 1 — Create the page; intro + Spy Functions table + functions A–C | DONE |
+| 2 — Functions D–F (suppression math) | DONE |
+| 3 — Wire the page into the site and apply weight | DONE |
+| 4 — Build, verify, and consistency pass | DONE |
 
 Keep this table in sync with the per-task **Status** lines below.
 
@@ -196,7 +196,7 @@ these heading slugs so the wiring in task 3 resolves:
 
 ## Task 1 — Create the page; intro + Spy Functions table + functions A–C
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** create `content/reference/espionage.md` with front matter, the intro
 paragraph, the `## Spy functions` table, the locality/persistence rules, and the
@@ -250,7 +250,7 @@ C Uncover Foreign Spy).
 
 ## Task 2 — Functions D–F (suppression math)
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add the remaining three function sections.
 
@@ -303,7 +303,7 @@ note for it.
 
 ## Task 3 — Wire the page into the site and apply weight
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** make the page reachable and link the Working-Index lines that now have
 a real target. No new body content.
@@ -345,7 +345,7 @@ a real target. No new body content.
 
 ## Task 4 — Build, verify, and consistency pass
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** confirm everything builds, links resolve, and nothing regressed.
 

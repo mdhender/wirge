@@ -139,13 +139,13 @@ the section that matches what you need:
 - 11.12 - [Captured Colonies]({{< relref "reference/combat.md#captured-colonies" >}})
 - 11.12.1 - [Captured population units]({{< relref "reference/combat.md#captured-population-units" >}})
 - 11.13 - [Combat and Ship/Colony TL]({{< relref "reference/combat.md#combat-and-ship-or-colony-tl" >}})
-- 12 - ESPIONAGE
-- 12.1 - Rebel Quantity and Type
-- 12.2 - Convert Rebels
-- 12.3 - Uncover Foreign Spy
-- 12.4 - Suppress Foreign Spy
-- 12.5 - Incite Rebellion
-- 12.6 - Obtain Secrets
+- 12 - [ESPIONAGE]({{< relref "reference/espionage.md" >}})
+- 12.1 - [Rebel Quantity and Type]({{< relref "reference/espionage.md#rebel-quantity-and-type" >}})
+- 12.2 - [Convert Rebels]({{< relref "reference/espionage.md#convert-rebels" >}})
+- 12.3 - [Uncover Foreign Spy]({{< relref "reference/espionage.md#uncover-foreign-spy" >}})
+- 12.4 - [Suppress Foreign Spy]({{< relref "reference/espionage.md#suppress-foreign-spy" >}})
+- 12.5 - [Incite Rebellion]({{< relref "reference/espionage.md#incite-rebellion" >}})
+- 12.6 - [Obtain Secrets]({{< relref "reference/espionage.md#obtain-secrets" >}})
 - 13 - CONTROL OF PLANETS
 - 13.1 - Taking Control
 - 13.2 - Controlled Planets

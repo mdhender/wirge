@@ -157,7 +157,9 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Soldier** (`SLD`) — Military population.
 - **Solar system** — A set of one or more stars sharing the same co-ordinates. Named by its co-ordinates alone (e.g. `12-13-14`); each of its stars adds a letter suffix.
 - **Space drive** (`SDRV`) — A unit that maintains a ship's orbit and maneuvers it in combat; cannot be used for interplanetary or interstellar travel. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#space-drives" >}}).
-- **Spy** (`SPY`) — A population-cadre allocation of 1 professional and 1 soldier that reports on other players and incites rebellion.
+- **Spy** (`SPY`) — A population-cadre allocation of 1 professional and 1 soldier that reports on other nations and incites rebellion. See [Espionage]({{< relref "espionage.md" >}}).
+- **Spy function** — One of the six actions (`A`–`F`) a spy unit can perform in a turn: rebel quantity and type, convert rebels, uncover foreign spy, suppress foreign spy, incite rebellion, or obtain secrets. See [Espionage]({{< relref "espionage.md#spy-functions" >}}).
+- **Spy unit** — A `SPY` cadre on a ship or colony, performing one spy function per turn. See [Espionage]({{< relref "espionage.md" >}}).
 - **Standard of living** (`SOL`) — A measure of population well-being, shaped by pay and rations, that bears on morale.
 - **Star** — A stellar body within a solar system. Identified by the system co-ordinates plus a letter suffix (`A`, `B`, `C`, …) — for example `12-13-14A` — which is required even in a single-star system.
 - **Starvation** — Loss of population when the actual ration falls below the survival ration (25% of a full ration). See [Food]({{< relref "food.md#starvation" >}}).
