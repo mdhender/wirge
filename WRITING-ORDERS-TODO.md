@@ -41,7 +41,7 @@ site and confirm a clean build.
 | 11 — Draft, Disband, Pay, Ration orders | DONE |
 | 12 — Control & Un-control orders | DONE |
 | 13 — Naming orders | DONE |
-| 14 — Trade station & Colonization orders | TODO |
+| 14 — Trade station & Colonization orders | DONE |
 | 15 — Create the how-to; front matter, intro, scaffolding | TODO |
 | 16 — How-to: the full `set up … end` walkthrough | TODO |
 | 17 — How-to: a complete sample order file | TODO |
@@ -690,7 +690,7 @@ forms.
 
 ## Task 14 — Trade station & Colonization orders
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add `## Trade station orders` and `## Colonization orders`.
 

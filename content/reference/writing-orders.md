@@ -502,3 +502,45 @@ Ship/Colony No. , name , name .
 ```text
 39, name, "Dragonfire".
 ```
+
+## Trade station orders
+
+A trade station order grants or denies a receiving ship or colony permission to
+use the station.
+
+```text
+Trade Station Ship/Colony No. , permission , Receiving Ship/Colony No. , granted .
+Trade Station Ship/Colony No. , permission , Receiving Ship/Colony No. , denied .
+```
+
+```text
+138, permission, 200, granted.
+162, permission, 100, denied.
+```
+
+{{< callout type="info" >}}
+The receiving ship or colony is a proxy: granting or denying permission to it acts
+on the nation that controls it.
+{{< /callout >}}
+
+See [Trade stations]({{< relref "trade.md#trade-stations" >}}).
+
+## Colonization orders
+
+A colonization order grants a receiving ship or colony permission to colonize a
+location. The location must include the orbit number.
+
+```text
+Receiving Ship/Colony No. , permission to colonize , Location .
+```
+
+```text
+129, permission to colonize, 99-12-26/3.
+```
+
+{{< callout type="warning" >}}
+The receiving ship or colony is a proxy: granting permission to it acts on the
+nation that controls it. Permission to colonize cannot be revoked once granted.
+{{< /callout >}}
+
+See [Control of planets]({{< relref "control-of-planets.md" >}}).
