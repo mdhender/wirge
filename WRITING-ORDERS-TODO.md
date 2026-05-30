@@ -332,9 +332,8 @@ target-first grammar** throughout (Divergence 1).
    with one minimal example apiece. Point to the companion how-to
    ([Write a turn's orders]({{< relref "../how-to/writing-orders.md" >}})) for the
    larger worked examples (the full set-up block, a complete order file, and
-   multi-order sequences). *(The how-to file does not exist until Task 15; the
-   `relref` will not resolve in a build until then — that is expected; Task 20's
-   build runs after both pages exist.)*
+   multi-order sequences). The how-to page already exists as a TODO-callout stub
+   (created alongside Task 1) so this `relref` resolves; Tasks 15–18 fill it in.
 3. `## General rules` — describe, in austere reference tone:
    - the header line each page carries (signature, player name, player ID No.,
      game No., game-turn No.), and that the game-turn No. is the number of the
