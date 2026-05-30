@@ -36,7 +36,7 @@ site and confirm a clean build.
 | 6 — Market orders (buy/sell units & TL) | DONE |
 | 7 — Survey & Probe orders | DONE |
 | 8 — Spy orders | DONE |
-| 9 — News release orders | TODO |
+| 9 — News release orders | DONE |
 | 10 — Jump orders | TODO |
 | 11 — Draft, Disband, Pay, Ration orders | TODO |
 | 12 — Control & Un-control orders | TODO |
@@ -557,7 +557,7 @@ side are allowed.
 
 ## Task 9 — News release orders
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add `## News release orders` with the market-planet and trade-station
 forms.

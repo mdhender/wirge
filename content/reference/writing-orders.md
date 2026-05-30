@@ -323,3 +323,31 @@ Ship/Colony No. , quantity of SPY , information , Defender Ship/Colony No. .
 See [Spy functions]({{< relref "espionage.md#spy-functions" >}}),
 [Convert rebels]({{< relref "espionage.md#convert-rebels" >}}), and
 [Incite rebellion]({{< relref "espionage.md#incite-rebellion" >}}).
+
+## News release orders
+
+A news release posts a message to a market planet or a trade station. The message
+text is enclosed in double quotes; an optional signature, if present, is also
+quoted. Odd characters in the message may cause the order to be rejected.
+
+**Market planet.**
+
+```text
+news , Market Planet Location , message text , signature .
+```
+
+```text
+news, 02-29-64/3, "SDRV-3 on the market next turn.", "Tras-yo of Blenora".
+```
+
+**Trade station.**
+
+```text
+news , Trade Station Colony No. , message text , signature .
+```
+
+```text
+news, 632, "SDRV-3 on the market next turn.".
+```
+
+See [News service]({{< relref "communication.md#news-service" >}}).
