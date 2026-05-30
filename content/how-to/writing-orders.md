@@ -68,7 +68,7 @@ yourself; the parser ignores the `//` and the rest of that line.
 22, transfer, 10 SPY, 29.               // hand spies to the scout
 
 // --- Movement ---
-29, move, 4-6-19.                       // jump the scout out
+29, jump, 4-6-19.                       // jump the scout out of the system
 
 16, ration, 50%.                        // half rations this turn
 ```

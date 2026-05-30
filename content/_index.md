@@ -171,7 +171,7 @@ the section that matches what you need:
 - 17.2.10 - [Probe Orders]({{< relref "reference/writing-orders.md#probe-orders" >}})
 - 17.2.11 - [Spy Orders]({{< relref "reference/writing-orders.md#spy-orders" >}})
 - 17.2.12 - [News Release]({{< relref "reference/writing-orders.md#news-release-orders" >}})
-- 17.2.13 - [Jump Orders]({{< relref "reference/writing-orders.md#jump-orders" >}})
+- 17.2.13 - [Movement Orders]({{< relref "reference/writing-orders.md#movement-orders" >}})
 - 17.2.14 - [Draft Orders]({{< relref "reference/writing-orders.md#draft-orders" >}})
 - 17.2.15 - [Disband Orders]({{< relref "reference/writing-orders.md#disband-orders" >}})
 - 17.2.16 - [Pay Orders]({{< relref "reference/writing-orders.md#pay-orders" >}})

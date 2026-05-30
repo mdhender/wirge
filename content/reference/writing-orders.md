@@ -30,6 +30,11 @@ Every order is addressed to a ship or colony. The ship or colony ID No. is the
 first field of most orders. See
 [Colonies and Ships]({{< relref "colonies-and-ships.md" >}}) for entity IDs.
 
+Some orders name a location — a system, star, or orbit. See
+[Co-ordinates]({{< relref "glossary.md" >}}) for how a location is written, and
+[Coordinates and Locations]({{< relref "../explanation/coordinates-and-locations.md" >}})
+for the nuances of specifying them in orders.
+
 An order is carried out only if the addressed ship or colony holds the units the
 order needs; an order is filled partially when fewer units are present than it
 calls for.
@@ -352,39 +357,39 @@ news, 632, "SDRV-3 on the market next turn.".
 
 See [News service]({{< relref "communication.md#news-service" >}}).
 
-## Jump orders
+## Movement orders
 
-{{< callout type="warning" >}}
-**TODO:** Reconcile the terminology. The order keyword is `move`, but movement
-through hyper-space is described as a *jump*. Settle on one term and apply it
-consistently across these docs.
-{{< /callout >}}
+A movement order is `move` within a system and `jump` between systems.
 
-**In-system.** The destination is the target star's sequence letter and the orbit
-number, separated by a dash (`A-2`, `C-4`, etc.). The star letter is required even
-in a single-star system.
+### In-system
+
+The destination is the target star's sequence letter and the orbit number,
+separated by a slash (`A/2`, `C/4`, etc.). The star letter is required even in a
+single-star system.
 
 ```text
-Ship No. , move , star letter-Orbit No. .
+Ship No. , move , star letter/Orbit No. .
 ```
 
 ```text
-77, move, A-2.
-88, move, C-4.
+77, move, A/2.
+88, move, C/4.
 ```
 
 See
 [Interplanetary movement]({{< relref "exploration.md#interplanetary-movement" >}}).
 
-**Between systems.** The destination is the system co-ordinates alone; a
-between-systems move cannot specify a star or an orbit.
+### Between systems
+
+The destination is the system ID alone; a between-systems jump cannot specify a
+star or an orbit.
 
 ```text
-Ship No. , move , Destination System .
+Ship No. , jump , Destination System ID .
 ```
 
 ```text
-79, move, 4-6-19.
+79, jump, 4-6-19.
 ```
 
 See
