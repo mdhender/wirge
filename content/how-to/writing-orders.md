@@ -89,4 +89,29 @@ here as the canonical model.
 
 ## Order several actions in sequence
 
-<!-- Task 18: multi-order sequences in Sequence-of-Play order -->
+The parser works through your orders in the order the turn executes, stage by
+stage. When it reaches a stage, it acts on the matching orders and moves on; an
+order for a stage that has already passed is skipped. So when one action must
+happen before another, write the orders in that same order.
+
+The manual's own example is dis-assembly and assembly. Dis-assembly runs before
+assembly in the Sequence of Play, so write your dis-assembly order first:
+
+```text
+58, disassemble, 6,000 MSL-1.          // free up the units first
+58, assemble, 6,000 FACT-6.            // then build with them
+```
+
+If you wrote the assembly order first, the parser would reach the assembly stage
+before the units were freed, decide there was no assembly order to fill, and skip
+it.
+
+The same applies when one order feeds another — transfer units into a ship before
+the order that uses them, and move a ship after the orders that load it. Arrange
+the whole file to match
+[Sequence of Turn Execution]({{< relref "../reference/sequence-of-turn-execution.md" >}}).
+For each order's format, see
+[Assembly orders]({{< relref "../reference/writing-orders.md#assembly-orders" >}}),
+[Dis-assembly orders]({{< relref "../reference/writing-orders.md#dis-assembly-orders" >}}),
+and the rest of the
+[Writing Orders]({{< relref "../reference/writing-orders.md" >}}) reference.
