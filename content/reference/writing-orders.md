@@ -127,3 +127,53 @@ The `-1` in `SDRV-1` is the unit's TL.
 See [Establishment]({{< relref "colonies-and-ships.md#establishment" >}}) for what
 a set-up order does. For the full set-up block in context, see
 [Write a turn's orders]({{< relref "../how-to/writing-orders.md" >}}).
+
+## Assembly orders
+
+An assembly order has three variants. Factories and mines are assembled into
+groups automatically.
+
+**Factory.** The units the factory group will make follow the quantity of factory
+units.
+
+```text
+Ship/Colony No. , assemble , quantity of FACT , units the factory will make .
+```
+
+```text
+91, assemble, 54,000 FACT-6, CNGD.
+```
+
+**Mine.** The deposit No. the mine group will work follows the quantity of mine
+units.
+
+```text
+Ship/Colony No. , assemble , quantity of MINE , Deposit No. .
+```
+
+```text
+83, assemble, 25,680 MINE-2, 148.
+```
+
+**Other.**
+
+```text
+Ship/Colony No. , assemble , quantity of units .
+```
+
+```text
+58, assemble, 6,000 MSL-1.
+```
+
+See [Assembling]({{< relref "manufacturing.md#assembling" >}}).
+
+## Dis-assembly orders
+
+Format and examples match the assembly orders, with `disassemble` replacing
+`assemble`.
+
+```text
+58, disassemble, 6,000 MSL-1.
+```
+
+See [Dis-assembling]({{< relref "manufacturing.md#dis-assembling" >}}).

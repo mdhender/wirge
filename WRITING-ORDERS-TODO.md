@@ -31,7 +31,7 @@ site and confirm a clean build.
 | 1 — Replace the stub; front matter, intro, General Rules | DONE |
 | 2 — Combat orders | DONE |
 | 3 — Set up orders | DONE |
-| 4 — Assembly & Dis-assembly orders | TODO |
+| 4 — Assembly & Dis-assembly orders | DONE |
 | 5 — Build change, Transfer, Mining change orders | TODO |
 | 6 — Market orders (buy/sell units & TL) | TODO |
 | 7 — Survey & Probe orders | TODO |
@@ -426,7 +426,7 @@ the full multi-line walkthrough goes to the how-to (Task 16).
 
 ## Task 4 — Assembly & Dis-assembly orders
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add `## Assembly orders` and `## Dis-assembly orders`.
 
