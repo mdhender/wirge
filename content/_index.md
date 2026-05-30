@@ -150,10 +150,10 @@ the section that matches what you need:
 - 13.1 - [Taking Control]({{< relref "reference/control-of-planets.md#taking-control" >}})
 - 13.2 - [Controlled Planets]({{< relref "reference/control-of-planets.md#controlled-planets" >}})
 - 13.3 - [Relinquishing Planets]({{< relref "reference/control-of-planets.md#relinquishing-planets" >}})
-- 14 - COMMUNICATION
-- 14.1 - News Service
-- 14.2 - Diplomatic Messages
-- 14.3 - Enforcement of Treaties and Agreements
+- 14 - [COMMUNICATION]({{< relref "reference/communication.md" >}})
+- 14.1 - [News Service]({{< relref "reference/communication.md#news-service" >}})
+- 14.2 - [Diplomatic Messages]({{< relref "reference/communication.md#diplomatic-messages" >}})
+- 14.3 - [Enforcement of Treaties and Agreements]({{< relref "reference/communication.md#enforcement-of-treaties-and-agreements" >}})
 - 15 - [VICTORY CONDITIONS]({{< relref "reference/victory-conditions.md" >}})
 - 16 - SEQUENCE OF TURN EXECUTION
 - 17 - [WRITING ORDERS]({{< relref "reference/writing-orders.md" >}})

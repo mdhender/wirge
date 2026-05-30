@@ -29,18 +29,15 @@ options.
 - **Bombard or capture** the ruler's colony. See
   [Bombardment]({{< relref "combat.md#bombardment" >}}) and
   [Captured colonies]({{< relref "combat.md#captured-colonies" >}}).
-- **Request permission** from the ruler by diplomatic message, agreeing to
-  whatever consideration the ruler requires in return. The considerations may be
-  a large initial fee; a percentage of mined resources; a quarterly or annual fee
-  payable in `GOLD`; or sole buying and selling by the new colony through the
-  ruler's [trade station]({{< relref "trade.md#trade-stations" >}}), if the ruler
-  has one. A nation requests permission with a colonizing-permission order (see
+- **Request permission** from the ruler by
+  [diplomatic message]({{< relref "communication.md#diplomatic-messages" >}}),
+  agreeing to whatever consideration the ruler requires in return. The
+  considerations may be a large initial fee; a percentage of mined resources; a
+  quarterly or annual fee payable in `GOLD`; or sole buying and selling by the new
+  colony through the ruler's
+  [trade station]({{< relref "trade.md#trade-stations" >}}), if the ruler has one.
+  A nation requests permission with a colonizing-permission order (see
   [Writing Orders]({{< relref "writing-orders.md" >}})).
-
-{{< callout type="warning" >}}
-**TODO:** Link the Communication reference page (Diplomatic Messages) here with a
-`relref` once that page exists.
-{{< /callout >}}
 
 ## Relinquishing planets
 
