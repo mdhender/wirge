@@ -1,0 +1,162 @@
+Create the conversion plan for the next manual section: **Writing Orders**.
+
+This is the `wirge` docs repo — read `CLAUDE.md` first. We convert the original rule
+book (`user-manual/`, which is sacred: never edit except typos, never published) into
+published Diátaxis pages under `content/`. In the documentation's canonical order (the
+Working Index in `content/_index.md`), **Writing Orders is section 17**, so the published
+reference page is `content/reference/writing-orders.md` with **weight 180** (the reference
+weights step by ten in Working-Index order: Sequence of Turn Execution 170, Writing Orders
+180; 180 is free). NOTE: `content/reference/writing-orders.md` ALREADY EXISTS as a stub
+(`title`/`weight: 180` front matter plus a `{{< callout type="warning" >}}` TODO). The
+implementation session REPLACES that stub in place — it does not create a new file or change
+the weight.
+
+This conversion has TWO deliverables. Besides the reference page, the plan must also create
+a companion HOW-TO guide, `content/how-to/writing-orders.md` (NEW file — `content/how-to/`
+currently holds only `_index.md`; give it a `title` and a `weight` — start at `10`), that
+holds the larger, more complete examples lifted out of the reference (the full multi-line
+`set up … end` block in context, a complete sample order file, and multi-order sequences in
+Sequence-of-Play order). The reference stays austere and links to the how-to for the big
+examples; the how-to links back to the reference for the per-order format. See the Goal and
+the reference/how-to split note below.
+
+WRITE THE PLAN ONLY. Produce a markdown plan file in the repo root named analogously to
+the existing plans (e.g. `WRITING-ORDERS-TODO.md`; cf. `MANUFACTURING-TODO.md`). Do NOT
+write the reference page or modify any content pages — the plan is implemented in a later
+session. Writing Orders is a LONG, list-structured section (General Rules plus ~22 order
+categories; see its 17.x sub-tree in the `content/_index.md` Working Index); the plan must
+break it into many small numbered tasks — roughly one per order category — not one
+monolithic task.
+
+Before writing, read:
+- `CLAUDE.md` (naming/IP rules, weight convention, what is published vs. internal).
+- The Diátaxis skill `.agents/skills/diataxis/SKILL.md` — read both
+  `references/reference.rst` AND `references/how-to-guides.rst`, because this conversion
+  produces TWO deliverables (see Goal). Writing Orders is dual-natured (see
+  `[[writing-orders-dual-natured]]`):
+  - The REFERENCE page (`content/reference/writing-orders.md`) owns the order CATALOG — the
+    format/grammar, the fields, the per-order constraints. It must DESCRIBE ONLY and stay
+    austere: no "first do X, then Y" instruction, no strategy. Each order shows its format
+    plus ONE short, minimal example (two at most where genuinely distinct variants exist,
+    e.g. buy-units vs buy-TL) with MINIMAL explanation — just enough to read the format.
+  - The HOW-TO page (a companion guide, see Goal) owns the LARGER, more complete examples —
+    the full multi-line `set up … end` block shown in context, a realistic complete order
+    file, and multi-order sequences arranged in Sequence-of-Play order. It is task-oriented
+    and may walk the reader through assembling a turn's orders.
+  - Rule of thumb for the split: if an example is longer than a couple of lines, or shows
+    several orders working together, or needs prose to explain WHY, it belongs in the how-to,
+    and the reference links to it.
+- `MANUFACTURING-TODO.md` (structure/house style) and `content/reference/manufacturing.md`.
+- `content/reference/sequence-of-turn-execution.md` — the immediately-preceding section
+  (DONE) and a key overlap: the manual says orders MUST be written in Sequence-of-Play
+  order or they may not execute. Link to that page for the canonical stage order; do NOT
+  restate the 21-stage list here.
+- `user-manual/writing-orders.md` (the source — read in full) and check `notes/` —
+  especially `notes/orders.md` and `notes/quick-command-index.md`.
+- The existing pages this section overlaps (below) for real anchors before linking.
+
+Model the plan on `MANUFACTURING-TODO.md`, including: a "How to use this plan" note and
+a task-status table (per-task `Status: TODO/IN PROGRESS/DONE`); a Goal; a Source-material
+section; an Overlap map (link, do not restate); a Terminology/code mapping (source term →
+engine codes, and "nation" not "player"); Conventions (front matter `title`/`weight` only;
+`relref` cross-links; fold the source's Markdoc `{% callout %}` shortcodes — the source has
+several `{% callout %}` / `{% callout type="warning" %}` blocks — into Hugo/Hextra
+`{{< callout >}}` shortcodes or prose; render every order's format/example block as fenced
+`text` code; **in examples, use the published unit codes in `CODE-TL` form, NOT the manual's
+spelled-out unit names** — the manual writes `space drives-1`, `hyper engines-1`, etc., but
+our reference writes `SDRV-1`, `HDRV-1`, and so on, with the codes taken from the
+authoritative table in `content/reference/units.md` (NOT `notes/unit-codes.md`, which
+diverges — e.g. it lists `SPD`/`HEN`; `units.md` deliberately uses `SDRV`/`HDRV` to avoid
+confusion with `SEN`). This is an intentional, allowed departure from the manual's wording:
+the examples are ours, and only the `user-manual/` source text is sacred. Keep the order
+keywords/structure faithful; only swap the unit naming. Codes in backticks; no rule
+duplication; never brand the game "Empyrean Challenge"); resolved Page-weight/ordering
+(reference 180, replacing the existing stub in place; new how-to `content/how-to/writing-orders.md`
+at weight 10); Link targets (existing vs. pending).
+
+State the Goal as BOTH deliverables: the austere minimal-example reference page and the
+companion how-to that carries the larger examples. Order the numbered tasks in two groups —
+first the reference tasks (General Rules, then roughly one per order category, each producing
+format + one minimal example), THEN the how-to tasks (set up the new file; the full
+`set up … end` walkthrough; a complete sample order file; Sequence-of-Play-ordered
+multi-order sequences). End with a wiring task and a final build/verify task. The wiring task
+must: turn the "17 - WRITING ORDERS" Working-Index line in `content/_index.md` and its full
+17.x sub-tree into `relref` links/anchors; wire RECIPROCAL links between the reference page
+and the new how-to (reference → how-to for big examples; how-to → reference for per-order
+format); and update the glossary. (Do NOT hand-author a how-to index entry — Hugo/Hextra
+auto-generates section cards from the how-to page's front matter; just give it a proper
+`title`/`weight`.) The build/verify task: `hugo --gc` clean; no `{%`; no
+"Empyrean Challenge"; all anchors and relrefs resolve on BOTH pages; correct sidebar order.
+Include an Out-of-scope section.
+
+Source content the plan must cover (verify against the source — don't trust this summary):
+- **General Rules**: page formatting/signature/header line (player name, player ID, game No.,
+  game-turn No.); the slashed-zero convention; quantity-and-unit spacing; the rule that
+  orders must be written in Sequence-of-Play order or may not execute; orders address a
+  ship/colony ID No. as the first field; orders execute only if the unit has the needed
+  items (partial fulfillment); `//` line comments.
+- **List of Orders** — one task per category, each with Format + Example(s) + any NOTEs:
+  Combat orders (bombard, invade, raid, support-attacker, support-defender; the integer
+  percent-committed and required `%`); Set Up orders (the multi-line `set up … end` block);
+  Assembly orders (factory / mine / other variants); Dis-assembly orders (delta vs assembly);
+  Build Change orders; Transfer orders; Mining Change orders; Market orders (buy units / buy
+  TL / sell units / sell TL — note quantity omitted for TL); Survey orders; Probe orders
+  (multiple orbits); Spy orders (check rebels, convert rebels, incite rebels, check for
+  spies, attack spies, gather information); News Release (market-planet vs trade-station,
+  quoted message text, optional quoted signature); Jump orders (in-system incl. the 11th-orbit
+  star-letter form, and system jump); Draft orders; **Disband orders** (present in the source
+  at the Disband heading — see the divergence note below); Pay orders; Ration orders; Control
+  orders; Un-Control orders; Naming orders (planets vs ships/colonies; 24-char limit; quoted
+  names); Trade Station orders (permission granted/denied; proxy note); Colonization orders
+  (permission to colonize; proxy note; cannot be revoked).
+
+Known overlaps / links to wire (verify each anchor exists before linking — most of these
+pages are now DONE):
+- `content/reference/sequence-of-turn-execution.md` — the Sequence-of-Play ordering rule
+  (primary overlap; link, don't restate).
+- `content/reference/combat.md` — bombard/invade/raid/support semantics (orders page gives
+  the ORDER FORMAT only; link the mechanic).
+- `content/reference/espionage.md` — spy orders' mechanics.
+- `content/reference/control-of-planets.md` — control / un-control / colonization permission.
+- `content/reference/trade.md` — market buy/sell and trade-station permission.
+- `content/reference/communication.md` — News Release / news service.
+- `content/reference/exploration.md` — survey, probe, jump/movement.
+- `content/reference/manufacturing.md` — assemble/disassemble/build-change of factories,
+  mines, and units.
+- `content/reference/colonies-and-ships.md` — set up / transfer; ship & colony IDs as the
+  order target.
+- `content/reference/mining.md` — mining-change / deposit assignment.
+- `content/reference/population.md` and `content/reference/food.md` — draft/disband, pay,
+  ration.
+- `content/reference/units.md` / `content/reference/weapons.md` / `content/reference/ship-systems.md`
+  — the AUTHORITATIVE unit-code table (`units.md`) for the codes used in examples (`STU`,
+  `AUT-n`, `SDRV-n`, `HDRV-n`, `TL-n`, `CNW`, etc.); link for the code definitions, do NOT
+  restate unit stats. Every example must use these codes in `CODE-TL` form, not the manual's
+  spelled-out names (see Conventions).
+- `content/reference/glossary.md` — add/relink order-form terms (order, percent committed,
+  set-up block, build change, proxy, slashed zero).
+
+Divergences/decisions to FLAG explicitly in the plan (surface, do not silently resolve):
+- **Grammar mismatch.** The manual's order grammar is comma-delimited and target-first
+  (`16, build change, 8, energy weapons-4.`). `notes/orders.md` uses a space-delimited,
+  verb-first grammar (`build change <id> <group> <target>`). Per `CLAUDE.md` the docs are
+  authoritative, but which canonical grammar the reference page publishes is a real decision —
+  flag it (a `{{< callout type="warning" >}}` TODO and/or a note to the user) rather than
+  inventing a reconciliation.
+- **Disband not in the index.** The source has a Disband orders section, but the
+  `content/_index.md` 17.x sub-tree omits it. The plan must cover Disband AND have the wiring
+  task ADD the missing 17.2.x entry to the Working Index.
+- **"player" vs "nation".** The manual's General Rules speak of "the player" (the human
+  submitting the turn). Map the in-game actor to "nation" per house style, but keep wording
+  sane where the rule is genuinely about the person/turn-sheet submission; flag the boundary.
+
+Dependency to flag: any 17.x order whose mechanic page is still pending — link at page level
+and/or leave a `{{< callout type="warning" >}}` TODO rather than inventing `#`-anchors.
+
+Out of scope to state: strategy/optimization advice (which orders to pick and why — neither
+page teaches tactics; the how-to shows HOW to write a turn's orders, not how to win), unit
+STATS and code definitions (owned by `units.md` / `weapons.md` / `ship-systems.md`),
+reconciling the engine order grammar in `notes/orders.md`, any engine code including the
+order parser (the separate `pyre` repo), and editing the manual. (Note: worked order-file
+walkthroughs are NOT out of scope — they are the explicit purpose of the companion how-to
+deliverable.)
