@@ -337,7 +337,7 @@ news , Market Planet Location , message text , signature .
 ```
 
 ```text
-news, 02-29-64/3, "SDRV-3 on the market next turn.", "Tras-yo of Blenora".
+news, 02-29-64A/3, "SDRV-3 on the market next turn.", "Tras-yo of Blenora".
 ```
 
 **Trade station.**
@@ -354,25 +354,33 @@ See [News service]({{< relref "communication.md#news-service" >}}).
 
 ## Jump orders
 
-**In-system.** From the 11th orbit, the destination orbit is prefixed with the
-target star's sequence letter and a dash (`C-4`).
+{{< callout type="warning" >}}
+**TODO:** Reconcile the terminology. The order keyword is `move`, but movement
+through hyper-space is described as a *jump*. Settle on one term and apply it
+consistently across these docs.
+{{< /callout >}}
+
+**In-system.** The destination is the target star's sequence letter and the orbit
+number, separated by a dash (`A-2`, `C-4`, etc.). The star letter is required even
+in a single-star system.
 
 ```text
-Ship No. , move , Orbit No. .
+Ship No. , move , star letter-Orbit No. .
 ```
 
 ```text
-77, move, 6.
+77, move, A-2.
 88, move, C-4.
 ```
 
 See
 [Interplanetary movement]({{< relref "exploration.md#interplanetary-movement" >}}).
 
-**System jump.**
+**Between systems.** The destination is the system co-ordinates alone; a
+between-systems move cannot specify a star or an orbit.
 
 ```text
-Ship No. , move , Destination Location .
+Ship No. , move , Destination System .
 ```
 
 ```text
@@ -450,14 +458,14 @@ See [Rations]({{< relref "food.md#rations" >}}) and
 ## Control orders
 
 A control order takes control of a planet for the acting nation. The location must
-include the orbit number.
+include the star letter and orbit number.
 
 ```text
 Ship/Colony No. , control , Location .
 ```
 
 ```text
-28, control, 2-4-6/9.
+28, control, 2-4-6A/9.
 ```
 
 {{< callout type="info" >}}
@@ -472,7 +480,7 @@ See [Taking control]({{< relref "control-of-planets.md#taking-control" >}}).
 Same as a control order, with `un-control` replacing `control`.
 
 ```text
-28, un-control, 2-4-6/9.
+28, un-control, 2-4-6A/9.
 ```
 
 See
@@ -490,7 +498,7 @@ Location , name , name .
 ```
 
 ```text
-5-12-38/2, name, "Goldball Prime".
+5-12-38A/2, name, "Goldball Prime".
 ```
 
 ### Naming ships and colonies
@@ -528,14 +536,14 @@ See [Trade stations]({{< relref "trade.md#trade-stations" >}}).
 ## Colonization orders
 
 A colonization order grants a receiving ship or colony permission to colonize a
-location. The location must include the orbit number.
+location. The location must include the star letter and orbit number.
 
 ```text
 Receiving Ship/Colony No. , permission to colonize , Location .
 ```
 
 ```text
-129, permission to colonize, 99-12-26/3.
+129, permission to colonize, 99-12-26A/3.
 ```
 
 {{< callout type="warning" >}}
