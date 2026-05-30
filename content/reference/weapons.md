@@ -8,8 +8,8 @@ engine's authoritative unit codes; where those codes or technological-level rule
 differ from the original rule book, see
 [Differences from the rule book]({{< relref "units.md#differences-from-the-rule-book" >}}).
 
-This page describes weapon units only. Combat procedure belongs with the combat
-reference material when that section is converted.
+This page describes weapon units only. Combat procedure belongs with the
+[combat reference material]({{< relref "combat.md" >}}).
 
 ## Weapons Chart
 

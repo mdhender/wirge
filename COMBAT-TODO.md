@@ -21,19 +21,19 @@ DONE when complete."
 
 | Task | Status |
 | ---- | ------ |
-| 1 — Create the page; Description, Military supplies, Percentage of commitment | TODO |
-| 2 — Attack orders (four order types) | TODO |
-| 3 — Raids and invasions (assault craft, assault weapons, transports, military robots) | TODO |
-| 4 — Bombardment (by colonies; by ships) | TODO |
-| 5 — Defense (soldiers, bombardment, while invading, raids, support) | TODO |
-| 6 — Combat factor (table + worked example) | TODO |
-| 7 — Casualties (invasion, troop transport, bombardment, raiding) | TODO |
-| 8 — Damage: energy weapons (+ energy shields) | TODO |
-| 9 — Damage: missiles and anti-missiles | TODO |
-| 10 — Ship movement during combat; End of round | TODO |
-| 11 — Surrender; Captured colonies; Combat and ship/colony TL | TODO |
-| 12 — Wire the page into the site and apply weight | TODO |
-| 13 — Build, verify, and consistency pass | TODO |
+| 1 — Create the page; Description, Military supplies, Percentage of commitment | DONE |
+| 2 — Attack orders (four order types) | DONE |
+| 3 — Raids and invasions (assault craft, assault weapons, transports, military robots) | DONE |
+| 4 — Bombardment (by colonies; by ships) | DONE |
+| 5 — Defense (soldiers, bombardment, while invading, raids, support) | DONE |
+| 6 — Combat factor (table + worked example) | DONE |
+| 7 — Casualties (invasion, troop transport, bombardment, raiding) | DONE |
+| 8 — Damage: energy weapons (+ energy shields) | DONE |
+| 9 — Damage: missiles and anti-missiles | DONE |
+| 10 — Ship movement during combat; End of round | DONE |
+| 11 — Surrender; Captured colonies; Combat and ship/colony TL | DONE |
+| 12 — Wire the page into the site and apply weight | DONE |
+| 13 — Build, verify, and consistency pass | DONE |
 
 Keep this table in sync with the per-task **Status** lines below.
 
@@ -284,7 +284,7 @@ fabricate links to them:
 
 ## Task 1 — Create the page; Description, Military supplies, Percentage of commitment
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** create `content/reference/combat.md` with front matter, the intro
 `## Description`, `## Military supplies`, and `## Percentage of commitment`.
@@ -317,7 +317,7 @@ fabricate links to them:
 
 ## Task 2 — Attack orders (four order types)
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add `## Attack` and `### Attack orders`.
 
@@ -344,7 +344,7 @@ fabricate links to them:
 
 ## Task 3 — Raids and invasions (assault craft, assault weapons, transports, military robots)
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add `### Raids and invasions` and its four `####` sub-units.
 
@@ -375,7 +375,7 @@ fabricate links to them:
 
 ## Task 4 — Bombardment (by colonies; by ships)
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add `### Bombardment`, `#### Bombardment by colonies`,
 `#### Bombardment by ships`.
@@ -408,7 +408,7 @@ fabricate links to them:
 
 ## Task 5 — Defense (soldiers, bombardment, while invading, raids, support)
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add `## Defense` and its five `###` sub-sections.
 
@@ -444,7 +444,7 @@ fabricate links to them:
 
 ## Task 6 — Combat factor (table + worked example)
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add `## Combat factor`.
 
@@ -472,7 +472,7 @@ fabricate links to them:
 
 ## Task 7 — Casualties (invasion, troop transport, bombardment, raiding)
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add `## Casualties` and its four `###` sub-sections.
 
@@ -510,7 +510,7 @@ fabricate links to them:
 
 ## Task 8 — Damage: energy weapons (+ energy shields)
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add `## Damage` lead-in and `### Energy weapons` with its sub-points
 (against ships/colonies, against transports/assault craft, against missiles,
@@ -558,7 +558,7 @@ energy shields).
 
 ## Task 9 — Damage: missiles and anti-missiles
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add `### Missiles` (with missile-launcher accuracy) and
 `### Anti-missiles` (against missiles; against transports/assault craft).
@@ -598,7 +598,7 @@ energy shields).
 
 ## Task 10 — Ship movement during combat; End of round
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add `## Ship movement during combat` and `## End of round`.
 
@@ -623,7 +623,7 @@ energy shields).
 
 ## Task 11 — Surrender; Captured colonies; Combat and ship/colony TL
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add `## Surrender`, `## Captured colonies` (+ `### Captured population
 units`), and `## Combat and ship or colony TL`.
@@ -662,7 +662,7 @@ units`), and `## Combat and ship or colony TL`.
 
 ## Task 12 — Wire the page into the site and apply weight
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** make the page reachable and convert the Working-Index `11`/`11.x`
 sub-tree to links/anchors. No new body content.
@@ -737,7 +737,7 @@ sub-tree to links/anchors. No new body content.
 
 ## Task 13 — Build, verify, and consistency pass
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** confirm everything builds, links resolve, and nothing regressed.
 

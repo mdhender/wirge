@@ -203,8 +203,8 @@ using half of its transfer capacity uses half of its non-combat fuel.
 Transports never transfer more population or material to a ship or colony than
 its life support units or structural limits can support.
 
-Combat transport fuel use belongs with the combat reference material when that
-section is converted.
+Combat transport fuel use belongs with the
+[combat reference material]({{< relref "combat.md#transports" >}}).
 
 ## Structural Units
 

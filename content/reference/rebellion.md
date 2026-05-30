@@ -64,7 +64,8 @@ A `SPY` cadre is allocated from 1 `PRO` and 1 `SLD`; see
 
 ## Loyalty on capture
 
-When a captured ship or colony is transferred to its new owner:
+When a captured ship or colony is transferred to its new owner (see
+[Captured colonies]({{< relref "combat.md#captured-colonies" >}})):
 
 - 50% of the loyal population units become rebels.
 - 50% of all existing rebels convert to loyal population.

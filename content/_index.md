@@ -94,51 +94,51 @@ the section that matches what you need:
 - 10 - [REBELLION]({{< relref "reference/rebellion.md" >}})
 - 10.1 - [Rebellion]({{< relref "reference/rebellion.md#when-rebellion-occurs" >}})
 - 10.2 - [Independent Colonies and Ships]({{< relref "reference/rebellion.md#independent-ships-and-colonies" >}})
-- 11 - COMBAT
-- 11.1 - Description
-- 11.2 - Military Supplies
-- 11.3 - Percentage of Commitment
-- 11.4 - Attack
-- 11.4.1 - Attack Orders
-- 11.4.2 - Raids and Invasions
-- 11.4.2.1 - Assault craft
-- 11.4.2.2 - Assault weapons
-- 11.4.2.3 - Transports
-- 11.4.2.4 - Military robots
-- 11.4.3 - Bombardment
-- 11.4.3.1 - Bombardment by colonies
-- 11.4.3.2 - Bombardment by ships
-- 11.5 - Defense
-- 11.5.1 - Defense against soldier units
-- 11.5.2 - Defense against bombardment
-- 11.5.3 - Defense while invading
-- 11.5.4 - Defense against raids
-- 11.5.5 - Defense support
-- 11.6 - Combat Factor
-- 11.7 - Casualties
-- 11.7.1 - Invasion casualties
-- 11.7.2 - Troop transport casualties
-- 11.7.3 - Bombardment casualties
-- 11.7.4 - Raiding casualties
-- 11.8 - Damage
-- 11.8.1 - Energy Weapons
-- 11.8.1.1 - Description
-- 11.8.1.2 - Energy weapons against ships/colonies
-- 11.8.1.3 - Energy weapons against transports and assault craft
-- 11.8.1.4 - Energy weapons against missiles
-- 11.8.1.5 - Energy shields
-- 11.8.2 - Missiles
-- 11.8.2.1 - Missile launchers
-- 11.8.3 - Anti-missiles
-- 11.8.3.1 - Description
-- 11.8.3.2 - Against missiles
-- 11.8.3.3 - Against transports and assault craft
-- 11.9 - Ship Movement During Combat
-- 11.10 - End of Round
-- 11.11 - Surrender
-- 11.12 - Captured Colonies
-- 11.12.1 - Captured population units
-- 11.13 - Combat and Ship/Colony TL
+- 11 - [COMBAT]({{< relref "reference/combat.md" >}})
+- 11.1 - [Description]({{< relref "reference/combat.md#description" >}})
+- 11.2 - [Military Supplies]({{< relref "reference/combat.md#military-supplies" >}})
+- 11.3 - [Percentage of Commitment]({{< relref "reference/combat.md#percentage-of-commitment" >}})
+- 11.4 - [Attack]({{< relref "reference/combat.md#attack" >}})
+- 11.4.1 - [Attack Orders]({{< relref "reference/combat.md#attack-orders" >}})
+- 11.4.2 - [Raids and Invasions]({{< relref "reference/combat.md#raids-and-invasions" >}})
+- 11.4.2.1 - [Assault craft]({{< relref "reference/combat.md#assault-craft" >}})
+- 11.4.2.2 - [Assault weapons]({{< relref "reference/combat.md#assault-weapons" >}})
+- 11.4.2.3 - [Transports]({{< relref "reference/combat.md#transports" >}})
+- 11.4.2.4 - [Military robots]({{< relref "reference/combat.md#military-robots" >}})
+- 11.4.3 - [Bombardment]({{< relref "reference/combat.md#bombardment" >}})
+- 11.4.3.1 - [Bombardment by colonies]({{< relref "reference/combat.md#bombardment-by-colonies" >}})
+- 11.4.3.2 - [Bombardment by ships]({{< relref "reference/combat.md#bombardment-by-ships" >}})
+- 11.5 - [Defense]({{< relref "reference/combat.md#defense" >}})
+- 11.5.1 - [Defense against soldier units]({{< relref "reference/combat.md#defense-against-soldier-units" >}})
+- 11.5.2 - [Defense against bombardment]({{< relref "reference/combat.md#defense-against-bombardment" >}})
+- 11.5.3 - [Defense while invading]({{< relref "reference/combat.md#defense-while-invading" >}})
+- 11.5.4 - [Defense against raids]({{< relref "reference/combat.md#defense-against-raids" >}})
+- 11.5.5 - [Defense support]({{< relref "reference/combat.md#defense-support" >}})
+- 11.6 - [Combat Factor]({{< relref "reference/combat.md#combat-factor" >}})
+- 11.7 - [Casualties]({{< relref "reference/combat.md#casualties" >}})
+- 11.7.1 - [Invasion casualties]({{< relref "reference/combat.md#invasion-casualties" >}})
+- 11.7.2 - [Troop transport casualties]({{< relref "reference/combat.md#troop-transport-casualties" >}})
+- 11.7.3 - [Bombardment casualties]({{< relref "reference/combat.md#bombardment-casualties" >}})
+- 11.7.4 - [Raiding casualties]({{< relref "reference/combat.md#raiding-casualties" >}})
+- 11.8 - [Damage]({{< relref "reference/combat.md#damage" >}})
+- 11.8.1 - [Energy Weapons]({{< relref "reference/combat.md#energy-weapons" >}})
+- 11.8.1.1 - [Description]({{< relref "reference/combat.md#energy-weapons" >}})
+- 11.8.1.2 - [Energy weapons against ships/colonies]({{< relref "reference/combat.md#energy-weapons" >}})
+- 11.8.1.3 - [Energy weapons against transports and assault craft]({{< relref "reference/combat.md#energy-weapons" >}})
+- 11.8.1.4 - [Energy weapons against missiles]({{< relref "reference/combat.md#energy-weapons" >}})
+- 11.8.1.5 - [Energy shields]({{< relref "reference/combat.md#energy-weapons" >}})
+- 11.8.2 - [Missiles]({{< relref "reference/combat.md#missiles" >}})
+- 11.8.2.1 - [Missile launchers]({{< relref "reference/combat.md#missiles" >}})
+- 11.8.3 - [Anti-missiles]({{< relref "reference/combat.md#anti-missiles" >}})
+- 11.8.3.1 - [Description]({{< relref "reference/combat.md#anti-missiles" >}})
+- 11.8.3.2 - [Against missiles]({{< relref "reference/combat.md#anti-missiles" >}})
+- 11.8.3.3 - [Against transports and assault craft]({{< relref "reference/combat.md#anti-missiles" >}})
+- 11.9 - [Ship Movement During Combat]({{< relref "reference/combat.md#ship-movement-during-combat" >}})
+- 11.10 - [End of Round]({{< relref "reference/combat.md#end-of-round" >}})
+- 11.11 - [Surrender]({{< relref "reference/combat.md#surrender" >}})
+- 11.12 - [Captured Colonies]({{< relref "reference/combat.md#captured-colonies" >}})
+- 11.12.1 - [Captured population units]({{< relref "reference/combat.md#captured-population-units" >}})
+- 11.13 - [Combat and Ship/Colony TL]({{< relref "reference/combat.md#combat-and-ship-or-colony-tl" >}})
 - 12 - ESPIONAGE
 - 12.1 - Rebel Quantity and Type
 - 12.2 - Convert Rebels

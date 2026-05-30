@@ -21,15 +21,20 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 - **Binary system** — A [solar system]({{< relref "game-setup.md#solar-systems" >}}) containing two stars that share one set of co-ordinates.
 - **Birth increase** — Population growth (colonies only) that enters the `UEM` class. See [Population]({{< relref "population.md#population-changes" >}}).
+- **Bombard / bombardment** — A combat order in which a ship or colony uses `MSS` and `EWP` against another ship or colony to destroy it. See [Combat]({{< relref "combat.md#bombardment" >}}).
 - **Build change order** — An order that directs a factory group to retool, switching the unit type it produces. See [Manufacturing]({{< relref "manufacturing.md#retooling" >}}).
 
 ## C
 
 - **Cadre** — A population allocation tracked separately from census totals. Includes `TRN`, `SPY`, `CNW`, and `RBL`.
+- **Captured colony / capture** — A ship or colony that becomes the attacker's property after its defenders are destroyed or surrender, provided the attacker still has troops there. See [Combat]({{< relref "combat.md#captured-colonies" >}}).
 - **Cluster** — The complete game map: 100 solar systems whose locations differ from one game to the next.
 - **Colony** — A permanent installation a player establishes at a planet, in one of three forms: open-air, enclosed, or orbiting. See [Colonies and Ships]({{< relref "colonies-and-ships.md" >}}).
+- **Combat** — Resolution of an attack by one nation's ships or colonies against another's; run in rounds at a shared orbit within a system. See [Combat]({{< relref "combat.md" >}}).
+- **Combat factor** — A per-unit value used to determine raid and invasion casualties. See [Combat]({{< relref "combat.md#combat-factor" >}}).
 - **Combat round** (`CR`) — One increment of a combat exchange; some weapons' fuel use is measured per combat round.
 - **Commission** — The 1% fee a seller pays a trade station on a completed trade; the station keeps it and may use it for any purpose. See [Trade]({{< relref "trade.md#trade-stations" >}}).
+- **Commitment (percentage of commitment)** — The share of a unit a nation commits to a combat order. See [Combat]({{< relref "combat.md#percentage-of-commitment" >}}).
 - **Construction worker** (`CNW`) — A population-cadre allocation of 1 professional and 1 unskilled worker that carries out assembly and dis-assembly orders.
 - **Consumer goods** (`CNGD`) — Factory output used to pay the population. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#consumer-goods" >}}).
 - **Control** — A player's claim over a planet, established by an orbiting or surface colony — or a trade station — and a declaration of control.
@@ -41,6 +46,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Deep space** — Any location that is not an interplanetary or interstellar jump destination. Hyperdrive jumps cannot end in deep space.
 - **Disassembly** — The reverse of assembly: an order effect that breaks a cadre or unit allocation back into its component units, with a 10% loss except for `SPY` and `CNW`. See [Manufacturing]({{< relref "manufacturing.md#dis-assembling" >}}).
 - **Disband** — A population order that returns soldier units to unskilled-worker status. See [Population]({{< relref "population.md#population-changes" >}}).
+- **Distance factor** (`DF`) — A colony-only value (1–3) that stands in for ship distance in the combat damage formulas, set by the attacker's and defender's positions. See [Combat]({{< relref "combat.md#bombardment-by-colonies" >}}).
 - **Draft** — A population order that recruits soldiers or trainees. See [Population]({{< relref "population.md#orders" >}}).
 
 ## E
@@ -82,6 +88,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 - **Interplanetary location** — A legal jump endpoint inside a solar system. Interplanetary jumps are always treated as 0.1 light years. See [Hyperdrives]({{< relref "ship-systems.md#hyperdrives" >}}).
 - **Interstellar location** — A legal jump endpoint between solar systems. Interstellar distances come from the player's Star List. See [Hyperdrives]({{< relref "ship-systems.md#hyperdrives" >}}).
+- **Invasion** — A combat order in which a ship or colony invades another to capture it. See [Combat]({{< relref "combat.md#attack-orders" >}}).
 
 ## J
 
@@ -135,6 +142,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 ## R
 
 - **Race** — All the nations on one planet, considered together; the basis of a future [Race Victory]({{< relref "victory-conditions.md" >}}).
+- **Raid** — A one-round combat order in which a ship or colony steals one type of unit, including population, from another. See [Combat]({{< relref "combat.md#attack-orders" >}}).
 - **Ration** — The FOOD served per population unit per turn, set by a `RATION` order. A full ration is 0.25 FOOD units. See [Food]({{< relref "food.md" >}}).
 - **Rebel** (`RBL`) — A tally of population willing to rebel, not a separate class; rises with underpayment, underfeeding, and especially starvation.
 - **Research point** (`RSCH`) — Output a researching factory group manufactures (`RSCH-N`, at the level researched); accumulates in storage until it forms a [prototype]({{< relref "technological-advancement.md#research" >}}).
@@ -154,7 +162,9 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Star** — A stellar body within a solar system. Identified by the system co-ordinates plus a letter suffix (`A`, `B`, `C`, …) — for example `12-13-14A` — which is required even in a single-star system.
 - **Starvation** — Loss of population when the actual ration falls below the survival ration (25% of a full ration). See [Food]({{< relref "food.md#starvation" >}}).
 - **Structural unit** (`STU`) — The framing required to build ships and colonies. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#structural-units" >}}).
+- **Support order** — A combat order that assists another nation in an invasion or in defense; the supporting and supported nations fight as one unit. See [Combat]({{< relref "combat.md#attack-orders" >}}).
 - **Surface colony** — An open-air or enclosed colony on a planet's surface (as distinct from an orbiting colony). Only a surface colony may mine.
+- **Surrender** — The automatic yielding of `SLD` at six-to-one odds, after which they become `UEM` in place; `MRBT` fight until killed. See [Combat]({{< relref "combat.md#surrender" >}}).
 - **Survival ration** — The minimum ration needed to avoid starvation. For planned rationing, it is 25% of a full ration. See [Starvation]({{< relref "food.md#starvation" >}}).
 - **Survey** — A scan from a ship or colony at a planet that reports its deposits' locations, types, and exact resource quantities. See [Exploration]({{< relref "exploration.md#surveys" >}}).
 
