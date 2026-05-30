@@ -221,3 +221,50 @@ Ship/Colony No. , mining , Mining Group No. , new Deposit No. .
 ```
 
 See [Mining]({{< relref "mining.md" >}}).
+
+## Market orders
+
+A market order buys or sells units or technology levels. The quantity is omitted
+when buying or selling a technology level.
+
+**Buy units.**
+
+```text
+Ship/Colony No. , buy , quantity , unit type , price in GOLD each .
+```
+
+```text
+555, buy, 25,600, STU, 0.01.
+```
+
+**Buy TL.** The quantity is omitted.
+
+```text
+Ship/Colony No. , buy , technology level , price in GOLD each .
+```
+
+```text
+53, buy, TL-6, 1,000,000.
+```
+
+**Sell units.**
+
+```text
+Ship/Colony No. , sell , quantity , unit type , price in GOLD each .
+```
+
+```text
+721, sell, STU, 0.5.
+```
+
+**Sell TL.** The quantity is omitted.
+
+```text
+Ship/Colony No. , sell , technology level , price in GOLD each .
+```
+
+```text
+721, sell, TL-4, 800,000.
+```
+
+See [Home planet markets]({{< relref "trade.md#home-planet-markets" >}}).

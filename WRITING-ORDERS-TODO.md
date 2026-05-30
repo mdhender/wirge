@@ -33,7 +33,7 @@ site and confirm a clean build.
 | 3 — Set up orders | DONE |
 | 4 — Assembly & Dis-assembly orders | DONE |
 | 5 — Build change, Transfer, Mining change orders | DONE |
-| 6 — Market orders (buy/sell units & TL) | TODO |
+| 6 — Market orders (buy/sell units & TL) | DONE |
 | 7 — Survey & Probe orders | TODO |
 | 8 — Spy orders | TODO |
 | 9 — News release orders | TODO |
@@ -481,7 +481,7 @@ the full multi-line walkthrough goes to the how-to (Task 16).
 
 ## Task 6 — Market orders (buy/sell units & TL)
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add `## Market orders` with the four forms; this is the one order with
 two genuinely distinct variants on each side (units vs TL), so two examples per
