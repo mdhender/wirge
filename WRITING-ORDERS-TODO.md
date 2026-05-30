@@ -30,7 +30,7 @@ site and confirm a clean build.
 | ---- | ------ |
 | 1 — Replace the stub; front matter, intro, General Rules | DONE |
 | 2 — Combat orders | DONE |
-| 3 — Set up orders | TODO |
+| 3 — Set up orders | DONE |
 | 4 — Assembly & Dis-assembly orders | TODO |
 | 5 — Build change, Transfer, Mining change orders | TODO |
 | 6 — Market orders (buy/sell units & TL) | TODO |
@@ -399,7 +399,7 @@ target-first grammar** throughout (Divergence 1).
 
 ## Task 3 — Set up orders
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add `## Set up orders` with the format and **one minimal** example;
 the full multi-line walkthrough goes to the how-to (Task 16).

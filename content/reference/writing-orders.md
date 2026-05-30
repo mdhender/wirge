@@ -103,3 +103,27 @@ See [Bombardment]({{< relref "combat.md#bombardment" >}}),
 [Attack orders]({{< relref "combat.md#attack-orders" >}}), and
 [Defense support]({{< relref "combat.md#defense-support" >}}) for combat
 resolution.
+
+## Set up orders
+
+A set-up order establishes a new ship or colony and transfers units into it. The
+order may span several lines, and `end` terminates the block.
+
+```text
+set up , type (ship or colony) , Establishing Ship/Colony No. , transfer , quantity and item , ... , end .
+```
+
+```text
+set up, ship, 29,
+transfer, 50,000 STU,
+5 SDRV-1,
+5 LSP-1,
+1 SEN-1,
+end.
+```
+
+The `-1` in `SDRV-1` is the unit's TL.
+
+See [Establishment]({{< relref "colonies-and-ships.md#establishment" >}}) for what
+a set-up order does. For the full set-up block in context, see
+[Write a turn's orders]({{< relref "../how-to/writing-orders.md" >}}).
