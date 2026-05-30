@@ -37,7 +37,7 @@ site and confirm a clean build.
 | 7 — Survey & Probe orders | DONE |
 | 8 — Spy orders | DONE |
 | 9 — News release orders | DONE |
-| 10 — Jump orders | TODO |
+| 10 — Jump orders | DONE |
 | 11 — Draft, Disband, Pay, Ration orders | TODO |
 | 12 — Control & Un-control orders | TODO |
 | 13 — Naming orders | TODO |
@@ -581,7 +581,7 @@ forms.
 
 ## Task 10 — Jump orders
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add `## Jump orders` with in-system and system forms.
 

@@ -351,3 +351,33 @@ news, 632, "SDRV-3 on the market next turn.".
 ```
 
 See [News service]({{< relref "communication.md#news-service" >}}).
+
+## Jump orders
+
+**In-system.** From the 11th orbit, the destination orbit is prefixed with the
+target star's sequence letter and a dash (`C-4`).
+
+```text
+Ship No. , move , Orbit No. .
+```
+
+```text
+77, move, 6.
+88, move, C-4.
+```
+
+See
+[Interplanetary movement]({{< relref "exploration.md#interplanetary-movement" >}}).
+
+**System jump.**
+
+```text
+Ship No. , move , Destination Location .
+```
+
+```text
+79, move, 4-6-19.
+```
+
+See
+[Interstellar movement]({{< relref "exploration.md#interstellar-movement" >}}).
