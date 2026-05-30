@@ -47,7 +47,7 @@ site and confirm a clean build.
 | 17 — How-to: a complete sample order file | DONE |
 | 18 — How-to: multi-order sequences in Sequence-of-Play order | DONE |
 | 19 — Wire both pages into the site; index, reciprocal links, glossary | DONE |
-| 20 — Build, verify, and consistency pass | TODO |
+| 20 — Build, verify, and consistency pass | DONE |
 
 Keep this table in sync with the per-task **Status** lines below.
 
@@ -890,7 +890,7 @@ new body content beyond links.
 
 ## Task 20 — Build, verify, and consistency pass
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** confirm both pages build, all links resolve, and nothing regressed.
 
