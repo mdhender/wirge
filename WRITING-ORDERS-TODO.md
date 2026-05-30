@@ -38,7 +38,7 @@ site and confirm a clean build.
 | 8 — Spy orders | DONE |
 | 9 — News release orders | DONE |
 | 10 — Jump orders | DONE |
-| 11 — Draft, Disband, Pay, Ration orders | TODO |
+| 11 — Draft, Disband, Pay, Ration orders | DONE |
 | 12 — Control & Un-control orders | TODO |
 | 13 — Naming orders | TODO |
 | 14 — Trade station & Colonization orders | TODO |
@@ -606,7 +606,7 @@ forms.
 
 ## Task 11 — Draft, Disband, Pay, Ration orders
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add `## Draft orders`, `## Disband orders`, `## Pay orders`, and
 `## Ration orders`.

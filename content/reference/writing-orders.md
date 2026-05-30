@@ -381,3 +381,68 @@ Ship No. , move , Destination Location .
 
 See
 [Interstellar movement]({{< relref "exploration.md#interstellar-movement" >}}).
+
+## Draft orders
+
+The unit-type words are rendered here as codes (`SLD` for soldier, `TRN` for
+trainee) for consistency with the rest of these docs.
+
+```text
+Ship/Colony No. , draft , quantity and type of unit .
+```
+
+```text
+13, draft, 3,600 SLD.
+78, draft, 16,880 TRN.
+99, draft, 5,000 CNW.
+```
+
+See [Population orders]({{< relref "population.md#orders" >}}).
+
+## Disband orders
+
+```text
+Ship/Colony No. , disband , quantity and type of unit .
+```
+
+```text
+13, disband, 3,600 SLD.
+```
+
+See [Population changes]({{< relref "population.md#population-changes" >}}).
+
+## Pay orders
+
+The pay-type words are rendered as codes (`USK` for unskilled, `PRO` for
+professional, `SLD` for soldier).
+
+```text
+Ship/Colony No. , pay , wages , type .
+```
+
+```text
+38, pay, 0.7, USK.
+38, pay, 1.6, PRO.
+38, pay, 1.2, SLD.
+```
+
+See [Population]({{< relref "population.md" >}}).
+
+## Ration orders
+
+```text
+Ship/Colony No. , ration , ration percentage % .
+```
+
+```text
+16, ration, 50%.
+```
+
+{{< callout type="info" >}}
+The ration is an integer and the `%` sign is required: `50%` is half a full ration
+and `100%` is a full ration. Starvation sets in at `25%` of a full ration. All
+population units on the ship or colony are assigned the same ration.
+{{< /callout >}}
+
+See [Rations]({{< relref "food.md#rations" >}}) and
+[Starvation]({{< relref "food.md#starvation" >}}).
