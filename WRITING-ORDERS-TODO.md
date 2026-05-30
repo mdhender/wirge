@@ -34,7 +34,7 @@ site and confirm a clean build.
 | 4 — Assembly & Dis-assembly orders | DONE |
 | 5 — Build change, Transfer, Mining change orders | DONE |
 | 6 — Market orders (buy/sell units & TL) | DONE |
-| 7 — Survey & Probe orders | TODO |
+| 7 — Survey & Probe orders | DONE |
 | 8 — Spy orders | TODO |
 | 9 — News release orders | TODO |
 | 10 — Jump orders | TODO |
@@ -510,7 +510,7 @@ side are allowed.
 
 ## Task 7 — Survey & Probe orders
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add `## Survey orders` and `## Probe orders`.
 

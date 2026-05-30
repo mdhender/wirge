@@ -268,3 +268,30 @@ Ship/Colony No. , sell , technology level , price in GOLD each .
 ```
 
 See [Home planet markets]({{< relref "trade.md#home-planet-markets" >}}).
+
+## Survey orders
+
+```text
+Ship/Colony No. , survey .
+```
+
+```text
+23, survey.
+```
+
+See [Surveys]({{< relref "exploration.md#surveys" >}}).
+
+## Probe orders
+
+A probe order takes one or more orbit numbers, separated by commas.
+
+```text
+Ship/Colony No. , probe , Orbit No. , ... .
+```
+
+```text
+28, probe, 6.
+31, probe, 2, 4, 5.
+```
+
+See [Probes]({{< relref "exploration.md#probes" >}}).
