@@ -184,18 +184,18 @@ the section that matches what you need:
 - 17.2.21 - [Trade Station Orders]({{< relref "reference/writing-orders.md#trade-station-orders" >}})
 - 17.2.22 - [Colonizing Permission]({{< relref "reference/writing-orders.md#colonization-orders" >}})
 - Appendix A
-- A.1 - APPROXIMATION
-- A.2 - FRACTIONS
-- A.3 - GROUPS
-- A.4 - HABITABILITY NUMBER
-- A.5 - HYPER SPACE
+- A.1 - [APPROXIMATION]({{< relref "reference/exploration.md#approximation" >}})
+- A.2 - [FRACTIONS]({{< relref "reference/glossary.md" >}})
+- A.3 - [GROUPS]({{< relref "reference/glossary.md" >}})
+- A.4 - [HABITABILITY NUMBER]({{< relref "reference/habitability.md" >}})
+- A.5 - [HYPER SPACE]({{< relref "reference/glossary.md" >}})
 - A.6 - [MASS]({{< relref "reference/mass.md" >}})
 - A.7 - [STORAGE]({{< relref "reference/mass.md#storage" >}})
 - Appendix B
-- B.1 - QUANTITIES REPRESENTED BY UNITS
+- B.1 - [QUANTITIES REPRESENTED BY UNITS]({{< relref "reference/units.md#quantities-represented" >}})
 - Appendix C: Sample Documents
-- C.1 - Orders File
-- C.2 - Turn Report
+- C.1 - [Orders File]({{< relref "how-to/writing-orders.md" >}})
+- C.2 - [Turn Report]({{< relref "how-to/read-a-turn-report.md" >}})
 - Colophon
 
 ## Additional Documents

@@ -125,6 +125,44 @@ Entities are ships or colonies and are frequently called "S/C" units in reports 
 | CENC | Enclosed Colony | yes           | TL 2-10  | yes           | yes           | Surface colony.                             |
 | CORB | Orbital Colony  | yes           | TL 2-10  | yes           | no            | Allowed to build STU-2 units.               |
 
+## Quantities represented
+
+How many items each unit stands for. Most units represent a single item; the
+exceptions are noted below.
+
+| Code | Number of items per unit |
+| ---- | ------------------------ |
+| ANM | 1 |
+| ASC | 1 |
+| ASW | Enough to arm 1 `SLD` unit |
+| AUT | Enough to replace 1 `USK` unit times its TL |
+| CNGD | Indeterminate |
+| ESH | 1 |
+| EWP | 1 |
+| FACT | 1 |
+| FARM | 1 |
+| HDRV | 1 |
+| LSP | 1 |
+| MINE | 1 |
+| MRBT | 100 robots |
+| MSL | 1 |
+| MSS | 1 |
+| MTSP | Enough for 1 `SLD` unit per combat round |
+| SDRV | 1 |
+| SEN | 1 |
+| STU-1 | Houses 1 `MU` |
+| STU-2 | Houses 1 `MU` |
+| TPT | 1 |
+
+Each natural-resource unit is 1 [mass unit]({{< relref "mass.md" >}}) (`MU`) of
+that resource.
+
+{{< callout type="info" >}}
+The structural quantities follow the current one-`MU`-per-`STU` model. They will
+change with the planned `STU-2` revision tracked in
+[Manufacturing]({{< relref "manufacturing.md#build-costs" >}}).
+{{< /callout >}}
+
 ## Differences from the rule book
 
 The game engine's codes and technological levels depart from the original rule book and sample turn reports in a few places:

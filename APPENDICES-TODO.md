@@ -30,14 +30,14 @@ DONE when complete."
 
 | Task | Status |
 | ---- | ------ |
-| 1 — Mass + Storage → write the `mass.md` body (A.6, A.7) | TODO |
-| 2 — Quantities represented → add a section to `units.md` (B.1) | TODO |
-| 3 — Approximation → add to `exploration.md` (A.1) | TODO |
-| 4 — Definition-only items → glossary (A.2 Fractions, A.5 Hyper Space; verify A.3/A.4) | TODO |
-| 5 — Sample Orders File → `how-to/writing-orders.md` (C.1) | TODO |
-| 6 — Sample Turn Report → new `how-to/read-a-turn-report.md` (C.2) | TODO |
-| 7 — Wire the Working Index (Appendix A/B/C) + cross-links | TODO |
-| 8 — Build, verify, and consistency pass | TODO |
+| 1 — Mass + Storage → write the `mass.md` body (A.6, A.7) | DONE |
+| 2 — Quantities represented → add a section to `units.md` (B.1) | DONE |
+| 3 — Approximation → add to `exploration.md` (A.1) | DONE |
+| 4 — Definition-only items → glossary (A.2 Fractions, A.5 Hyper Space; verify A.3/A.4) | DONE |
+| 5 — Sample Orders File → `how-to/writing-orders.md` (C.1) | DONE |
+| 6 — Sample Turn Report → new `how-to/read-a-turn-report.md` (C.2) | DONE |
+| 7 — Wire the Working Index (Appendix A/B/C) + cross-links | DONE |
+| 8 — Build, verify, and consistency pass | DONE |
 
 Keep this table in sync with the per-task **Status** lines below.
 
@@ -263,7 +263,7 @@ leave it for a separate fix.
 
 ## Task 1 — Mass + Storage → write the `mass.md` body (A.6, A.7)
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** replace the stub body of `content/reference/mass.md` with the Mass-unit
 definition and the Storage section. Keep `weight: 190`.
@@ -296,7 +296,7 @@ definition and the Storage section. Keep `weight: 190`.
 
 ## Task 2 — Quantities represented → add a section to `units.md` (B.1)
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add a `## Quantities represented` section (anchor
 `#quantities-represented`) to `content/reference/units.md` carrying Appendix II's
@@ -332,7 +332,7 @@ definition and the Storage section. Keep `weight: 190`.
 
 ## Task 3 — Approximation → add to `exploration.md` (A.1)
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** host the log-base-10 approximation table on
 `content/reference/exploration.md` as a subsection of Probes (anchor
@@ -372,7 +372,7 @@ definition and the Storage section. Keep `weight: 190`.
 
 ## Task 4 — Definition-only items → glossary (A.2, A.5; verify A.3, A.4)
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add the two glossary terms that do not yet exist and confirm the
 already-homed definitions are present and adequate.
@@ -403,7 +403,7 @@ already-homed definitions are present and adequate.
 
 ## Task 5 — Sample Orders File → `how-to/writing-orders.md` (C.1)
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add the Appendix C Orders File as an annotated full sample in
 `content/how-to/writing-orders.md`, and remove that page's existing Appendix-C
@@ -441,7 +441,7 @@ TODO callout.
 
 ## Task 6 — Sample Turn Report → new `how-to/read-a-turn-report.md` (C.2)
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** create a new how-to guide that reproduces an engine-code-translated,
 annotated sample turn report and explains how to read it, linking each section to
@@ -484,7 +484,7 @@ the reference page that owns its rules.
 
 ## Task 7 — Wire the Working Index (Appendix A/B/C) + cross-links
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** point every Appendix A/B/C line in `content/_index.md` at its real home;
 confirm Appendix III stays omitted; add reciprocal links. No new body content.
@@ -529,7 +529,7 @@ confirm Appendix III stays omitted; add reciprocal links. No new body content.
 
 ## Task 8 — Build, verify, and consistency pass
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** confirm everything builds, links resolve, modes are correct, and
 nothing regressed.

@@ -82,10 +82,117 @@ covers why that grouping matters. For the header rules and the `//` comment
 convention, see
 [General rules]({{< relref "../reference/writing-orders.md#general-rules" >}}).
 
-{{< callout type="warning" >}}
-**TODO:** When the manual's Appendix C (sample Orders File) is converted, link it
-here as the canonical model.
-{{< /callout >}}
+### A full sample order file
+
+The file below is a complete sample exercising most of the order types. It is
+grouped by activity, in roughly the order the turn executes; the `//` comments
+explain representative lines. Slash your zeros (0) and keep the header on every
+page.
+
+```text
+// Player: Tras-yo of Blenora   Player ID No.: 408   Game No.: 3   Game-turn No.: 17
+// Signature: ______________________
+
+// --- Set up a new ship (transfer block closed by a period) ---
+29, set up, ship, transfer,
+STU-1, 60,
+SDRV-1, 5,
+LSP-1, 5,
+FOOD, 5,
+PRO, 5,
+SEN-1, 1,
+FUEL, 16,800,
+HDRV-1, 61.
+
+// --- Assembly ---
+58, assemble, MSL-1, 6,000.            // assemble 6,000 missile launchers
+83, assemble, MINE-2, 25,680, 148.     // new mine group working deposit 148
+91, assemble, FACT-6, 54,000, CNGD.    // new factory group building CNGD
+
+// --- Build changes ---
+16, build change, 8, EWP-4.            // factory group 8 builds EWP-4 (use retool to change an existing product)
+17, build change, 1, RSCH.             // switch factory group 1 to research
+
+// --- Mining change ---
+348, mining, 18, 92.                   // move mine group 18 to deposit 92
+
+// --- Population, pay, and rations ---
+13, draft, SLD, 3,600.                 // raise 3,600 soldiers
+78, draft, TRN, 16,880.                // train 16,880 unskilled toward professional
+99, disband, SLD, 5,000.               // return 5,000 soldiers to unskilled
+38, pay, USK, 0.7.                     // wages are in CNGD
+38, pay, PRO, 1.6.
+38, pay, SLD, 1.2.
+16, ration, 50%.                       // half rations this turn
+
+// --- Logistics ---
+22, transfer, 29, SPY, 10.             // hand 10 spy units to ship 29
+
+// --- Market ---
+53, buy, PRTO-6, 1, 1,000,000.         // buy one TL-6 prototype
+555, buy, STU-1, 25,600, 0.01.         // buy structural units at 0.01 GOLD each
+44, sell, SDRV-3, 4, 0.2.              // sell 4 space drives at 0.2 GOLD each
+721, sell, PRTO-4, 1, 800,000.         // sell one TL-4 prototype
+
+// --- Survey and probe ---
+23, survey.                            // survey the planet this S/C is at
+28, probe, A/6.                        // probe orbit 6 of star A
+31, probe, A/2, A/4, A/5.              // probe several orbits
+
+// --- Espionage ---
+38, check rebels, 1.
+38, check for spies, 1.
+38, convert rebels, 119.
+38, attack spies, 102, 54.             // attack nation 54's spies
+38, incite rebels, 998, 54.
+38, information, 12, 54.
+
+// --- Combat ---
+20, support, 342, 40%.                 // support 342 in its defense
+20, support, 342, 45, 35%.             // support 342's attack on 45
+22, invade, 342, 55%.
+39, bombard, 121, 75%.
+98, raid, 644, 28%, GOLD.              // raid 644 for gold
+
+// --- Movement ---
+77, move, A/6.                         // in-system move to orbit 6 of star A
+79, jump, 4-6-19.                      // jump to system 4-6-19
+
+// --- Control ---
+28, control.                           // declare control through proxy S/C 28
+28, un-control.                        // or relinquish it
+
+// --- Naming ---
+39, name, "Dragonfire".                // name a ship
+5-12-38A/2, name, "Goldball".          // name a planet (location needs star letter and orbit)
+
+// --- News and permissions ---
+02-29-64A/3, news, "SDRV-3 on the market next turn.", "Tras-yo of Blenora".
+129, permission to colonize, 99-12-26A/3.
+138, permission, 200, granted.
+162, permission, 100, denied.
+```
+
+This sample only illustrates each order's shape. For the exact format, fields,
+and constraints of every order, follow the reference: each of these orders is
+cataloged in
+[Writing Orders]({{< relref "../reference/writing-orders.md" >}}) — for instance
+[set up]({{< relref "../reference/writing-orders.md#set-up-orders" >}}),
+[assemble and dis-assemble]({{< relref "../reference/writing-orders.md#assembly-orders" >}}),
+[build change]({{< relref "../reference/writing-orders.md#build-change-orders" >}}),
+[transfer]({{< relref "../reference/writing-orders.md#transfer-orders" >}}),
+[market buy/sell]({{< relref "../reference/writing-orders.md#market-orders" >}}),
+[combat]({{< relref "../reference/writing-orders.md#combat-orders" >}}),
+[spy]({{< relref "../reference/writing-orders.md#spy-orders" >}}),
+[movement]({{< relref "../reference/writing-orders.md#movement-orders" >}}),
+[draft]({{< relref "../reference/writing-orders.md#draft-orders" >}}),
+[pay]({{< relref "../reference/writing-orders.md#pay-orders" >}}),
+[ration]({{< relref "../reference/writing-orders.md#ration-orders" >}}),
+[control]({{< relref "../reference/writing-orders.md#control-orders" >}}), and
+[naming]({{< relref "../reference/writing-orders.md#naming-orders" >}}).
+
+To interpret the report this file produces, see
+[Read a turn report]({{< relref "read-a-turn-report.md" >}}).
 
 ## Order several actions in sequence
 

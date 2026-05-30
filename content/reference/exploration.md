@@ -60,6 +60,25 @@ A probe reports on **any planet in the same system**:
 A probe's quantities are approximate, in contrast to the exact figures a survey
 returns.
 
+### Approximation
+
+Probe and sensor reports give certain values not exactly but as the **log base
+10** of the actual number:
+
+| Actual mass / quantity | Reported approximation |
+| ---------------------- | ---------------------- |
+| 0 – 9                  | 0                      |
+| 10 – 99                | 1                      |
+| 100 – 999              | 2                      |
+| 1,000 – 9,999          | 3                      |
+| 10,000 – 99,999        | 4                      |
+| 100,000 – 999,999      | 5                      |
+| 1,000,000 – 9,999,999  | 6                      |
+
+The pattern continues for larger magnitudes — each further row is one more power
+of ten. This is the convention behind the approximate quantities a probe reports,
+in contrast to the exact figures a [survey](#surveys) returns.
+
 ## Surveys
 
 Any ship or colony may survey the **planet it is located at**. A survey reports

@@ -10,7 +10,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 ## A
 
 - **Anti-missile** (`ANM`) — A weapon launched by a missile launcher to destroy incoming missiles. See [Weapons]({{< relref "weapons.md#anti-missiles" >}}).
-- **Approximation** — A report value rounded or obscured by the game rather than exact. Sensor and probe reports often give approximate masses, quantities, or production-unit counts.
+- **Approximation** — A report value rounded or obscured by the game rather than exact. Sensor and probe reports often give approximate masses, quantities, or production-unit counts as the log base 10 of the actual number. See [Approximation]({{< relref "exploration.md#approximation" >}}).
 - **Assembly** — An order family that forms or disassembles units, including `SPY` and `CNW` population-cadre allocations, and makes operational units functional. See [Population]({{< relref "population.md#orders" >}}) and [Manufacturing]({{< relref "manufacturing.md#assembling" >}}).
 - **Assault craft** (`ASC`) — A land/space vehicle used to invade a ship or colony. See [Weapons]({{< relref "weapons.md#assault-craft" >}}).
 - **Assault weapon** (`ASW`) — A weapon carried by soldiers in surface combat. See [Weapons]({{< relref "weapons.md#assault-weapons" >}}).
@@ -67,6 +67,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Farm** (`FARM`) — A production unit that grows FOOD, delivering its harvest once a year. See [Farming]({{< relref "farming.md" >}}).
 - **Farm group** — A set of `FARM` units that grow FOOD together, tracked in four quarter buckets toward harvest.
 - **Food** (`FOOD`) — The resource that feeds the population, produced by farms. See [Food]({{< relref "food.md" >}}).
+- **Fraction / rounding** — Fractions of units are resolved by truncation or by rounding up, depending on the operation. There is no single global rule; each rule states its own rounding where it matters.
 - **Full ration** — 0.25 FOOD units per population unit per turn. See [Food]({{< relref "food.md#rations" >}}).
 - **Fuel** (`FUEL`) — The resource that powers mines, farms, factories, engines, and combat.
 
@@ -175,6 +176,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Standard of living** (`SOL`) — A measure of population well-being, shaped by pay and rations, that bears on morale.
 - **Star** — A stellar body within a solar system. Identified by the system co-ordinates plus a letter suffix (`A`, `B`, `C`, …) — for example `12-13-14A` — which is required even in a single-star system.
 - **Starvation** — Loss of population when the actual ration falls below the survival ration (25% of a full ration). See [Food]({{< relref "food.md#starvation" >}}).
+- **Storage** — The state of a unit that is not currently operational — one that must be assembled before it functions — is said to be in storage. See [Mass · Storage]({{< relref "mass.md#storage" >}}) and **Operational unit**.
 - **Structural unit** (`STU`) — The framing required to build ships and colonies. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#structural-units" >}}).
 - **Support order** — A combat order that assists another nation in an invasion or in defense; the supporting and supported nations fight as one unit. See [Combat]({{< relref "combat.md#attack-orders" >}}).
 - **Surface colony** — An open-air or enclosed colony on a planet's surface (as distinct from an orbiting colony). Only a surface colony may mine.
