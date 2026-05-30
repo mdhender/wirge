@@ -131,17 +131,20 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Operational unit** — A unit that must be assembled after coming out of storage before it will function: `SDRV`, `SEN`, `AUT`, `LSP`, `EWP`, `ESH`, `MINE`, `FACT`, `FARM`, `HDRV`, `STU-1`, `STU-2`, or `MSL`. See [Manufacturing]({{< relref "manufacturing.md#assembling" >}}).
 - **Orbit** — One of a star's ten numbered positions (1 closest, 10 farthest); any may hold a planet. See [Stars and Orbits]({{< relref "game-setup.md#stars-and-orbits" >}}).
 - **Orbiting colony** (`CORB`) — A colony in orbit around a planet; requires life support and cannot mine.
+- **Order** — A single instruction a nation submits with its turn, addressed to a ship or colony and written in Sequence-of-Play order. See [Writing Orders]({{< relref "writing-orders.md" >}}).
 
 ## P
 
 - **Planet** — A body occupying an [orbit]({{< relref "game-setup.md#stars-and-orbits" >}}); the basic site for colonies, mining, and farming. One of three types, with a habitability number and natural resources. See [Planets]({{< relref "planets.md" >}}).
 - **Pay** — Consumer goods or gold given to population units. Colony population pay is expressed in `CNGD`; ship crew wages are expressed in `GOLD`. See [Population]({{< relref "population.md" >}}).
+- **Percent committed** — The integer share (with a required `%`) a nation commits to a combat order; see **Commitment (percentage of commitment)**. See [Combat]({{< relref "combat.md#percentage-of-commitment" >}}).
 - **Population unit** — A unit of citizens. Population classes are `USK`, `PRO`, `SLD`, and `UEM`; population cadres are `TRN`, `SPY`, `CNW`, and `RBL`. See [Population]({{< relref "population.md" >}}).
 - **Probe** — A sensor scan that reports a planet in the same system: its ships and colonies, its resource deposits (type and approximate quantity), and its habitability number. See [Exploration]({{< relref "exploration.md#probes" >}}).
 - **Production unit** — A unit that turns inputs into output: a mine, farm, or factory. See [The Production Cycle]({{< relref "../explanation/production-cycle.md" >}}).
 - **Professional** (`PRO`) — Skilled population requiring long apprenticeships; needed to manage production units.
 - **Propulsion capacity** — The mass a hyperdrive can move through hyper-space: 1,000 x TL MU per operating hyperdrive. See [Hyperdrives]({{< relref "ship-systems.md#hyperdrives" >}}).
 - **Prototype** (`PRTO`) — A storable, tradeable unit (`PRTO-N`) formed from accumulated `RSCH-N`; a colony consumes one with an upgrade order to raise its own or a target entity's `TL`. See [Upgrading]({{< relref "technological-advancement.md#upgrading" >}}).
+- **Proxy** — In a trade-station or colonization permission order, the receiving ship or colony that stands in for the nation controlling it; granting or denying permission acts on that nation. See [Writing Orders]({{< relref "writing-orders.md#trade-station-orders" >}}).
 
 ## R
 
@@ -158,8 +161,10 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Sensor** (`SEN`) — A unit that reports on solar systems and on ships and colonies, and conducts probes. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#sensors" >}}).
 - **Sequence of turn execution** — The fixed order of the 21 stages in which a turn resolves. See [Sequence of Turn Execution]({{< relref "sequence-of-turn-execution.md" >}}).
 - **Set up order** — An order that establishes a new ship or colony by transferring materials from an existing entity at the same location. See [Colonies and Ships]({{< relref "colonies-and-ships.md#establishment" >}}).
+- **Set-up block** — The multi-line form of a [set up order]({{< relref "writing-orders.md#set-up-orders" >}}), one transfer per line and closed by `end`. See [Write a turn's orders]({{< relref "../how-to/writing-orders.md" >}}).
 - **Ship** (`SHIP`) — A mobile entity that can move between orbits and systems; requires life support and cannot host factories or mines.
 - **Ship/colony** (S/C) — Collective term for an entity — that is, either a ship or a colony.
+- **Slashed zero** — The convention of writing a zero with a slash (0) on a turn sheet to distinguish it from the letter O. See [Writing Orders]({{< relref "writing-orders.md#general-rules" >}}).
 - **Soldier** (`SLD`) — Military population.
 - **Solar system** — A set of one or more stars sharing the same co-ordinates. Named by its co-ordinates alone (e.g. `12-13-14`); each of its stars adds a letter suffix.
 - **Space drive** (`SDRV`) — A unit that maintains a ship's orbit and maneuvers it in combat; cannot be used for interplanetary or interstellar travel. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#space-drives" >}}).

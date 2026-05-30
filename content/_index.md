@@ -157,31 +157,32 @@ the section that matches what you need:
 - 15 - [VICTORY CONDITIONS]({{< relref "reference/victory-conditions.md" >}})
 - 16 - [SEQUENCE OF TURN EXECUTION]({{< relref "reference/sequence-of-turn-execution.md" >}})
 - 17 - [WRITING ORDERS]({{< relref "reference/writing-orders.md" >}})
-- 17.1 - General Rules
-- 17.2 - List of Orders
-- 17.2.1 - Combat orders
-- 17.2.2 - [Set Up Orders]({{< relref "reference/writing-orders.md" >}})
-- 17.2.3 - [Assembly orders]({{< relref "reference/writing-orders.md" >}})
-- 17.2.4 - Dis-assembly orders
-- 17.2.5 - Build Change Orders
-- 17.2.6 - [Transfer Orders]({{< relref "reference/writing-orders.md" >}})
-- 17.2.7 - Mining Change Orders
-- 17.2.8 - Market Order
-- 17.2.9 - Survey Orders
-- 17.2.10 - Probe Orders
-- 17.2.11 - Spy Orders
-- 17.2.12 - News Release
-- 17.2.13 - Jump Orders
-- 17.2.14 - Draft Orders
-- 17.2.15 - Pay Orders
-- 17.2.16 - Ration Orders
-- 17.2.17 - Control Orders
-- 17.2.18 - Un-Control Orders
-- 17.2.19 - Naming Orders
-- 17.2.19.1 - Naming Planets
-- 17.2.19.2 - Naming Ships and Colonies
-- 17.2.20 - Trade Station Orders
-- 17.2.21 - Colonizing Permission
+- 17.1 - [General Rules]({{< relref "reference/writing-orders.md#general-rules" >}})
+- 17.2 - [List of Orders]({{< relref "reference/writing-orders.md" >}})
+- 17.2.1 - [Combat orders]({{< relref "reference/writing-orders.md#combat-orders" >}})
+- 17.2.2 - [Set Up Orders]({{< relref "reference/writing-orders.md#set-up-orders" >}})
+- 17.2.3 - [Assembly orders]({{< relref "reference/writing-orders.md#assembly-orders" >}})
+- 17.2.4 - [Dis-assembly orders]({{< relref "reference/writing-orders.md#dis-assembly-orders" >}})
+- 17.2.5 - [Build Change Orders]({{< relref "reference/writing-orders.md#build-change-orders" >}})
+- 17.2.6 - [Transfer Orders]({{< relref "reference/writing-orders.md#transfer-orders" >}})
+- 17.2.7 - [Mining Change Orders]({{< relref "reference/writing-orders.md#mining-change-orders" >}})
+- 17.2.8 - [Market Order]({{< relref "reference/writing-orders.md#market-orders" >}})
+- 17.2.9 - [Survey Orders]({{< relref "reference/writing-orders.md#survey-orders" >}})
+- 17.2.10 - [Probe Orders]({{< relref "reference/writing-orders.md#probe-orders" >}})
+- 17.2.11 - [Spy Orders]({{< relref "reference/writing-orders.md#spy-orders" >}})
+- 17.2.12 - [News Release]({{< relref "reference/writing-orders.md#news-release-orders" >}})
+- 17.2.13 - [Jump Orders]({{< relref "reference/writing-orders.md#jump-orders" >}})
+- 17.2.14 - [Draft Orders]({{< relref "reference/writing-orders.md#draft-orders" >}})
+- 17.2.15 - [Disband Orders]({{< relref "reference/writing-orders.md#disband-orders" >}})
+- 17.2.16 - [Pay Orders]({{< relref "reference/writing-orders.md#pay-orders" >}})
+- 17.2.17 - [Ration Orders]({{< relref "reference/writing-orders.md#ration-orders" >}})
+- 17.2.18 - [Control Orders]({{< relref "reference/writing-orders.md#control-orders" >}})
+- 17.2.19 - [Un-Control Orders]({{< relref "reference/writing-orders.md#un-control-orders" >}})
+- 17.2.20 - [Naming Orders]({{< relref "reference/writing-orders.md#naming-orders" >}})
+- 17.2.20.1 - [Naming Planets]({{< relref "reference/writing-orders.md#naming-planets" >}})
+- 17.2.20.2 - [Naming Ships and Colonies]({{< relref "reference/writing-orders.md#naming-ships-and-colonies" >}})
+- 17.2.21 - [Trade Station Orders]({{< relref "reference/writing-orders.md#trade-station-orders" >}})
+- 17.2.22 - [Colonizing Permission]({{< relref "reference/writing-orders.md#colonization-orders" >}})
 - Appendix A
 - A.1 - APPROXIMATION
 - A.2 - FRACTIONS

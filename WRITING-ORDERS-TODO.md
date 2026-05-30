@@ -46,7 +46,7 @@ site and confirm a clean build.
 | 16 — How-to: the full `set up … end` walkthrough | DONE |
 | 17 — How-to: a complete sample order file | DONE |
 | 18 — How-to: multi-order sequences in Sequence-of-Play order | DONE |
-| 19 — Wire both pages into the site; index, reciprocal links, glossary | TODO |
+| 19 — Wire both pages into the site; index, reciprocal links, glossary | DONE |
 | 20 — Build, verify, and consistency pass | TODO |
 
 Keep this table in sync with the per-task **Status** lines below.
@@ -848,7 +848,7 @@ Sequence-of-Play order, showing several orders working together.
 
 ## Task 19 — Wire both pages into the site; index, reciprocal links, glossary
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** make both pages reachable and link the Working Index 17.x sub-tree. No
 new body content beyond links.
