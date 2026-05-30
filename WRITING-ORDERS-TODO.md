@@ -35,7 +35,7 @@ site and confirm a clean build.
 | 5 — Build change, Transfer, Mining change orders | DONE |
 | 6 — Market orders (buy/sell units & TL) | DONE |
 | 7 — Survey & Probe orders | DONE |
-| 8 — Spy orders | TODO |
+| 8 — Spy orders | DONE |
 | 9 — News release orders | TODO |
 | 10 — Jump orders | TODO |
 | 11 — Draft, Disband, Pay, Ration orders | TODO |
@@ -532,7 +532,7 @@ side are allowed.
 
 ## Task 8 — Spy orders
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add `## Spy orders` with the six spy-function forms.
 

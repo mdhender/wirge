@@ -295,3 +295,31 @@ Ship/Colony No. , probe , Orbit No. , ... .
 ```
 
 See [Probes]({{< relref "exploration.md#probes" >}}).
+
+## Spy orders
+
+A spy order names a quantity of spies and a function. Three functions —
+**incite rebels**, **attack spies**, and **information** — also take a defender
+ship or colony ID No.
+
+```text
+Ship/Colony No. , quantity of SPY , check rebels .
+Ship/Colony No. , quantity of SPY , convert rebels .
+Ship/Colony No. , quantity of SPY , incite rebels , Defender Ship/Colony No. .
+Ship/Colony No. , quantity of SPY , check for spies .
+Ship/Colony No. , quantity of SPY , attack spies , Defender Ship/Colony No. .
+Ship/Colony No. , quantity of SPY , information , Defender Ship/Colony No. .
+```
+
+```text
+38, 1, check rebels.
+38, 119, convert rebels.
+38, 998, incite rebels, 54.
+38, 1, check for spies.
+38, 102, attack spies, 54.
+38, 12, information, 54.
+```
+
+See [Spy functions]({{< relref "espionage.md#spy-functions" >}}),
+[Convert rebels]({{< relref "espionage.md#convert-rebels" >}}), and
+[Incite rebellion]({{< relref "espionage.md#incite-rebellion" >}}).
