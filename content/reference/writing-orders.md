@@ -446,3 +446,34 @@ population units on the ship or colony are assigned the same ration.
 
 See [Rations]({{< relref "food.md#rations" >}}) and
 [Starvation]({{< relref "food.md#starvation" >}}).
+
+## Control orders
+
+A control order takes control of a planet for the acting nation. The location must
+include the orbit number.
+
+```text
+Ship/Colony No. , control , Location .
+```
+
+```text
+28, control, 2-4-6/9.
+```
+
+{{< callout type="info" >}}
+The source labels the first field "Empire No." Here it is the acting nation's ship
+or colony ID, consistent with the first field of other orders.
+{{< /callout >}}
+
+See [Taking control]({{< relref "control-of-planets.md#taking-control" >}}).
+
+## Un-control orders
+
+Same as a control order, with `un-control` replacing `control`.
+
+```text
+28, un-control, 2-4-6/9.
+```
+
+See
+[Relinquishing planets]({{< relref "control-of-planets.md#relinquishing-planets" >}}).

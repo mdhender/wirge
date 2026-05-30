@@ -39,7 +39,7 @@ site and confirm a clean build.
 | 9 — News release orders | DONE |
 | 10 — Jump orders | DONE |
 | 11 — Draft, Disband, Pay, Ration orders | DONE |
-| 12 — Control & Un-control orders | TODO |
+| 12 — Control & Un-control orders | DONE |
 | 13 — Naming orders | TODO |
 | 14 — Trade station & Colonization orders | TODO |
 | 15 — Create the how-to; front matter, intro, scaffolding | TODO |
@@ -639,7 +639,7 @@ forms.
 
 ## Task 12 — Control & Un-control orders
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add `## Control orders` and `## Un-control orders`.
 
