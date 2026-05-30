@@ -40,3 +40,66 @@ calls for.
 // This is a comment
 39, bombard, 121, 75%. // This is a comment
 ```
+
+## Combat orders
+
+The percent committed is an integer and the `%` sign is required; `10%` is barely
+committed and `100%` is totally committed. See
+[Percentage of commitment]({{< relref "combat.md#percentage-of-commitment" >}}).
+
+**Bombard.**
+
+```text
+Ship/Colony No. , bombard , Defender Ship/Colony No. , percent committed .
+```
+
+```text
+39, bombard, 121, 75%.
+```
+
+**Invade.**
+
+```text
+Ship/Colony No. , invade , Defender Ship/Colony No. , percent committed .
+```
+
+```text
+22, invade, 342, 55%.
+```
+
+**Raid.** The material raided follows the percent committed.
+
+```text
+Ship/Colony No. , raid , Defender Ship/Colony No. , percent committed , material raided .
+```
+
+```text
+98, raid, 644, 28%, GOLD.
+```
+
+**Support (attacker).** The supported attacker's ID No. precedes the defender's;
+the example below has No. 20 support No. 342 in its attack on No. 45.
+
+```text
+Ship/Colony No. , support , attacker Ship/Colony No. , Defender Ship/Colony No. , percent committed .
+```
+
+```text
+20, support, 342, 45, 35%.
+```
+
+**Support (defender).** The example below has No. 20 support No. 342 in its
+defense.
+
+```text
+Ship/Colony No. , support , Defender Ship/Colony No. , percent committed .
+```
+
+```text
+20, support, 342, 40%.
+```
+
+See [Bombardment]({{< relref "combat.md#bombardment" >}}),
+[Attack orders]({{< relref "combat.md#attack-orders" >}}), and
+[Defense support]({{< relref "combat.md#defense-support" >}}) for combat
+resolution.

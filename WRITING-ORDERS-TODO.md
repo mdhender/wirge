@@ -29,7 +29,7 @@ site and confirm a clean build.
 | Task | Status |
 | ---- | ------ |
 | 1 — Replace the stub; front matter, intro, General Rules | DONE |
-| 2 — Combat orders | TODO |
+| 2 — Combat orders | DONE |
 | 3 — Set up orders | TODO |
 | 4 — Assembly & Dis-assembly orders | TODO |
 | 5 — Build change, Transfer, Mining change orders | TODO |
@@ -369,7 +369,7 @@ target-first grammar** throughout (Divergence 1).
 
 ## Task 2 — Combat orders
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add `## Combat orders` with the five combat order forms.
 
