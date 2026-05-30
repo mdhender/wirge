@@ -146,10 +146,10 @@ the section that matches what you need:
 - 12.4 - [Suppress Foreign Spy]({{< relref "reference/espionage.md#suppress-foreign-spy" >}})
 - 12.5 - [Incite Rebellion]({{< relref "reference/espionage.md#incite-rebellion" >}})
 - 12.6 - [Obtain Secrets]({{< relref "reference/espionage.md#obtain-secrets" >}})
-- 13 - CONTROL OF PLANETS
-- 13.1 - Taking Control
-- 13.2 - Controlled Planets
-- 13.3 - Relinquishing Planets
+- 13 - [CONTROL OF PLANETS]({{< relref "reference/control-of-planets.md" >}})
+- 13.1 - [Taking Control]({{< relref "reference/control-of-planets.md#taking-control" >}})
+- 13.2 - [Controlled Planets]({{< relref "reference/control-of-planets.md#controlled-planets" >}})
+- 13.3 - [Relinquishing Planets]({{< relref "reference/control-of-planets.md#relinquishing-planets" >}})
 - 14 - COMMUNICATION
 - 14.1 - News Service
 - 14.2 - Diplomatic Messages

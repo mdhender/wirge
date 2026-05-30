@@ -9,7 +9,7 @@ documented below as future additions.
 
 ## Nation Victory
 
-In order to win a Nation Victory, a player must control at least 100 planets, with no other player controlling more than 50% of that number, for four consecutive turns.
+In order to win a Nation Victory, a player must [control]({{< relref "control-of-planets.md" >}}) at least 100 planets, with no other player controlling more than 50% of that number, for four consecutive turns.
 
 ## Future rule additions
 

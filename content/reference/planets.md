@@ -83,13 +83,8 @@ the planet a ship or colony is located at. For the full report contents, see
 
 A planet may be controlled by a player who establishes an orbiting or surface
 colony — or a trade station — there and declares control. Control may be
-contested, granted by diplomacy, or relinquished; see Control of Planets for the
-full rules.
-
-{{< callout type="warning" >}}
-**TODO:** Wire up the "Control of Planets" link above with a `relref` once that
-reference page exists.
-{{< /callout >}}
+contested, granted by diplomacy, or relinquished; see
+[Control of Planets]({{< relref "control-of-planets.md" >}}) for the full rules.
 
 ## Generation
 

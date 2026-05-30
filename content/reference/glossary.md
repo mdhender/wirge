@@ -37,7 +37,8 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Commitment (percentage of commitment)** — The share of a unit a nation commits to a combat order. See [Combat]({{< relref "combat.md#percentage-of-commitment" >}}).
 - **Construction worker** (`CNW`) — A population-cadre allocation of 1 professional and 1 unskilled worker that carries out assembly and dis-assembly orders.
 - **Consumer goods** (`CNGD`) — Factory output used to pay the population. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#consumer-goods" >}}).
-- **Control** — A player's claim over a planet, established by an orbiting or surface colony — or a trade station — and a declaration of control.
+- **Control** — A nation's claim over a planet, established by an orbiting or surface colony — or a trade station — and a declaration of control. See [Control of Planets]({{< relref "control-of-planets.md" >}}).
+- **Control order** — The order by which a nation declares rulership of a planet where it has a colony or trade station. See [Control of Planets]({{< relref "control-of-planets.md#taking-control" >}}).
 - **Co-ordinates** — The three two-digit numbers (`00`–`30`, e.g. `28-02-18`) that designate a [solar system]({{< relref "game-setup.md#cluster" >}}). Stars sharing co-ordinates lie in the same system. A star appends a letter suffix to the co-ordinates (`28-02-18A`), and an orbit appends `/` and its number (`28-02-18A/5`).
 
 ## D
@@ -147,6 +148,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Rebel** (`RBL`) — A tally of population willing to rebel, not a separate class; rises with underpayment, underfeeding, and especially starvation.
 - **Research point** (`RSCH`) — Output a researching factory group manufactures (`RSCH-N`, at the level researched); accumulates in storage until it forms a [prototype]({{< relref "technological-advancement.md#research" >}}).
 - **Resource** — A farmed or mined substance: FOOD, METS, NMTS, FUEL, or GOLD.
+- **Ruler** — The nation that controls a planet. See [Control of Planets]({{< relref "control-of-planets.md" >}}).
 
 ## S
 
@@ -175,7 +177,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Technological level** (`TL`) — A unit's tech rating, which sets its mass, cost, and effectiveness. A ship or colony raises its `TL` through [technological advancement]({{< relref "technological-advancement.md" >}}).
 - **Technology transfer** — Raising a ship or colony's `TL` by establishing it from, or transferring levels from, a higher-`TL` ship or colony. See [Technological Advancement]({{< relref "technological-advancement.md#technology-transfer" >}}).
 - **Terrestrial** — A spherical [planet]({{< relref "planets.md#types" >}}) type, not necessarily "earth-like." Habitability number 0–25.
-- **Trade station** — An orbiting colony whose only function is trade between nations; it can also establish control of a planet. See [Trade]({{< relref "trade.md#trade-stations" >}}).
+- **Trade station** — An orbiting colony whose only function is trade between nations; it can also establish [control]({{< relref "control-of-planets.md#taking-control" >}}) of a planet. See [Trade]({{< relref "trade.md#trade-stations" >}}).
 - **Trainee** (`TRN`) — A population-cadre allocation of an unskilled worker being trained into a professional.
 - **Transport** (`TPT`) — A unit that moves units between ships and colonies and carries soldiers into combat. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#transports" >}}).
 - **Thrust factor** — A space drive's combat maneuver value: TL^2 x 1,000. A ship's combat movement is total thrust factor divided by ship mass. See [Space Drives]({{< relref "ship-systems.md#space-drives" >}}).
@@ -184,6 +186,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 ## U
 
+- **Uncontrol order** — The order by which a nation relinquishes control of a planet. See [Control of Planets]({{< relref "control-of-planets.md#relinquishing-planets" >}}).
 - **Unemployables** (`UEM`) — All citizens not represented by the working or soldier classes; all birth increases enter this category.
 - **Unit** — Any item that may be held by a ship or colony. See [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Unskilled worker** (`USK`) — Population providing labor that needs little training.
