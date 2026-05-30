@@ -6,6 +6,8 @@
 /resources/_gen/
 /.hugo_build.lock
 hugo_stats.json
+/pdf/data/
+__pycache__/
 
 # OS cruft
 .DS_Store

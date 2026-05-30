@@ -1,0 +1,16 @@
+{{- /*
+PDF-specific Markdown image renderer.
+
+Prefer page resources when present; otherwise leave the destination as Hugo
+rendered it. The print stylesheet handles final scaling for WeasyPrint.
+*/ -}}
+{{- $destination := .Destination -}}
+{{- with .Page.Resources.GetMatch $destination -}}
+  {{- $destination = .RelPermalink -}}
+{{- end -}}
+<figure class="pdf-image">
+  <img src="{{ $destination | safeURL }}" alt="{{ .Text }}">
+  {{- with .Title }}
+    <figcaption>{{ . }}</figcaption>
+  {{- end }}
+</figure>
