@@ -36,10 +36,12 @@ distances for interstellar jumps come from the
 [Star List]({{< relref "game-setup.md#star-lists" >}}).
 
 {{< callout type="info" >}}
-**Intra-binary movement.** A move between the two systems of a binary is written
-as an interstellar jump but is treated as **0.2 light years** in distance. The
-ship may move from any orbit in one system to any orbit in the other — it need
-not arrive in the 11th orbit.
+**Movement between stars of one system.** A jump between two stars of the same
+[multi-star system]({{< relref "game-setup.md#solar-systems" >}}) (a binary or
+trinary, whose stars share one set of coordinates) is written as an interstellar
+jump but is treated as **0.2 light years** in distance. The order specifies the
+orbit in the destination star, which must be an occupied orbit; the ship does not
+arrive in the 11th orbit.
 {{< /callout >}}
 
 ## Probes
