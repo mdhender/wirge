@@ -61,7 +61,8 @@ turn-to-turn optimization.
 
 A factory adds one more input — materials — and one more state. A factory sits
 **idle** until it has materials, labor, and fuel together. The turn an assembly order
-is issued, the group is only *formed*: production is calculated earlier in the turn,
+is issued, the group is only *formed*: production is calculated earlier in the turn
+(see the [Sequence of Turn Execution]({{< relref "../reference/sequence-of-turn-execution.md" >}})),
 so the new group does nothing yet. On the next turn it claims its inputs, consumes the
 materials to open the work at 0%, and advances it 25% each turn it stays supplied.
 When the work reaches completion it is delivered to cargo and the group starts the

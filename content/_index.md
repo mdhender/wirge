@@ -155,7 +155,7 @@ the section that matches what you need:
 - 14.2 - [Diplomatic Messages]({{< relref "reference/communication.md#diplomatic-messages" >}})
 - 14.3 - [Enforcement of Treaties and Agreements]({{< relref "reference/communication.md#enforcement-of-treaties-and-agreements" >}})
 - 15 - [VICTORY CONDITIONS]({{< relref "reference/victory-conditions.md" >}})
-- 16 - SEQUENCE OF TURN EXECUTION
+- 16 - [SEQUENCE OF TURN EXECUTION]({{< relref "reference/sequence-of-turn-execution.md" >}})
 - 17 - [WRITING ORDERS]({{< relref "reference/writing-orders.md" >}})
 - 17.1 - General Rules
 - 17.2 - List of Orders

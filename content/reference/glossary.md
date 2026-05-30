@@ -156,6 +156,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 ## S
 
 - **Sensor** (`SEN`) — A unit that reports on solar systems and on ships and colonies, and conducts probes. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#sensors" >}}).
+- **Sequence of turn execution** — The fixed order of the 21 stages in which a turn resolves. See [Sequence of Turn Execution]({{< relref "sequence-of-turn-execution.md" >}}).
 - **Set up order** — An order that establishes a new ship or colony by transferring materials from an existing entity at the same location. See [Colonies and Ships]({{< relref "colonies-and-ships.md#establishment" >}}).
 - **Ship** (`SHIP`) — A mobile entity that can move between orbits and systems; requires life support and cannot host factories or mines.
 - **Ship/colony** (S/C) — Collective term for an entity — that is, either a ship or a colony.
@@ -165,6 +166,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Spy** (`SPY`) — A population-cadre allocation of 1 professional and 1 soldier that reports on other nations and incites rebellion. See [Espionage]({{< relref "espionage.md" >}}).
 - **Spy function** — One of the six actions (`A`–`F`) a spy unit can perform in a turn: rebel quantity and type, convert rebels, uncover foreign spy, suppress foreign spy, incite rebellion, or obtain secrets. See [Espionage]({{< relref "espionage.md#spy-functions" >}}).
 - **Spy unit** — A `SPY` cadre on a ship or colony, performing one spy function per turn. See [Espionage]({{< relref "espionage.md" >}}).
+- **Stage** — One step of the [sequence of turn execution]({{< relref "sequence-of-turn-execution.md" >}}); a turn has 21.
 - **Standard of living** (`SOL`) — A measure of population well-being, shaped by pay and rations, that bears on morale.
 - **Star** — A stellar body within a solar system. Identified by the system co-ordinates plus a letter suffix (`A`, `B`, `C`, …) — for example `12-13-14A` — which is required even in a single-star system.
 - **Starvation** — Loss of population when the actual ration falls below the survival ration (25% of a full ration). See [Food]({{< relref "food.md#starvation" >}}).
@@ -186,7 +188,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Treaty** — An agreement between nations, enforced by the nations themselves and not by the game engine. See [Communication]({{< relref "communication.md#enforcement-of-treaties-and-agreements" >}}).
 - **Thrust factor** — A space drive's combat maneuver value: TL^2 x 1,000. A ship's combat movement is total thrust factor divided by ship mass. See [Space Drives]({{< relref "ship-systems.md#space-drives" >}}).
 - **Trinary system** — A solar system containing three stars.
-- **Turn** — One game cycle, equal to one quarter of a Galactic standard year.
+- **Turn** — One game cycle, equal to one quarter of a Galactic standard year. Each turn resolves in a fixed [sequence of stages]({{< relref "sequence-of-turn-execution.md" >}}).
 
 ## U
 

@@ -94,4 +94,6 @@ colonies.
 Within a turn, rebellion is resolved before new rebels accumulate: rebellion
 occurs first, then rebel increases are calculated. Pay and ration orders take
 effect just before this step, so the current turn's standard of living governs
-both whether a revolt happens and how many new rebels appear.
+both whether a revolt happens and how many new rebels appear. For the full
+within-turn ordering, see the
+[Sequence of Turn Execution]({{< relref "sequence-of-turn-execution.md" >}}).
