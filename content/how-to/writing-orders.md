@@ -52,7 +52,40 @@ what a set-up order does, see
 
 ## A complete order file
 
-<!-- Task 17: one realistic, complete sample order file -->
+A turn's orders are a plain-text file. Put the header line at the top of each page,
+then list your orders in Sequence-of-Play order. Use `//` to leave notes for
+yourself; the parser ignores the `//` and the rest of that line.
+
+```text
+// Player: Tras-yo of Blenora   Player ID No.: 408   Game No.: 3   Game-turn No.: 17
+// Signature: ______________________
+
+// --- Mining and manufacturing ---
+83, assemble, 25,680 MINE-2, 148.       // work deposit 148
+91, build change, 8, EWP-4.             // retool factory group 8
+
+// --- Logistics ---
+22, transfer, 10 SPY, 29.               // hand spies to the scout
+
+// --- Movement ---
+29, move, 4-6-19.                       // jump the scout out
+
+16, ration, 50%.                        // half rations this turn
+```
+
+Write the header values — player name, player ID No., game No., game-turn No., and
+your signature — on every page, and slash your zeros (0) so they are not read as
+the letter O. The game-turn No. is the number of the last print-out you received.
+
+Keep the orders grouped in the order the turn executes them; the next section
+covers why that grouping matters. For the header rules and the `//` comment
+convention, see
+[General rules]({{< relref "../reference/writing-orders.md#general-rules" >}}).
+
+{{< callout type="warning" >}}
+**TODO:** When the manual's Appendix C (sample Orders File) is converted, link it
+here as the canonical model.
+{{< /callout >}}
 
 ## Order several actions in sequence
 

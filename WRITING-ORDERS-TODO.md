@@ -44,7 +44,7 @@ site and confirm a clean build.
 | 14 — Trade station & Colonization orders | DONE |
 | 15 — Create the how-to; front matter, intro, scaffolding | DONE |
 | 16 — How-to: the full `set up … end` walkthrough | DONE |
-| 17 — How-to: a complete sample order file | TODO |
+| 17 — How-to: a complete sample order file | DONE |
 | 18 — How-to: multi-order sequences in Sequence-of-Play order | TODO |
 | 19 — Wire both pages into the site; index, reciprocal links, glossary | TODO |
 | 20 — Build, verify, and consistency pass | TODO |
@@ -790,7 +790,7 @@ block shown in context, with the prose the reference deliberately omits.
 
 ## Task 17 — How-to: a complete sample order file
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** fill the order-file section with one realistic, complete order file.
 
