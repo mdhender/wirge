@@ -40,7 +40,7 @@ site and confirm a clean build.
 | 10 — Jump orders | DONE |
 | 11 — Draft, Disband, Pay, Ration orders | DONE |
 | 12 — Control & Un-control orders | DONE |
-| 13 — Naming orders | TODO |
+| 13 — Naming orders | DONE |
 | 14 — Trade station & Colonization orders | TODO |
 | 15 — Create the how-to; front matter, intro, scaffolding | TODO |
 | 16 — How-to: the full `set up … end` walkthrough | TODO |
@@ -667,7 +667,7 @@ forms.
 
 ## Task 13 — Naming orders
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add `## Naming orders` with two H3 subsections.
 

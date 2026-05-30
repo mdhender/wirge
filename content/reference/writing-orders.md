@@ -477,3 +477,28 @@ Same as a control order, with `un-control` replacing `control`.
 
 See
 [Relinquishing planets]({{< relref "control-of-planets.md#relinquishing-planets" >}}).
+
+## Naming orders
+
+A name may be at most 24 characters, including blanks, and is enclosed in double
+quotes. Odd characters in the name may cause the order to be rejected.
+
+### Naming planets
+
+```text
+Location , name , name .
+```
+
+```text
+5-12-38/2, name, "Goldball Prime".
+```
+
+### Naming ships and colonies
+
+```text
+Ship/Colony No. , name , name .
+```
+
+```text
+39, name, "Dragonfire".
+```
