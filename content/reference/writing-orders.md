@@ -15,11 +15,6 @@ Each page of a turn carries a header line: the signature, player name, player ID
 No., game No., and game-turn No. The game-turn No. is the number of the last
 print-out received.
 
-Zeros are written with a slash through them (0) to distinguish them from the
-letter O.
-
-A quantity and its unit need no comma between them.
-
 Orders must be written in the same order as the Sequence of Play; orders written
 out of sequence may not execute. See
 [Sequence of Turn Execution]({{< relref "sequence-of-turn-execution.md" >}}) for
@@ -55,7 +50,7 @@ committed and `100%` is totally committed. See
 **Bombard.**
 
 ```text
-Ship/Colony No. , bombard , Defender Ship/Colony No. , percent committed .
+S/C ID. , bombard , Defender S/C ID. , Percent committed .
 ```
 
 ```text
@@ -65,7 +60,7 @@ Ship/Colony No. , bombard , Defender Ship/Colony No. , percent committed .
 **Invade.**
 
 ```text
-Ship/Colony No. , invade , Defender Ship/Colony No. , percent committed .
+S/C ID. , invade , Defender S/C ID. , Percent committed .
 ```
 
 ```text
@@ -75,7 +70,7 @@ Ship/Colony No. , invade , Defender Ship/Colony No. , percent committed .
 **Raid.** The material raided follows the percent committed.
 
 ```text
-Ship/Colony No. , raid , Defender Ship/Colony No. , percent committed , material raided .
+S/C ID. , raid , Defender S/C ID. , Percent committed , Unit raided .
 ```
 
 ```text
@@ -86,7 +81,7 @@ Ship/Colony No. , raid , Defender Ship/Colony No. , percent committed , material
 the example below has No. 20 support No. 342 in its attack on No. 45.
 
 ```text
-Ship/Colony No. , support , attacker Ship/Colony No. , Defender Ship/Colony No. , percent committed .
+S/C ID. , support , Attacker S/C ID. , Defender S/C ID. , Percent committed .
 ```
 
 ```text
@@ -97,7 +92,7 @@ Ship/Colony No. , support , attacker Ship/Colony No. , Defender Ship/Colony No. 
 defense.
 
 ```text
-Ship/Colony No. , support , Defender Ship/Colony No. , percent committed .
+S/C ID. , support , Defender S/C ID. , Percent committed .
 ```
 
 ```text
@@ -112,22 +107,36 @@ resolution.
 ## Set up orders
 
 A set-up order establishes a new ship or colony and transfers units into it. The
-order may span several lines, and `end` terminates the block.
+order may span several lines, and `.` terminates the block.
+
+Set up colony:
 
 ```text
-set up , type (ship or colony) , Establishing Ship/Colony No. , transfer , quantity and item , ... , end .
+S/C ID. , set up , colony , transfer , Unit , Quantity, ... .
 ```
 
 ```text
-set up, ship, 29,
-transfer, 50,000 STU,
-5 SDRV-1,
-5 LSP-1,
-1 SEN-1,
-end.
+29, set up, colony, transfer,
+STU-1, 50,000,
+SDRV-1, 1,
+LSP-1, 5,
+SEN-1, 1.
 ```
 
-The `-1` in `SDRV-1` is the unit's TL.
+Set up ship:
+
+```text
+S/C ID. , set up , ship , transfer , Unit, Quantity, ... .
+```
+
+```text
+29, set up, ship, transfer,
+STU-2, 50,000,
+SDRV-1, 5,
+HDRV-1, 10,
+LSP-1, 5,
+SEN-1, 1.
+```
 
 See [Establishment]({{< relref "colonies-and-ships.md#establishment" >}}) for what
 a set-up order does. For the full set-up block in context, see
@@ -142,43 +151,44 @@ groups automatically.
 units.
 
 ```text
-Ship/Colony No. , assemble , quantity of FACT , units the factory will make .
+S/C ID. , assemble , FACT Unit, Quantity , Unit the factory will make .
 ```
 
 ```text
-91, assemble, 54,000 FACT-6, CNGD.
+91, assemble, FACT-6, 54,000, CNGD.
 ```
 
 **Mine.** The deposit No. the mine group will work follows the quantity of mine
 units.
 
 ```text
-Ship/Colony No. , assemble , quantity of MINE , Deposit No. .
+S/C ID. , assemble , Mine Unit , Quantity , Deposit No. .
 ```
 
 ```text
-83, assemble, 25,680 MINE-2, 148.
+83, assemble, MINE-2, 25,680, 148.
 ```
 
 **Other.**
 
 ```text
-Ship/Colony No. , assemble , quantity of units .
+S/C ID. , assemble , Unit , Quantity .
 ```
 
 ```text
-58, assemble, 6,000 MSL-1.
+58, assemble, MSL-1, 6,000.
 ```
 
 See [Assembling]({{< relref "manufacturing.md#assembling" >}}).
 
 ## Dis-assembly orders
 
-Format and examples match the assembly orders, with `disassemble` replacing
-`assemble`.
+```text
+S/C ID. , disassemble , Unit , Quantity .
+```
 
 ```text
-58, disassemble, 6,000 MSL-1.
+58, disassemble, MSL-1, 6,000.
 ```
 
 See [Dis-assembling]({{< relref "manufacturing.md#dis-assembling" >}}).
@@ -187,16 +197,28 @@ See [Dis-assembling]({{< relref "manufacturing.md#dis-assembling" >}}).
 
 A build change order sets a factory group to start a new product, or `retool`.
 
+Start building:
+
 ```text
-Ship/Colony No. , build change , Factory Group No. , item to start building (or retool) .
+S/C ID. , build change , Factory Group No. , Unit to start building .
+```
+
+Retool:
+
+```text
+S/C ID. , retool , Factory Group No. , Unit to start building .
 ```
 
 ```text
 16, build change, 8, EWP-4.
-16, build change, 10, retool.
+16, retool, 8, EWP-4.
 ```
 
 See [Retooling]({{< relref "manufacturing.md#retooling" >}}).
+
+{{< callout type="warning" >}}
+TODO: Considering collapsing build change and retool into a single order.
+{{< /callout >}}
 
 ## Transfer orders
 
@@ -204,11 +226,11 @@ A transfer order moves one unit type from one ship or colony to another. One ord
 moves a single unit type; multi-item transfer is a future feature.
 
 ```text
-Ship/Colony No. , transfer , quantity and unit type , Receiving Ship/Colony No. .
+S/C ID. , transfer , Receiving S/C ID. , Unit , Quantity .
 ```
 
 ```text
-22, transfer, 10 SPY, 29.
+22, transfer, 29, SPY, 10.
 ```
 
 See [Colonies and Ships]({{< relref "colonies-and-ships.md" >}}).
@@ -218,7 +240,7 @@ See [Colonies and Ships]({{< relref "colonies-and-ships.md" >}}).
 A mining change order reassigns a mining group to a new deposit.
 
 ```text
-Ship/Colony No. , mining , Mining Group No. , new Deposit No. .
+S/C ID. , mining , Mining Group No. , New Deposit No. .
 ```
 
 ```text
@@ -229,47 +251,28 @@ See [Mining]({{< relref "mining.md" >}}).
 
 ## Market orders
 
-A market order buys or sells units or technology levels. The quantity is omitted
-when buying or selling a technology level.
+A market order buys or sells units.
 
 **Buy units.**
 
 ```text
-Ship/Colony No. , buy , quantity , unit type , price in GOLD each .
+S/C ID. , buy , Unit , Quantity , Price each (in GOLD) .
 ```
 
 ```text
-555, buy, 25,600, STU, 0.01.
-```
-
-**Buy TL.** The quantity is omitted.
-
-```text
-Ship/Colony No. , buy , technology level , price in GOLD each .
-```
-
-```text
-53, buy, TL-6, 1,000,000.
+555, buy, STU-2, 25,600, 0.01.
+53, buy, PRTO-6, 1, 1,000,000.
 ```
 
 **Sell units.**
 
 ```text
-Ship/Colony No. , sell , quantity , unit type , price in GOLD each .
+S/C ID. , sell , Unit , Quantity , Price each (in GOLD) .
 ```
 
 ```text
-721, sell, STU, 0.5.
-```
-
-**Sell TL.** The quantity is omitted.
-
-```text
-Ship/Colony No. , sell , technology level , price in GOLD each .
-```
-
-```text
-721, sell, TL-4, 800,000.
+721, sell, STU-2, 4, 0.5.
+721, sell, PRTO-4, 1, 800,000.
 ```
 
 See [Home planet markets]({{< relref "trade.md#home-planet-markets" >}}).
@@ -277,7 +280,7 @@ See [Home planet markets]({{< relref "trade.md#home-planet-markets" >}}).
 ## Survey orders
 
 ```text
-Ship/Colony No. , survey .
+S/C ID. , survey .
 ```
 
 ```text
@@ -288,16 +291,21 @@ See [Surveys]({{< relref "exploration.md#surveys" >}}).
 
 ## Probe orders
 
-A probe order takes one or more orbit numbers, separated by commas.
+A probe order takes one or more orbit IDs, separated by commas.
 
 ```text
-Ship/Colony No. , probe , Orbit No. , ... .
+S/C ID. , probe , Orbit ID , ... .
 ```
 
 ```text
-28, probe, 6.
-31, probe, 2, 4, 5.
+28, probe, A/6.
+31, probe, A/2, C/4, B/5.
 ```
+
+{{< callout type="info" >}}
+The order may specify orbits for multiple stars only when the ship is located in the 11th orbit.
+{{< /callout >}}
+
 
 See [Probes]({{< relref "exploration.md#probes" >}}).
 
@@ -308,21 +316,21 @@ A spy order names a quantity of spies and a function. Three functions —
 ship or colony ID No.
 
 ```text
-Ship/Colony No. , quantity of SPY , check rebels .
-Ship/Colony No. , quantity of SPY , convert rebels .
-Ship/Colony No. , quantity of SPY , incite rebels , Defender Ship/Colony No. .
-Ship/Colony No. , quantity of SPY , check for spies .
-Ship/Colony No. , quantity of SPY , attack spies , Defender Ship/Colony No. .
-Ship/Colony No. , quantity of SPY , information , Defender Ship/Colony No. .
+S/C ID. , check rebels , quantity of SPY .
+S/C ID. , check for spies , quantity of SPY .
+S/C ID. , convert rebels , quantity of SPY .
+S/C ID. , attack spies , quantity of SPY , Defender S/C ID. .
+S/C ID. , incite rebels , quantity of SPY , Defender S/C ID. .
+S/C ID. , information , quantity of SPY , Defender S/C ID. .
 ```
 
 ```text
-38, 1, check rebels.
-38, 119, convert rebels.
-38, 998, incite rebels, 54.
-38, 1, check for spies.
-38, 102, attack spies, 54.
-38, 12, information, 54.
+38, check rebels, 1.
+38, check for spies, 1.
+38, convert rebels, 119.
+38, attack spies, 102, 54.
+38, incite rebels, 998, 54.
+38, information, 12, 54.
 ```
 
 See [Spy functions]({{< relref "espionage.md#spy-functions" >}}),
@@ -338,22 +346,32 @@ quoted. Odd characters in the message may cause the order to be rejected.
 **Market planet.**
 
 ```text
-news , Market Planet Location , message text , signature .
+Market Planet Location , news , Quoted message text , Quoted signature .
 ```
 
 ```text
-news, 02-29-64A/3, "SDRV-3 on the market next turn.", "Tras-yo of Blenora".
+02-29-64A/3, news, "SDRV-3 on the market next turn.", "Tras-yo of Blenora".
 ```
+
+{{< callout type="warning" >}}
+The message text and signature must always be quoted.
+Odd characters in the text may cause the order to be rejected (TODO: document which characters cause rejection).
+{{< /callout >}}
 
 **Trade station.**
 
 ```text
-news , Trade Station Colony No. , message text , signature .
+Trade Station Colony No. , news , Quoted message text , Quoted signature .
 ```
 
 ```text
-news, 632, "SDRV-3 on the market next turn.".
+632, news, "SDRV-3 on the market next turn.", "".
 ```
+
+{{< callout type="warning" >}}
+The message text and signature must always be quoted.
+Odd characters in the text may cause the order to be rejected (TODO: document which characters cause rejection).
+{{< /callout >}}
 
 See [News service]({{< relref "communication.md#news-service" >}}).
 
@@ -368,7 +386,7 @@ separated by a slash (`A/2`, `C/4`, etc.). The star letter is required even in a
 single-star system.
 
 ```text
-Ship No. , move , star letter/Orbit No. .
+Ship No. , move , Destination Orbit ID .
 ```
 
 ```text
@@ -397,17 +415,14 @@ See
 
 ## Draft orders
 
-The unit-type words are rendered here as codes (`SLD` for soldier, `TRN` for
-trainee) for consistency with the rest of these docs.
-
 ```text
-Ship/Colony No. , draft , quantity and type of unit .
+S/C ID. , draft , Population Unit , Quantity .
 ```
 
 ```text
-13, draft, 3,600 SLD.
-78, draft, 16,880 TRN.
-99, draft, 5,000 CNW.
+13, draft, SLD, 3,600.
+78, draft, TRN, 16,880.
+99, draft, CNW, 5,000.
 ```
 
 See [Population orders]({{< relref "population.md#orders" >}}).
@@ -415,28 +430,25 @@ See [Population orders]({{< relref "population.md#orders" >}}).
 ## Disband orders
 
 ```text
-Ship/Colony No. , disband , quantity and type of unit .
+S/C ID. , disband , Unit, Quantity .
 ```
 
 ```text
-13, disband, 3,600 SLD.
+13, disband, SLD, 3,600.
 ```
 
 See [Population changes]({{< relref "population.md#population-changes" >}}).
 
 ## Pay orders
 
-The pay-type words are rendered as codes (`USK` for unskilled, `PRO` for
-professional, `SLD` for soldier).
-
 ```text
-Ship/Colony No. , pay , wages , type .
+S/C ID. , pay , Population Unit, Wages (in CNGD) .
 ```
 
 ```text
-38, pay, 0.7, USK.
-38, pay, 1.6, PRO.
-38, pay, 1.2, SLD.
+38, pay, USK, 0.7.
+38, pay, PRO, 1.6.
+38, pay, SLD, 1.2.
 ```
 
 See [Population]({{< relref "population.md" >}}).
@@ -444,7 +456,7 @@ See [Population]({{< relref "population.md" >}}).
 ## Ration orders
 
 ```text
-Ship/Colony No. , ration , ration percentage % .
+S/C ID. , ration , Ration percentage % .
 ```
 
 ```text
@@ -462,31 +474,49 @@ See [Rations]({{< relref "food.md#rations" >}}) and
 
 ## Control orders
 
-A control order takes control of a planet for the acting nation. The location must
-include the star letter and orbit number.
+A control order takes control for the acting nation. It is addressed to a ship or
+colony the nation has transferred population to.
 
 ```text
-Ship/Colony No. , control , Location .
+S/C ID. , control .
 ```
 
 ```text
-28, control, 2-4-6A/9.
+28, control.
 ```
 
 {{< callout type="info" >}}
-The source labels the first field "Empire No." Here it is the acting nation's ship
-or colony ID, consistent with the first field of other orders.
+The ship or colony ID is a proxy: the engine looks up the nation that controls it
+and applies the order to that nation.
+{{< /callout >}}
+
+{{< callout type="warning" >}}
+TODO: Reconsider whether a Location ID is needed.
 {{< /callout >}}
 
 See [Taking control]({{< relref "control-of-planets.md#taking-control" >}}).
 
 ## Un-control orders
 
-Same as a control order, with `un-control` replacing `control`.
+An un-control order relinquishes control. It is the control order with
+`un-control` replacing `control`.
 
 ```text
-28, un-control, 2-4-6A/9.
+S/C ID. , un-control .
 ```
+
+```text
+28, un-control.
+```
+
+{{< callout type="info" >}}
+The ship or colony ID is a proxy: the engine looks up the nation that controls it
+and applies the order to that nation.
+{{< /callout >}}
+
+{{< callout type="warning" >}}
+TODO: Reconsider whether a Location ID is needed.
+{{< /callout >}}
 
 See
 [Relinquishing planets]({{< relref "control-of-planets.md#relinquishing-planets" >}}).
@@ -494,12 +524,12 @@ See
 ## Naming orders
 
 A name may be at most 24 characters, including blanks, and is enclosed in double
-quotes. Odd characters in the name may cause the order to be rejected.
+quotes. Odd characters in the text may cause the order to be rejected (TODO: document which characters cause rejection).
 
 ### Naming planets
 
 ```text
-Location , name , name .
+Location ID , name , Quoted text .
 ```
 
 ```text
@@ -509,7 +539,7 @@ Location , name , name .
 ### Naming ships and colonies
 
 ```text
-Ship/Colony No. , name , name .
+S/C ID. , name , Quoted text .
 ```
 
 ```text
@@ -522,8 +552,8 @@ A trade station order grants or denies a receiving ship or colony permission to
 use the station.
 
 ```text
-Trade Station Ship/Colony No. , permission , Receiving Ship/Colony No. , granted .
-Trade Station Ship/Colony No. , permission , Receiving Ship/Colony No. , denied .
+Trade Station S/C ID. , permission , Receiving S/C ID. , granted .
+Trade Station S/C ID. , permission , Receiving S/C ID. , denied .
 ```
 
 ```text
@@ -544,7 +574,7 @@ A colonization order grants a receiving ship or colony permission to colonize a
 location. The location must include the star letter and orbit number.
 
 ```text
-Receiving Ship/Colony No. , permission to colonize , Location .
+Receiving S/C ID. , permission to colonize , Location .
 ```
 
 ```text

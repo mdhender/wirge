@@ -22,28 +22,28 @@ organized around that rule.
 A set-up order establishes a new ship or colony from an existing one and transfers
 units into it. Because a set-up order lists every unit to transfer, it is usually
 too long for one line — so you write it across several, one transfer per line, and
-close it with `end`:
+close it with a period:
 
 ```text
-set up, ship, 29,
-transfer, 50,000 STU,
-5 SDRV-1,
-5 LSP-1,
-5 FOOD,
-5 PRO,
-1 SEN-1,
-10,000 FUEL,
-61 HDRV-1,
-end.
+29, set up, ship, transfer,
+STU-2, 50,000,
+SDRV-1, 5,
+LSP-1, 5,
+FOOD, 5,
+PRO, 5,
+SEN-1, 1,
+FUEL, 10,000,
+HDRV-1, 61.
 ```
 
-Start the order with `set up`, the type (`ship` or `colony`), and the establishing
-ship or colony's ID No. Follow it with `transfer` and then each item on its own
-line. The order continues across line breaks until `end`, so `end` is required —
-it tells the parser the list is complete. Without it, later orders would be read as
-more transfer lines.
+Start with the establishing ship or colony's ID No., then `set up`, the type
+(`ship` or `colony`), and `transfer`. List each unit to transfer as a
+`Unit, Quantity` pair on its own line, and end the last line with a period. The
+order continues across line breaks until that period, so it is required — it tells
+the parser the list is complete. Without it, later orders would be read as more
+transfer lines.
 
-Each item is a quantity and a unit code; the `-1` in `SDRV-1` is the unit's TL.
+Each item is a unit code and a quantity; the `-1` in `SDRV-1` is the unit's TL.
 
 For the bare format, see
 [Set up orders]({{< relref "../reference/writing-orders.md#set-up-orders" >}}); for
@@ -61,11 +61,11 @@ yourself; the parser ignores the `//` and the rest of that line.
 // Signature: ______________________
 
 // --- Mining and manufacturing ---
-83, assemble, 25,680 MINE-2, 148.       // work deposit 148
-91, build change, 8, EWP-4.             // retool factory group 8
+83, assemble, MINE-2, 25,680, 148.      // work deposit 148
+91, build change, 8, EWP-4.             // build EWP-4 in factory group 8
 
 // --- Logistics ---
-22, transfer, 10 SPY, 29.               // hand spies to the scout
+22, transfer, 29, SPY, 10.              // hand spies to the scout
 
 // --- Movement ---
 29, jump, 4-6-19.                       // jump the scout out of the system
@@ -98,8 +98,8 @@ The manual's own example is dis-assembly and assembly. Dis-assembly runs before
 assembly in the Sequence of Play, so write your dis-assembly order first:
 
 ```text
-58, disassemble, 6,000 MSL-1.          // free up the units first
-58, assemble, 6,000 FACT-6.            // then build with them
+58, disassemble, MSL-1, 6,000.         // free the units first
+58, assemble, FACT-6, 6,000, CNGD.     // then assemble with them
 ```
 
 If you wrote the assembly order first, the parser would reach the assembly stage
