@@ -177,3 +177,47 @@ Format and examples match the assembly orders, with `disassemble` replacing
 ```
 
 See [Dis-assembling]({{< relref "manufacturing.md#dis-assembling" >}}).
+
+## Build change orders
+
+A build change order sets a factory group to start a new product, or `retool`.
+
+```text
+Ship/Colony No. , build change , Factory Group No. , item to start building (or retool) .
+```
+
+```text
+16, build change, 8, EWP-4.
+16, build change, 10, retool.
+```
+
+See [Retooling]({{< relref "manufacturing.md#retooling" >}}).
+
+## Transfer orders
+
+A transfer order moves one unit type from one ship or colony to another. One order
+moves a single unit type; multi-item transfer is a future feature.
+
+```text
+Ship/Colony No. , transfer , quantity and unit type , Receiving Ship/Colony No. .
+```
+
+```text
+22, transfer, 10 SPY, 29.
+```
+
+See [Colonies and Ships]({{< relref "colonies-and-ships.md" >}}).
+
+## Mining change orders
+
+A mining change order reassigns a mining group to a new deposit.
+
+```text
+Ship/Colony No. , mining , Mining Group No. , new Deposit No. .
+```
+
+```text
+348, mining, 18, 92.
+```
+
+See [Mining]({{< relref "mining.md" >}}).
