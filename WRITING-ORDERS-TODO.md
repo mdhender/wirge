@@ -42,7 +42,7 @@ site and confirm a clean build.
 | 12 — Control & Un-control orders | DONE |
 | 13 — Naming orders | DONE |
 | 14 — Trade station & Colonization orders | DONE |
-| 15 — Create the how-to; front matter, intro, scaffolding | TODO |
+| 15 — Create the how-to; front matter, intro, scaffolding | DONE |
 | 16 — How-to: the full `set up … end` walkthrough | TODO |
 | 17 — How-to: a complete sample order file | TODO |
 | 18 — How-to: multi-order sequences in Sequence-of-Play order | TODO |
@@ -726,7 +726,7 @@ no restating the per-order format (link the reference for that).
 
 ## Task 15 — Create the how-to; front matter, intro, scaffolding
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** create `content/how-to/writing-orders.md` with front matter, a goal
 statement, and the framing that ties it to the reference and to Sequence of Turn
