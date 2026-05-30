@@ -131,10 +131,17 @@ Engine `HDRV`, Life Support `LSP`, Light Structural `STU-2`, Military Robot
 
 ## Page weight and ordering (resolved)
 
-Weights equal the section's position in `user-manual/toc.json` × 10. Manufacturing
-is **item 7** in the toc (Forward 1, Introduction 2, History 3, Game Set Up 4,
-Basic Units 5, Colonies and Ships 6, **Manufacturing 7**), so its weight is
-**70**.
+Weights equal the section's **1-indexed position in `user-manual/toc.json`** × 10.
+That position counts `Forward` as 1, so it runs **one ahead** of the published
+Working-Index number in `content/_index.md` (which starts at `1 - INTRODUCTION`,
+`Forward` being unpublished). Use the toc position, not the Working-Index number:
+Manufacturing is Working-Index 6 but **toc item 7**, so its weight is **70**, not
+60.
+
+Toc order: Forward 1, Introduction 2, History 3, Game Set Up 4, Basic Units 5,
+Colonies and Ships 6, **Manufacturing 7**, Technological Advancement 8, Trade 9,
+Exploration 10, Rebellion 11, Combat 12. The shipped weights confirm the rule
+(`game-setup` 40, `colonies-and-ships` 60, `manufacturing` 70, `rebellion` 110).
 
 No collision and no re-weighting of other pages is required: 70 is free between
 `colonies-and-ships.md` (60) and `shortages.md` (75). `shortages.md` is the
