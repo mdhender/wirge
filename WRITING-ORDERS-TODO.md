@@ -43,7 +43,7 @@ site and confirm a clean build.
 | 13 — Naming orders | DONE |
 | 14 — Trade station & Colonization orders | DONE |
 | 15 — Create the how-to; front matter, intro, scaffolding | DONE |
-| 16 — How-to: the full `set up … end` walkthrough | TODO |
+| 16 — How-to: the full `set up … end` walkthrough | DONE |
 | 17 — How-to: a complete sample order file | TODO |
 | 18 — How-to: multi-order sequences in Sequence-of-Play order | TODO |
 | 19 — Wire both pages into the site; index, reciprocal links, glossary | TODO |
@@ -760,7 +760,7 @@ Execution.
 
 ## Task 16 — How-to: the full `set up … end` walkthrough
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** fill the set-up section with the **full** multi-line `set up … end`
 block shown in context, with the prose the reference deliberately omits.

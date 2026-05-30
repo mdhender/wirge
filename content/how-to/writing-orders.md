@@ -19,7 +19,36 @@ organized around that rule.
 
 ## Set up a new ship or colony
 
-<!-- Task 16: the full multi-line `set up … end` walkthrough -->
+A set-up order establishes a new ship or colony from an existing one and transfers
+units into it. Because a set-up order lists every unit to transfer, it is usually
+too long for one line — so you write it across several, one transfer per line, and
+close it with `end`:
+
+```text
+set up, ship, 29,
+transfer, 50,000 STU,
+5 SDRV-1,
+5 LSP-1,
+5 FOOD,
+5 PRO,
+1 SEN-1,
+10,000 FUEL,
+61 HDRV-1,
+end.
+```
+
+Start the order with `set up`, the type (`ship` or `colony`), and the establishing
+ship or colony's ID No. Follow it with `transfer` and then each item on its own
+line. The order continues across line breaks until `end`, so `end` is required —
+it tells the parser the list is complete. Without it, later orders would be read as
+more transfer lines.
+
+Each item is a quantity and a unit code; the `-1` in `SDRV-1` is the unit's TL.
+
+For the bare format, see
+[Set up orders]({{< relref "../reference/writing-orders.md#set-up-orders" >}}); for
+what a set-up order does, see
+[Establishment]({{< relref "../reference/colonies-and-ships.md#establishment" >}}).
 
 ## A complete order file
 
