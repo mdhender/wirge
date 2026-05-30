@@ -19,10 +19,10 @@ DONE when complete."
 
 | Task | Status |
 | ---- | ------ |
-| 1 — Create the page; Ship movement | TODO |
-| 2 — Probes + Surveys | TODO |
-| 3 — Wire the page into the site; reconcile the probe/survey duplication | TODO |
-| 4 — Build, verify, and consistency pass | TODO |
+| 1 — Create the page; Ship movement | DONE |
+| 2 — Probes + Surveys | DONE |
+| 3 — Wire the page into the site; reconcile the probe/survey duplication | DONE |
+| 4 — Build, verify, and consistency pass | DONE |
 
 Keep this table in sync with the per-task **Status** lines below.
 
@@ -205,7 +205,7 @@ create a stub (the Combat conversion owns that).
 
 ## Task 1 — Create the page; Ship movement
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** create `content/reference/exploration.md` with front matter, a one-line
 intro, and the full `## Ship movement` section (with the two movement
@@ -258,7 +258,7 @@ sub-sections).
 
 ## Task 2 — Probes + Surveys
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** add the `## Probes` and `## Surveys` sections — the authoritative
 report contents.
@@ -303,7 +303,7 @@ report contents.
 
 ## Task 3 — Wire the page into the site; reconcile the probe/survey duplication
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** make the page reachable, relink the Working-Index 9.x lines, relink the
 glossary, and **reconcile the existing probe/survey duplication** so the report
@@ -366,7 +366,7 @@ reconciliation trims.
 
 ## Task 4 — Build, verify, and consistency pass
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** confirm everything builds, links resolve, and nothing regressed.
 

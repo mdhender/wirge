@@ -85,7 +85,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 ## J
 
-- **Jump** — A ship's movement through hyper-space. Every jump must end at an interplanetary or interstellar location, never in deep space.
+- **Jump** — A ship's movement through hyper-space. Every jump must end at an interplanetary or interstellar location, never in deep space. See [Exploration]({{< relref "exploration.md#ship-movement" >}}).
 
 ## L
 
@@ -118,7 +118,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 - **Open-air colony** (`COPN`) — A surface colony exposed to the planet's environment; allowed only where HN > 0, and the only colony that may use `FARM-1`.
 - **Operational unit** — A unit that must be assembled after coming out of storage before it will function: `SDRV`, `SEN`, `AUT`, `LSP`, `EWP`, `ESH`, `MINE`, `FACT`, `FARM`, `HDRV`, `STU-1`, `STU-2`, or `MSL`. See [Manufacturing]({{< relref "manufacturing.md#assembling" >}}).
-- **Orbit** — One of a star's ten numbered positions (1 closest, 10 farthest); any may hold a planet.
+- **Orbit** — One of a star's ten numbered positions (1 closest, 10 farthest); any may hold a planet. See [Stars and Orbits]({{< relref "game-setup.md#stars-and-orbits" >}}).
 - **Orbiting colony** (`CORB`) — A colony in orbit around a planet; requires life support and cannot mine.
 
 ## P
@@ -126,7 +126,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Planet** — A body occupying an [orbit]({{< relref "game-setup.md#stars-and-orbits" >}}); the basic site for colonies, mining, and farming. One of three types, with a habitability number and natural resources. See [Planets]({{< relref "planets.md" >}}).
 - **Pay** — Consumer goods or gold given to population units. Colony population pay is expressed in `CNGD`; ship crew wages are expressed in `GOLD`. See [Population]({{< relref "population.md" >}}).
 - **Population unit** — A unit of citizens. Population classes are `USK`, `PRO`, `SLD`, and `UEM`; population cadres are `TRN`, `SPY`, `CNW`, and `RBL`. See [Population]({{< relref "population.md" >}}).
-- **Probe** — A sensor scan that reports a planet in the same system: its ships and colonies, its resource deposits (type and approximate quantity), and its habitability number.
+- **Probe** — A sensor scan that reports a planet in the same system: its ships and colonies, its resource deposits (type and approximate quantity), and its habitability number. See [Exploration]({{< relref "exploration.md#probes" >}}).
 - **Production unit** — A unit that turns inputs into output: a mine, farm, or factory. See [The Production Cycle]({{< relref "../explanation/production-cycle.md" >}}).
 - **Professional** (`PRO`) — Skilled population requiring long apprenticeships; needed to manage production units.
 - **Propulsion capacity** — The mass a hyperdrive can move through hyper-space: 1,000 x TL MU per operating hyperdrive. See [Hyperdrives]({{< relref "ship-systems.md#hyperdrives" >}}).
@@ -156,7 +156,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 - **Structural unit** (`STU`) — The framing required to build ships and colonies. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#structural-units" >}}).
 - **Surface colony** — An open-air or enclosed colony on a planet's surface (as distinct from an orbiting colony). Only a surface colony may mine.
 - **Survival ration** — The minimum ration needed to avoid starvation. For planned rationing, it is 25% of a full ration. See [Starvation]({{< relref "food.md#starvation" >}}).
-- **Survey** — A scan from a ship or colony at a planet that reports its deposits' locations, types, and exact resource quantities.
+- **Survey** — A scan from a ship or colony at a planet that reports its deposits' locations, types, and exact resource quantities. See [Exploration]({{< relref "exploration.md#surveys" >}}).
 
 ## T
 

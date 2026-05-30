@@ -113,6 +113,9 @@ Orbit 11 is a bookkeeping slot, not a planetary orbit:
 - A ship in orbit 11 must move to one of orbits 1 through 10 before it can act
   at any planet in the system.
 
+See [Interstellar movement]({{< relref "exploration.md#interstellar-movement" >}})
+for how a jump arrives here.
+
 ## Turn Length
 
 One turn equals one quarter of a Galactic standard year.

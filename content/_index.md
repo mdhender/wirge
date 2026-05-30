@@ -85,12 +85,12 @@ the section that matches what you need:
 - 8 - [TRADE]({{< relref "reference/trade.md" >}})
 - 8.1 - [Trade Stations]({{< relref "reference/trade.md#trade-stations" >}})
 - 8.2 - [Home Planet Markets]({{< relref "reference/trade.md#home-planet-markets" >}})
-- 9 - EXPLORATION
-- 9.1 - Ship Movement
-- 9.1.1 - Interplanetary Movement
-- 9.1.2 - Interstellar Movement
-- 9.2 - Probes
-- 9.3 - Surveys
+- 9 - [EXPLORATION]({{< relref "reference/exploration.md" >}})
+- 9.1 - [Ship Movement]({{< relref "reference/exploration.md#ship-movement" >}})
+- 9.1.1 - [Interplanetary Movement]({{< relref "reference/exploration.md#interplanetary-movement" >}})
+- 9.1.2 - [Interstellar Movement]({{< relref "reference/exploration.md#interstellar-movement" >}})
+- 9.2 - [Probes]({{< relref "reference/exploration.md#probes" >}})
+- 9.3 - [Surveys]({{< relref "reference/exploration.md#surveys" >}})
 - 10 - [REBELLION]({{< relref "reference/rebellion.md" >}})
 - 10.1 - [Rebellion]({{< relref "reference/rebellion.md#when-rebellion-occurs" >}})
 - 10.2 - [Independent Colonies and Ships]({{< relref "reference/rebellion.md#independent-ships-and-colonies" >}})

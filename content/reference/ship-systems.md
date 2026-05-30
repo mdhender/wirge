@@ -173,7 +173,7 @@ Sensors also automatically report orbital information to a ship or colony:
 
 Sensors can also conduct planet probes. A sensor unit conducts probes equal to
 its TL each turn. For probe contents, see
-[Planets]({{< relref "planets.md#learning-about-a-planet" >}}).
+[Probes]({{< relref "exploration.md#probes" >}}).
 
 ## Transports
 

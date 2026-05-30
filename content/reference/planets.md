@@ -74,16 +74,10 @@ applies.
 ## Learning about a planet
 
 A player does not automatically know a planet's contents. Two methods reveal
-them:
-
-- A **probe** reports any planet in the same system: the ships and colonies there
-  (orbiting and on the surface), their mass and ID numbers, the planet's natural
-  resource deposits with their type and approximate quantity, and its habitability
-  number.
-- A **survey** is conducted by a ship/colony at the planet itself. It reports
-  the number of natural resource deposits, where they are located, their type, and
-  the exact number of resource units in each. A survey takes one TPT unit and
-  one PRO unit and completes in one turn.
+them: a **probe** reads any planet in the same system, while a **survey** reads
+the planet a ship or colony is located at. For the full report contents, see
+[Probes]({{< relref "exploration.md#probes" >}}) and
+[Surveys]({{< relref "exploration.md#surveys" >}}).
 
 ## Control
 
