@@ -28,7 +28,7 @@ site and confirm a clean build.
 
 | Task | Status |
 | ---- | ------ |
-| 1 — Replace the stub; front matter, intro, General Rules | TODO |
+| 1 — Replace the stub; front matter, intro, General Rules | DONE |
 | 2 — Combat orders | TODO |
 | 3 — Set up orders | TODO |
 | 4 — Assembly & Dis-assembly orders | TODO |
@@ -317,7 +317,7 @@ later wiring matches; if you rename a heading, update Task 19's anchor list.
 
 ## Task 1 — Replace the stub; front matter, intro, General Rules
 
-**Status:** TODO
+**Status:** DONE
 
 **Scope:** replace the stub body of `content/reference/writing-orders.md` (keep
 its `title: Writing Orders` / `weight: 180` front matter) with a short intro and a
