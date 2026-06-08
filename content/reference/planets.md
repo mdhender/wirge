@@ -96,8 +96,8 @@ them.
 
 ### Occupied orbits
 
-A system has ten orbits, numbered 1 to 10. The procedure picks 1 to 10 of
-them to hold a planet:
+Each star has ten orbits, numbered 1 to 10. The procedure runs once per star
+and picks 1 to 10 of its orbits to hold a planet:
 
 1. Form the list of orbit numbers 1 through 10.
 2. Shuffle the list.
