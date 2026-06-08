@@ -62,7 +62,7 @@ hugo mod get -u ./...   # update the Hextra theme module
 
 ## Deploying
 
-The published site at <https://epimethean.dev/docs> is built **on the server**:
+The published site at <https://ec.pbbgaming.com/docs> is built **on the server**:
 push your changes to `main`, then run `deploy/deploy-docs.sh`, which SSHes in and
 rebuilds the live `public/` directory in place. See
 [`deploy/README.md`](deploy/README.md) for the full workflow and the one-time

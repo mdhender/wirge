@@ -1,23 +1,23 @@
 # Sample Caddyfile for the Epimethean Challenge documentation site.
 #
 # The docs are a static Hugo build served under the /docs path of
-# epimethean.dev (matching the Hugo `baseURL` of https://epimethean.dev/docs).
-# Caddy provisions and renews TLS for epimethean.dev automatically.
+# ec.pbbgaming.com (matching the Hugo `baseURL` of https://ec.pbbgaming.com/docs).
+# Caddy provisions and renews TLS for ec.pbbgaming.com automatically.
 #
 # Deploy: the site is built on the server by /opt/wirge/deploy.sh (see
 # deploy/README.md). Point this docs root at the build output by symlinking
-# /srv/epimethean/docs -> /opt/wirge/wirge/public. `handle_path /docs/*` strips
-# the /docs prefix, so /docs/tutorial/ is served from /srv/epimethean/docs/
+# /srv/wirge/docs -> /opt/wirge/wirge/public. `handle_path /docs/*` strips
+# the /docs prefix, so /docs/tutorial/ is served from /srv/wirge/docs/
 # tutorial/ (i.e. /opt/wirge/wirge/public/tutorial/).
 #
 # This is a template — adjust the site address and root path for your
 # environment. Other routes (e.g. the pyre app) can live alongside the docs
 # block in the same site.
 
-epimethean.dev {
+ec.pbbgaming.com {
 	# Documentation site (static Hugo output), served under /docs.
 	handle_path /docs/* {
-		root * /srv/epimethean/docs
+		root * /srv/wirge/docs
 		file_server
 
 		# Long-cache Hugo's fingerprinted assets.
@@ -32,7 +32,7 @@ epimethean.dev {
 	handle_errors {
 		@404 expression {http.error.status_code} == 404
 		handle @404 {
-			root * /srv/epimethean/docs
+			root * /srv/wirge/docs
 			rewrite * /404.html
 			file_server
 		}

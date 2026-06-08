@@ -1,7 +1,7 @@
 # Epimethean Challenge documentation site
 # Built with Hugo + the Hextra theme (https://imfing.github.io/hextra/).
 
-baseURL = "https://epimethean.dev/docs"
+baseURL = "https://ec.pbbgaming.com/docs"
 title = "Epimethean Challenge"
 
 # Fail the build on broken `ref`/`relref` links instead of only warning.

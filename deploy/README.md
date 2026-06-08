@@ -20,8 +20,8 @@ asset — accepted as low risk (low probability, low impact).
 
 ## Server setup (one time)
 
-The live server is `epimethean.dev`. Run these as the **deploy user** — the
-non-root account that owns the checkout and that `ssh epimethean.dev` logs in as
+The live server is `ec.pbbgaming.com`. Run these as the **deploy user** — the
+non-root account that owns the checkout and that `ssh ec.pbbgaming.com` logs in as
 (here, `wirge`) — using `sudo` only on the privileged steps. Don't deploy as
 root: it taints `public/` and `.git` ownership and breaks the next deploy.
 
@@ -71,12 +71,12 @@ The `nginx.conf` / `Caddyfile` templates keep their existing roots, so symlink
 that root at the checkout's `public/`. The old rsync deploy may have left a real
 directory there — move it aside first.
 
-    # nginx (deploy/nginx.conf): root /var/www/epimethean, /docs/ -> /var/www/epimethean/docs
-    sudo mv /var/www/epimethean/docs /var/www/epimethean/docs.old   # if it exists as a dir
-    sudo ln -s /opt/wirge/wirge/public /var/www/epimethean/docs
+    # nginx (deploy/nginx.conf): root /var/www/wirge, /docs/ -> /var/www/wirge/docs
+    sudo mv /var/www/wirge/docs /var/www/wirge/docs.old   # if it exists as a dir
+    sudo ln -s /opt/wirge/wirge/public /var/www/wirge/docs
 
     # Caddy (deploy/Caddyfile)
-    sudo ln -s /opt/wirge/wirge/public /srv/epimethean/docs
+    sudo ln -s /opt/wirge/wirge/public /srv/wirge/docs
 
 Make sure the web server's user can traverse into the checkout:
 
@@ -84,4 +84,4 @@ Make sure the web server's user can traverse into the checkout:
 
 ### 5. Verify
 
-    curl -sI https://epimethean.dev/docs/ | head -1   # expect: HTTP/... 200
+    curl -sI https://ec.pbbgaming.com/docs/ | head -1   # expect: HTTP/... 200

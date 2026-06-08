@@ -11,4 +11,4 @@
 #
 set -euo pipefail
 
-exec ssh epimethean.dev /opt/wirge/deploy.sh
+exec ssh ec.pbbgaming.com /opt/wirge/deploy.sh

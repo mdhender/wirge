@@ -72,7 +72,7 @@ reference only** and is **never published** to the site.
 site; never run a deploy on your own initiative, even after committing or
 pushing. Wait for an explicit instruction to deploy.
 
-The live site (<https://epimethean.dev/docs/>) is built **on the server** from a
+The live site (<https://ec.pbbgaming.com/docs/>) is built **on the server** from a
 git checkout — the server publishes the commit it pulls, not your working tree.
 Everyday flow:
 
@@ -81,7 +81,7 @@ Everyday flow:
 2. Run `deploy/deploy-docs.sh` from your laptop. It SSHes to the server and runs
    `/opt/wirge/deploy.sh`, which `git pull --ff-only`s and rebuilds `public/` with
    `hugo --gc --minify`.
-3. Verify: `curl -sI https://epimethean.dev/docs/ | head -1` (expect `200`).
+3. Verify: `curl -sI https://ec.pbbgaming.com/docs/ | head -1` (expect `200`).
 
 See `deploy/README.md` for the full runbook and one-time server setup.
 
