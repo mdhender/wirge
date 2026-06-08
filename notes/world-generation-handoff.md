@@ -42,7 +42,9 @@ That section **hands off to the bottom half, run once per star.**
 5. **Planet types** (`### Planet types`) — assigned by orbit position (1–3
    terrestrial; 4–6 roll 1d3; 7–8 roll 1d20; 9 roll 1d20; 10 always asteroid),
    then two fix-ups in order: **lone outer asteroid** and the **4-5-6 asteroid**.
-   Resolve against the *original* occupancy map.
+   Resolve against the *original* occupancy map. The **lone-outer-asteroid**
+   fix-up applies only to systems with **two or more occupied orbits** — it never
+   touches the single-planet override's lone gas giant in orbit 7.
 6. **Habitability** (`### Habitability number`) —
    `HN = clamp(floor((2d15 − penalty) / div), 0, typeMax)`, with per-orbit
    penalty/div tables for terrestrials and gas giants (gas-giant curve is the

@@ -131,11 +131,19 @@ against the *original* occupancy map; never read your own output.
 
 Then apply two fix-ups in order:
 
-**Lone outer asteroid.** Walk the occupied orbits from 8 down to 7. The first
-one whose next inner orbit is empty (orbit 8 peeks at 7; orbit 7 at 6)
-becomes an **asteroid**, overwriting the 1d20 result. Stops after one
-conversion; if neither orbit qualifies, the step does nothing. The peek uses
-the *original* occupancy.
+**Lone outer asteroid.** This fix-up applies **only to systems with two or
+more occupied orbits**. In a single-planet system the override has already
+pinned the lone planet as a gas giant in orbit 7 (see [Occupied
+orbits](#occupied-orbits) and the single-occupied-orbit type rule above); that
+planet is exempt and the fix-up does nothing. Otherwise, walk the occupied
+orbits from 8 down to 7. The first one whose next inner orbit is empty (orbit 8
+peeks at 7; orbit 7 at 6) becomes an **asteroid**, overwriting the 1d20 result.
+Stops after one conversion; if neither orbit qualifies, the step does nothing.
+The peek uses the *original* occupancy.
+
+Without this guard the fix-up would contradict the single-planet override: a
+lone planet sits in orbit 7 with orbit 6 empty, so an unguarded fix-up would
+convert the system's only planet from the required gas giant into an asteroid.
 
 **The 4-5-6 asteroid.** If orbits 4, 5, and 6 are all occupied, orbits 4 and
 5 came out terrestrial, and orbit 6 is a gas giant, force orbit 5 to an
@@ -225,14 +233,19 @@ Each deposit rolls 1d100 for its resource. Inner terrestrials are metal-rich
 (differentiated cores), outer terrestrials carry ices and volatiles (NMTS),
 gas giants are fuel-heavy, and asteroids are balanced.
 
-Terrestrials — three orbit bands:
+Terrestrials — three orbit bands. The outer band covers orbit 5 **and
+outward**, so any terrestrial past mid uses the outer distribution — including
+the rare terrestrials that the type rules place in orbits 7, 8, or 9:
 
-| 1d100 | Inner (orbits 1–2) | Mid (orbits 3–4) | Outer (orbits 5–6) |
-| ----- | ------------------ | ---------------- | ------------------ |
-| GOLD  | 01–02 (2%)         | 01–02 (2%)       | 01–02 (2%)         |
-| FUEL  | 03–32 (30%)        | 03–42 (40%)      | 03–32 (30%)        |
-| METS  | 33–87 (55%)        | 43–71 (29%)      | 33–50 (18%)        |
-| NMTS  | 88–100 (13%)       | 72–100 (29%)     | 51–100 (50%)       |
+| 1d100 | Inner (orbits 1–2) | Mid (orbits 3–4) | Outer (orbits 5+) |
+| ----- | ------------------ | ---------------- | ----------------- |
+| GOLD  | 01–02 (2%)         | 01–02 (2%)       | 01–02 (2%)        |
+| FUEL  | 03–32 (30%)        | 03–42 (40%)      | 03–32 (30%)       |
+| METS  | 33–87 (55%)        | 43–71 (29%)      | 33–50 (18%)       |
+| NMTS  | 88–100 (13%)       | 72–100 (29%)     | 51–100 (50%)      |
+
+A terrestrial never occupies orbit 10 (the outer edge is always an asteroid),
+so the outer band runs from orbit 5 through orbit 9 in practice.
 
 Gas giants — fuel-dominant, single mix:
 
