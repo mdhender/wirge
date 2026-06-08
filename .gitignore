@@ -12,6 +12,10 @@ __pycache__/
 # OS cruft
 .DS_Store
 
+# IDE
+.code/
+.idea/
+.vscode/
+
 # notes
-notes/cluster-generation.md
 notes/holford.*
