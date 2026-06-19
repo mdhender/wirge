@@ -8,10 +8,10 @@ learns a planet's contents through a probe or a survey.
 
 ## Ship movement
 
-A ship moves between locations by jumping. Each jump is interplanetary (within a
-system) or interstellar (between systems); both kinds are made by
-[hyperdrives]({{< relref "ship-systems.md#hyperdrives" >}}) (`HDRV`), which set
-jump range, fuel use, and the rule that a jump cannot end in deep space. Holding
+A ship moves between locations by making a **hyperdrive hop**. Each hop is
+interplanetary (within a system) or interstellar (between systems); both kinds are
+made by [hyperdrives]({{< relref "ship-systems.md#hyperdrives" >}}) (`HDRV`), which
+set hop range, fuel use, and the rule that a hop cannot end in deep space. Holding
 position in orbit and maneuvering in combat are functions of
 [space drives]({{< relref "ship-systems.md#space-drives" >}}) (`SDRV`), not
 hyperdrives.
@@ -23,9 +23,9 @@ Combat reference page, which is not yet converted. Link it here once it exists.
 
 ### Interplanetary movement
 
-A jump within a system is always treated as **0.1 light years** in distance. A
-ship may jump from one orbit to another within the system. For jump range, fuel,
-and the deep-space rule, see
+A hyperdrive hop within a system is always treated as **0.1 light years** in
+distance. A ship may hop from one orbit to another within the system. For hop
+range, fuel, and the deep-space rule, see
 [Hyperdrives]({{< relref "ship-systems.md#hyperdrives" >}}).
 
 ### Interstellar movement
@@ -36,12 +36,17 @@ distances for interstellar jumps come from the
 [Star List]({{< relref "game-setup.md#star-lists" >}}).
 
 {{< callout type="info" >}}
-**Movement between stars of one system.** A jump between two stars of the same
+**Movement between stars of one system.** The stars of a
 [multi-star system]({{< relref "game-setup.md#solar-systems" >}}) (a binary or
-trinary, whose stars share one set of coordinates) is written as an interstellar
-jump but is treated as **0.2 light years** in distance. The order specifies the
-orbit in the destination star, which must be an occupied orbit; the ship does not
-arrive in the 11th orbit.
+trinary, whose stars share one set of coordinates) belong to a single system, so
+a ship travels from one star to another with a
+[`move` order]({{< relref "writing-orders.md#in-system" >}}), naming the
+destination star and orbit — **not** a `jump`, which targets a different system by
+ID and cannot name an orbit. The destination orbit must be an occupied orbit, and
+the ship does not arrive in the 11th orbit. The hop covers more ground than an
+ordinary in-system move, so it is treated as **0.2 light years** in distance
+(rather than the 0.1 light years of a move within one star's orbits), and its
+hyperdrive range and fuel follow from that distance.
 {{< /callout >}}
 
 ## Probes

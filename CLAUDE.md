@@ -66,6 +66,30 @@ reference only** and is **never published** to the site.
   (build into `public/`, which is git-ignored). Update the theme with
   `hugo mod get -u ./...`.
 
+## Recording clarifications vs. rule changes
+
+The manual stays untouched; everything we decide is captured **in place, in our
+own voice, in the relevant `content/` page** — there is no separate changelog.
+Three tiers, distinguished by Hextra callout type, keep "we clarified" separate
+from "we changed the rules":
+
+1. **Clarification** — resolving an ambiguity or pinning down a special case
+   *without changing the rule*. Write it into the reference prose. When it
+   deserves to be set apart, use an **`info` callout** with a bolded topic label
+   (not a warning), e.g. `content/reference/exploration.md` "**Movement between
+   stars of one system.**"
+2. **Deviation or addition** — anywhere we genuinely depart from or add to the
+   rule book. Use a **`warning` callout** opening with a standard bolded phrase:
+   **"Differs from the rule book."**, **"Not in the rule book."**, or **"Not in
+   this version."** State what the book says, what we do instead, and why.
+   Material unit/code changes also get an entry in the "Differences from the rule
+   book" section of `content/reference/units.md`, and old→new term mappings go in
+   the glossary. Never correct a rule silently — if our number or formula
+   disagrees with the book, flag it (e.g. the energy-weapon `(F / D)` note in
+   `content/reference/combat.md`).
+3. **Open question** — anything not yet pinned down. Use a **`warning` callout**
+   (or inline) opening with **`TODO:`**.
+
 ## Deploying
 
 **Only deploy when the user explicitly asks.** Deploying publishes to the live
