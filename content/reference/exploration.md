@@ -51,7 +51,9 @@ An interstellar [`jump` order]({{< relref "writing-orders.md#between-systems" >}
 may start from **any orbit** and ends automatically in the
 [11th orbit]({{< relref "game-setup.md#11th-orbit" >}}) of the target system. The
 distances for interstellar jumps come from the
-[Star List]({{< relref "game-setup.md#star-lists" >}}).
+[Star List]({{< relref "game-setup.md#star-lists" >}}). For why arrival lands in
+that slot and what its design implies, see
+[The Eleventh Orbit]({{< relref "../explanation/the-eleventh-orbit.md" >}}).
 
 ## Probes
 

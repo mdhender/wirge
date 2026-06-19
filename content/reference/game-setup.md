@@ -114,7 +114,9 @@ Orbit 11 is a bookkeeping slot, not a planetary orbit:
   at any planet in the system.
 
 See [Interstellar movement]({{< relref "exploration.md#interstellar-movement" >}})
-for how a jump arrives here.
+for how a jump arrives here, and
+[The Eleventh Orbit]({{< relref "../explanation/the-eleventh-orbit.md" >}}) for why
+the slot is designed this way and what follows from it.
 
 ## Generation
 
