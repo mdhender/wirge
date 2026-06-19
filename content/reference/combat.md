@@ -262,13 +262,12 @@ mass units of damage. Of that damage, 75% is applied to `MSL`, `EWP`, and `SDRV`
 (a colony has no `SDRV`); the balance affects other parts of the target,
 including population units.
 
-{{< callout type="warning" >}}
-**Differs from the rule book.** The original rule book prints this term as
-`(F + D)`, but its own worked example divides — `((10,000 / 5) x 10) - 10,000` —
-so the printed sum is a typo. We use the division form `(F / D)`, which the
-example confirms and which correctly attenuates a beam over distance (a more
-distant target, larger `D`, takes less damage). This is the formula the engine
-implements.
+{{< callout type="info" >}}
+**Reading the rule book's formula.** The rule book prints this term as `(F + D)`,
+but its own worked example divides — `((10,000 / 5) x 10) - 10,000` — so the
+printed sum is a typo. The division form `(F / D)` above is the rule the example
+confirms, and it correctly attenuates a beam over distance (a more distant target,
+larger `D`, takes less damage).
 {{< /callout >}}
 
 Against transports and assault craft, the share of `EWP` that fire and the share

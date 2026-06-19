@@ -84,11 +84,19 @@ from "we changed the rules":
    this version."** State what the book says, what we do instead, and why.
    Material unit/code changes also get an entry in the "Differences from the rule
    book" section of `content/reference/units.md`, and old→new term mappings go in
-   the glossary. Never correct a rule silently — if our number or formula
-   disagrees with the book, flag it (e.g. the energy-weapon `(F / D)` note in
-   `content/reference/combat.md`).
+   the glossary.
 3. **Open question** — anything not yet pinned down. Use a **`warning` callout**
    (or inline) opening with **`TODO:`**.
+
+**Never correct a rule silently.** If our number or formula disagrees with the
+printed book, always flag it — but pick the tier by *intent*. A typo (where the
+book's own worked example agrees with us) is a tier-1 clarification, e.g. the
+energy-weapon `(F / D)` note in `content/reference/combat.md`. A deliberate change
+is a tier-2 deviation. When the disagreement is a downstream *consequence* of a
+model change we already made (e.g. reclassifying a binary star-to-star hop from
+the manual's "interstellar jump" to our in-system `move`, which makes its 0.2-ly
+distance an in-system case), reconcile every page the change touches so they state
+one rule — don't leave one page asserting the pre-change version.
 
 ## Deploying
 

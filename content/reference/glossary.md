@@ -89,7 +89,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 
 ## I
 
-- **Interplanetary location** — A legal jump endpoint inside a solar system. Interplanetary jumps are always treated as 0.1 light years. See [Hyperdrives]({{< relref "ship-systems.md#hyperdrives" >}}).
+- **Interplanetary location** — A legal `move` endpoint inside a solar system. An interplanetary hop spans 0.1 light years between orbits of one star, or 0.2 light years between two stars of a multi-star system. See [Hyperdrives]({{< relref "ship-systems.md#hyperdrives" >}}).
 - **Interstellar location** — A legal jump endpoint between solar systems. Interstellar distances come from the player's Star List. See [Hyperdrives]({{< relref "ship-systems.md#hyperdrives" >}}).
 - **Invasion** — A combat order in which a ship or colony invades another to capture it. See [Combat]({{< relref "combat.md#attack-orders" >}}).
 
@@ -100,7 +100,7 @@ see [Units]({{< relref "units.md" >}}) for the full catalog.
 ## L
 
 - **Light structural unit** (`STU-2`) — The engine representation of the rule book's light structural unit. It substitutes for regular structural units and can be built only by orbiting colonies. See [Structural Units]({{< relref "ship-systems.md#structural-units" >}}).
-- **Light year** — The distance unit used for hyperdrive jump range and interstellar jump distance.
+- **Light year** — The distance unit for hyperdrive jump range and for hop distance, whether interplanetary (0.1 or 0.2 light years) or interstellar.
 - **Life support** (`LSP`) — A unit that recycles air and water; required by ships, enclosed colonies, and orbiting colonies. See [Ship Systems and Miscellaneous Units]({{< relref "ship-systems.md#life-support" >}}).
 
 ## M

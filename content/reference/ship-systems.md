@@ -115,14 +115,22 @@ calculating how many engines are required.
 hyperdrives required = ceiling(non-HDRV ship mass / (1,000 x hyperdrive TL))
 ```
 
-For jump distance:
+A hop's distance follows from the order that flies it:
 
-| Jump type | Distance |
-| --------- | -------- |
-| Interplanetary | Always 0.1 light years |
-| Interstellar | Distance from the player's Star List |
+| Hop | Distance |
+| --- | -------- |
+| `move` between orbits of one star | 0.1 light years |
+| `move` between two stars of a multi-star system | 0.2 light years |
+| `jump` between systems | Distance from the player's Star List |
 
-Every jump must end at an interplanetary or interstellar location. A jump cannot
+Fuel use applies the single rule above to that distance, so a `move` within one
+star's orbits costs `40 x 0.1 = 4` FUEL per operating hyperdrive, while a `move`
+between the stars of a multi-star system covers 0.2 light years and costs
+`40 x 0.2 = 8` FUEL per operating hyperdrive. There is no separate per-`move`
+charge — the distance is the only thing that changes. See
+[Interplanetary movement]({{< relref "exploration.md#interplanetary-movement" >}}).
+
+Every hop must end at an interplanetary or interstellar location. A hop cannot
 end in deep space.
 
 ## Space Drives
